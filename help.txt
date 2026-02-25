@@ -1,0 +1,20 @@
+Usage: shadcn create [options] [name]
+
+create a new project with shadcn/ui
+
+Arguments:
+  name                       the name of your project
+
+Options:
+  -t, --template <template>  the template to use. e.g. next, start or vite
+  -p, --preset [name]        use a preset configuration
+  -c, --cwd <cwd>            the working directory. defaults to the current
+                             directory. (default:
+                             "C:\\Users\\Rasmus\\source\\repos\\enhancior.se")
+  --src-dir                  use the src directory when creating a new project.
+                             (default: false)
+  --no-src-dir               do not use the src directory when creating a new
+                             project.
+  -y, --yes                  skip confirmation prompt. (default: true)
+  --rtl                      enable RTL support. (default: false)
+  -h, --help                 display help for command
