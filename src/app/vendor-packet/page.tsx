@@ -18,7 +18,7 @@ export default function VendorPacketPage() {
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
           Här hittar du allt som krävs för intern leverantörsgodkännande av
-          Enhancior AB — organisationsnummer, F-skattstatus, bolagsform,
+          Enhancior AB: organisationsnummer, F-skattstatus, bolagsform,
           certifieringar och ett nedladdningsbart leverantörspaket.
         </p>
       </div>
@@ -70,7 +70,7 @@ export default function VendorPacketPage() {
                 Verksamhetstyp
               </span>
               <p className="font-mono text-base text-[#EDEDED]">
-                Enskild konsult — Mjukvaruarkitektur &amp; Teknisk Ledning
+                Enskild konsult: Mjukvaruarkitektur och teknisk ledning
               </p>
             </div>
           </div>
@@ -109,10 +109,10 @@ export default function VendorPacketPage() {
             </span>
             <div className="mt-1 space-y-1">
               <p className="text-sm text-[#A1A1A1]">
-                30-dagars Teknisk Akutrevision
+                30-dagars Teknisk Revision
               </p>
               <p className="text-sm text-[#A1A1A1]">
-                Fraktionell Arkitekt-retainer
+                Teknisk ledning på deltid
               </p>
               <p className="text-sm text-[#A1A1A1]">Enterprise Rescue</p>
             </div>
@@ -130,7 +130,7 @@ export default function VendorPacketPage() {
         </p>
         <p className="text-base text-[#A1A1A1] leading-relaxed mb-6 max-w-[600px]">
           Leverantörspaketet innehåller CV, certifieringar, referensuppdrag och
-          prisintervall — allt samlat i ett dokument för intern kvalificering.
+          prisintervall, allt samlat i ett dokument för intern kvalificering.
         </p>
         <div className="flex flex-col items-start">
           <a
