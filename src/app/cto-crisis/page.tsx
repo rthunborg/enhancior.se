@@ -10,9 +10,9 @@ import { PathwayCaseStudies } from "@/components/pathway/pathway-case-studies";
 import { EngagementTiers } from "@/components/engagement-tiers";
 
 export const metadata: Metadata = {
-  title: "Akut Leveranskris | Enhancior",
+  title: "Leveranskris | Enhancior",
   description:
-    "Er tekniska skuld saboterar leveransen. En 30-dagars Tech Rescue Audit som identifierar exakt var systemet blöder och levererar en exekverbar åtgärdsplan.",
+    "Er tekniska skuld bromsar leveransen. En 30-dagars Teknisk Revision som identifierar exakt var problemen sitter och ger er en konkret åtgärdsplan.",
 };
 
 export default function CtooCrisisPage() {
@@ -24,10 +24,10 @@ export default function CtooCrisisPage() {
           Ni vet redan att teknisk skuld kostar er.
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
-          Er pipeline är fragil, varje release är ett hasardspel och teamet
-          tappar fart. En 30-dagars Tech Rescue Audit identifierar exakt var
-          systemet blöder — och levererar en exekverbar åtgärdsplan som ert team
-          kan börja implementera dag 31.
+          Er pipeline är fragil och varje release är ett hasardspel. Teamet
+          tappar fart. En 30-dagars Teknisk Revision identifierar exakt var
+          problemen sitter och ger er en konkret åtgärdsplan som ert team kan
+          börja implementera dag 31.
         </p>
       </div>
 
