@@ -23,27 +23,27 @@ function getCalendlyUrl(tierSlug: string): string {
 export const engagementTiers: EngagementTier[] = [
   {
     id: "tech-rescue-audit",
-    name: "30-dagars Tech Rescue Audit",
-    tagline: "Akut intervention för system som blöder",
+    name: "30-dagars Teknisk Revision",
+    tagline: "För system som dränerar sprint-kapacitet och bromsar leveransen",
     scope:
-      "Djupanalys av kodbas, arkitektur och leveransprocesser under 30 dagar. Ni får en exekverbar åtgärdsplan rankad efter affärsimpakt och teknisk risk — redo att implementera dag 31.",
+      "Djupanalys av kodbas, arkitektur och leveransprocesser under 30 dagar. Ni får en konkret åtgärdsplan rankad efter affärsnytta och teknisk risk, redo att implementera dag 31.",
     timeline: "30 dagar",
     startingPrice: "Från 180 000 kr",
     deliverables: [
       "Komplett arkitekturbedömning med identifierade flaskhalsar",
-      "Prioriterad åtgärdsplan rankad efter affärsimpakt",
+      "Prioriterad åtgärdsplan rankad efter affärsnytta",
       "Mätbara förbättringsmål med baseline-värden",
-      "Exekverbar roadmap för de första 90 dagarna",
+      "Konkret roadmap för de första 90 dagarna",
     ],
     ctaLabel: calendly.ctaLabel,
     ctaHref: getCalendlyUrl("rescue-audit"),
   },
   {
     id: "fractional-retainer",
-    name: "Fraktionell Arkitekt-Retainer",
-    tagline: "Inbäddad teknisk ledning — inte en konsult som försvinner",
+    name: "Teknisk ledning på deltid",
+    tagline: "En inbäddad arkitekt som driver beslut och stannar tills ert team är stabilt",
     scope:
-      "Senior arkitekt som integreras i ert team 1–2 dagar per vecka. Driver arkitekturbeslut, mentorskapar teamet och stabiliserar er tekniska grund — och hjälper er hitta en permanent ersättare.",
+      "Senior arkitekt som integreras i ert team 1–2 dagar per vecka. Driver arkitekturbeslut, mentorskapar teamet och stabiliserar er tekniska grund. Hjälper er hitta en permanent ersättare när ni är redo.",
     timeline: "Löpande · 1–2 dagar/vecka",
     startingPrice: "Från 45 000 kr/mån",
     deliverables: [
@@ -60,7 +60,7 @@ export const engagementTiers: EngagementTier[] = [
     name: "Enterprise Rescue",
     tagline: "Storskalig modernisering av legacysystem",
     scope:
-      "Djupgående räddningsuppdrag för enterprise-system som kräver modernisering. Compliance-säkrad process med full transparens — från diagnostik till leverans.",
+      "Djupgående moderniseringsuppdrag för enterprise-system som kräver modernisering. Compliance-säkrad process med full transparens, från diagnostik till leverans.",
     timeline: "3–12 månader",
     startingPrice: "Offertbaserad",
     deliverables: [
