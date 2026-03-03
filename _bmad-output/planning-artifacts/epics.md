@@ -29,7 +29,7 @@ FR10: The case study component supports three distinct visual states (Before, In
 FR11: Case study content includes verifiable impact metrics (timelines, measurable outcomes)
 FR12: Case studies are authored as MDX files and rendered statically at build time
 FR13: Visitors can view productized engagement offerings with transparent pricing brackets
-FR14: The system presents three engagement tiers: 30-Day Tech Rescue Audit, Fractional Architect Retainer, and Enterprise Rescue
+FR14: The system presents three engagement tiers: 30-dagars Teknisk Revision, Teknisk ledning på deltid, and Enterprise Rescue
 FR15: Each engagement tier displays starting price, scope, and timeline information
 FR16: Visitors can book a discovery call directly from within persona pathways via embedded Calendly
 FR17: The booking CTA is framed as "Free 45-min Whiteboarding Session"
@@ -165,7 +165,7 @@ FR41: Epic 4 - Engagement Tiers & Conversion
 *Note: This is a localized complex UI component mixed with content management basics.*
 
 ### Epic 4: Engagement Tiers & Conversion
-**User Outcome:** Prospects can view clear, productized offerings (Audit, Retainer, Rescue) with transparent pricing and seamlessly book a discovery call via Calendly or download a vendor packet to proceed with hiring.
+**User Outcome:** Prospects can view clear, productized offerings (Revision, Deltid, Rescue) with transparent pricing and seamlessly book a discovery call via Calendly or download a vendor packet to proceed with hiring.
 **FRs covered:** FR13, FR14, FR15, FR16, FR17, FR18, FR19, FR22, FR41
 *Note: This epic is where the site converts.*
 
@@ -251,7 +251,7 @@ So that I understand this is an expert intervention, not just generic consulting
 **When** the pathway page loads
 **Then** the messaging is specifically tailored to a CTO in crisis
 **And** at least one relevant proof artifact (e.g. an architecture diagram or specific metrics) is displayed
-**And** the engagement CTA is focused on the "30-Day Tech Rescue Audit".
+**And** the engagement CTA is focused on the "30-dagars Teknisk Revision".
 
 ### Story 2.2: CTO Proactive Pathway
 
@@ -264,7 +264,7 @@ So that I feel confident engaging a fractional architect to help me scale.
 **Given** I select a "scaling/growth" option on the ER Triage homepage
 **When** the pathway page loads
 **Then** the messaging is specifically tailored to proactive architectural scaling
-**And** the engagement CTA is focused on the "Fractional Architect Retainer".
+**And** the engagement CTA is focused on the "Teknisk ledning på deltid".
 
 ### Story 2.3: Non-Technical Founder Pathway
 
@@ -337,12 +337,12 @@ So that I can publish new proof artifacts without needing a complex CMS or deplo
 
 ## Epic 4: Engagement Tiers & Conversion
 
-Prospects can view clear, productized offerings (Audit, Retainer, Rescue) with transparent pricing and seamlessly book a discovery call via Calendly or download a vendor packet to proceed with hiring.
+Prospects can view clear, productized offerings (Revision, Deltid, Rescue) with transparent pricing and seamlessly book a discovery call via Calendly or download a vendor packet to proceed with hiring.
 
 ### Story 4.1: Productized Engagement Tiers Display
 
 As a prospective client,
-I want to view clear, productized engagement offerings (30-Day Tech Rescue Audit, Fractional Architect Retainer, Enterprise Rescue),
+I want to view clear, productized engagement offerings (30-dagars Teknisk Revision, Teknisk ledning på deltid, Enterprise Rescue),
 So that I understand exactly what services you provide and can verify they match my needs.
 
 **Acceptance Criteria:**
