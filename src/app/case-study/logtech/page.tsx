@@ -9,7 +9,7 @@ import {
 } from "@/components/architecture";
 
 export const metadata: Metadata = {
-  title: "LogTech CI/CD-Räddning — Fallstudie | Enhancior",
+  title: "LogTech CI/CD-Räddning: Fallstudie | Enhancior",
   description:
     "Hur en logistik SaaS-plattform gick från 40% build-success till 98% på 30 dagar.",
 };
@@ -55,8 +55,8 @@ export default function LogtechCaseStudyPage() {
         problemNarrative={
           <>
             <p className="mb-4">
-              LogTech hade byggt en lovande SaaS-plattform för logistikhantering
-              — men deras CI/CD-pipeline hade blivit en flaskhals. Över 60% av
+              LogTech hade byggt en lovande SaaS-plattform för logistikhantering,
+              men deras CI/CD-pipeline hade blivit en flaskhals. Över 60% av
               alla builds misslyckades, och teamet spenderade mer tid på att
               felsöka deployments än på att bygga nya funktioner. Lead time från
               commit till produktion låg på 14 dagar.
@@ -71,8 +71,8 @@ export default function LogtechCaseStudyPage() {
             <p>
               Situationen hade börjat påverka affären. Säljteamet kunde inte
               lova snabba leveranser till nya kunder, och befintliga kunder
-              rapporterade instabilitet i plattformen. Något behövde förändras
-              — snabbt.
+              rapporterade instabilitet i plattformen. Något behövde förändras.
+              Snabbt.
             </p>
           </>
         }
@@ -116,7 +116,7 @@ export default function LogtechCaseStudyPage() {
           <>
             <p className="mb-4">
               Inom 30 dagar hade LogTechs team gått från att frukta varje
-              deploy till att leverera fyra gånger om dagen — med förtroende.
+              deploy till att leverera fyra gånger om dagen, med förtroende.
               Build-success-raten steg från 40% till 98%, och
               produktionsincidenter minskade med 73%.
             </p>
