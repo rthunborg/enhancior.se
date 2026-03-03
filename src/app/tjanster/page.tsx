@@ -4,7 +4,7 @@ import { EngagementTiers } from "@/components/engagement-tiers";
 export const metadata: Metadata = {
   title: "Tjänster | Enhancior",
   description:
-    "Enhanciors produktiserade engagemangsmodeller: 30-dagars Tech Rescue Audit, Fraktionell Arkitekt-Retainer och Enterprise Rescue. Välj den modell som passar er situation.",
+    "Tre uppdragsformer med tydlig omfattning, tidslinje och leverabler: 30-dagars Teknisk Revision, Teknisk ledning på deltid och Enterprise Rescue.",
 };
 
 export default function TjansterPage() {
@@ -15,9 +15,8 @@ export default function TjansterPage() {
           Tjänster
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
-          Tre produktiserade engagemangsmodeller — varje uppdrag har tydlig
-          omfattning, tidslinje och leverabler. Ingen vag konsultrådgivning,
-          bara exekverbar förändring.
+          Tre uppdragsformer. Varje engagemang har tydlig omfattning, tidslinje
+          och leverabler. Ingen vag konsultrådgivning, bara konkret förändring.
         </p>
       </div>
 
