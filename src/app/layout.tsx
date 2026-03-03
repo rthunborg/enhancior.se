@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://enhancior.se"),
-  title: "Enhancior | Fraktionell CTO & Teknisk Skuld Konsult",
-  description: "Diagnostisera och åtgärda mjukvaruproblem. Enhancior erbjuder fraktionell CTO-tjänster och lösningar för teknisk skuld för SaaS och Enterprise.",
+  title: "Enhancior | Senior Mjukvaruarkitekt & Teknisk Ledning",
+  description: "Identifiera och åtgärda teknisk skuld. Enhancior erbjuder teknisk revision, inbäddad arkitektkompetens och enterprise-modernisering för SaaS och enterprise.",
 };
 
 export default function RootLayout({
