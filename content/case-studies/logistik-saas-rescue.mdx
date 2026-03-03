@@ -1,0 +1,47 @@
+---
+title: "LogTech CI/CD-Räddning"
+slug: "logistik-saas-rescue"
+description: "Hur en logistik SaaS-plattform gick från 40% build-success till 98% på 30 dagar genom pipeline-omstrukturering och blue-green deployment."
+client: "Series B Logistics SaaS"
+engagement: "30-dagars Tech Rescue Audit"
+metrics:
+  - label: "Deploy-frekvens"
+    value: "1/vecka → 4/dag"
+  - label: "Incidenter"
+    value: "4/mån → 1/mån (−73%)"
+  - label: "Lead time"
+    value: "14 dagar → 2 dagar"
+  - label: "Build-success"
+    value: "40% → 98%"
+personas:
+  - "cto-crisis"
+  - "cto-proactive"
+svgBefore: "assets/logistik-before.svg"
+svgIntervention: "assets/logistik-intervention.svg"
+svgAfter: "assets/logistik-after.svg"
+publishedAt: "2025-09-15"
+timeline: "30 dagar"
+featured: true
+---
+
+## Problemet
+
+LogTech hade byggt en lovande SaaS-plattform för logistikhantering — men deras CI/CD-pipeline hade blivit en flaskhals. Över 60% av alla builds misslyckades, och teamet spenderade mer tid på att felsöka deployments än på att bygga nya funktioner. Lead time från commit till produktion låg på 14 dagar.
+
+Produktionsincidenter inträffade varje vecka. Varje deploy var en manuell process som krävde att en senior utvecklare satt och övervakade hela kedjan. Teamet hade tappat förtroendet för sin egen release-process och undvek att deploya om det inte var absolut nödvändigt.
+
+Situationen hade börjat påverka affären. Säljteamet kunde inte lova snabba leveranser till nya kunder, och befintliga kunder rapporterade instabilitet i plattformen. Något behövde förändras — snabbt.
+
+## Insatsen
+
+- **Pipeline-omstrukturering:** Bröt upp den monolitiska build-pipelinen i isolerade steg med tydliga kontraktsgränser. Varje steg kunde köras och valideras oberoende, vilket eliminerade kaskadfel.
+
+- **Automatiserad testtäckning:** Införde quality gates med minimikrav på testtäckning. Inga merges tilläts utan godkänd testsvit. Resultatet: defekter fångades innan de nådde produktion.
+
+- **Blue-green deployment:** Implementerade en blue-green deployment-strategi som möjliggjorde zero-downtime releases och omedelbar rollback vid problem. Teamet kunde deploya med förtroende.
+
+## Affärsresultat
+
+Inom 30 dagar hade LogTechs team gått från att frukta varje deploy till att leverera fyra gånger om dagen — med förtroende. Build-success-raten steg från 40% till 98%, och produktionsincidenter minskade med 73%.
+
+Den nya leveransförmågan öppnade affärsmöjligheter som tidigare varit omöjliga. LogTech kunde erbjuda enterprise-kunder SLA:er med garanterad uptime och snabba feature-leveranser. Inom kvartalet efter insatsen hade de tecknat tre nya enterprise-avtal som de tidigare tvingats tacka nej till.

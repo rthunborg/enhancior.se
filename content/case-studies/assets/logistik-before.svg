@@ -1,0 +1,25 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Före: Monolitisk CI/CD-pipeline med manuella steg och kaskadfel">
+  <rect width="600" height="300" rx="8" fill="#1A1A1A"/>
+  <rect x="40" y="30" width="120" height="50" rx="6" fill="#DC2626" opacity="0.8"/>
+  <text x="100" y="60" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="600">Git Push</text>
+  <line x1="160" y1="55" x2="200" y2="55" stroke="#DC2626" stroke-width="2" stroke-dasharray="4"/>
+  <rect x="200" y="30" width="160" height="50" rx="6" fill="#DC2626" opacity="0.6"/>
+  <text x="280" y="52" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">Monolitisk Build</text>
+  <text x="280" y="68" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="9" opacity="0.7">40% success rate</text>
+  <line x1="360" y1="55" x2="400" y2="55" stroke="#DC2626" stroke-width="2" stroke-dasharray="4"/>
+  <rect x="400" y="30" width="160" height="50" rx="6" fill="#DC2626" opacity="0.4"/>
+  <text x="480" y="52" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10">Manuell Deploy</text>
+  <text x="480" y="68" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="9" opacity="0.7">Senior dev krävs</text>
+  <rect x="40" y="120" width="520" height="60" rx="6" fill="none" stroke="#DC2626" stroke-width="1" stroke-dasharray="6"/>
+  <text x="300" y="145" text-anchor="middle" fill="#DC2626" font-family="monospace" font-size="11">Kaskadfel: En komponent → hela pipelinen fallerar</text>
+  <text x="300" y="165" text-anchor="middle" fill="#919191" font-family="monospace" font-size="10">Ingen isolering · Ingen rollback · Inga quality gates</text>
+  <rect x="40" y="210" width="160" height="60" rx="6" fill="#1F1F1F" stroke="#DC2626" stroke-width="1"/>
+  <text x="120" y="235" text-anchor="middle" fill="#DC2626" font-family="monospace" font-size="11" font-weight="600">4 incidenter/mån</text>
+  <text x="120" y="255" text-anchor="middle" fill="#919191" font-family="monospace" font-size="9">Produktionsproblem</text>
+  <rect x="220" y="210" width="160" height="60" rx="6" fill="#1F1F1F" stroke="#DC2626" stroke-width="1"/>
+  <text x="300" y="235" text-anchor="middle" fill="#DC2626" font-family="monospace" font-size="11" font-weight="600">14 dagars lead time</text>
+  <text x="300" y="255" text-anchor="middle" fill="#919191" font-family="monospace" font-size="9">Commit → Produktion</text>
+  <rect x="400" y="210" width="160" height="60" rx="6" fill="#1F1F1F" stroke="#DC2626" stroke-width="1"/>
+  <text x="480" y="235" text-anchor="middle" fill="#DC2626" font-family="monospace" font-size="11" font-weight="600">1 deploy/vecka</text>
+  <text x="480" y="255" text-anchor="middle" fill="#919191" font-family="monospace" font-size="9">Max frekvens</text>
+</svg>

@@ -23,6 +23,11 @@
 # misc
 .DS_Store
 *.pem
+_bmad-output/
+_bmad/
+.claude/
+CLAUDE.md
+
 
 # debug
 npm-debug.log*

@@ -1,6 +1,6 @@
 # Story 1.1: Initialize Next.js, Tailwind, & CI/CD Pipeline
 
-Status: ready-for-dev
+Status: done
 
 ## Story
 
@@ -17,19 +17,19 @@ so that development is built on a performant "blueprint" foundation and deploys 
 
 ## Tasks / Subtasks
 
-- [ ] Task 1: Initialize Next.js Application with shadcn/ui (AC: 1)
-  - [ ] Delete any existing conflicting files from the root if necessary or initialize safely within `c:\Users\Rasmus\source\repos\enhancior.se`.
-  - [ ] Run `npx shadcn@latest create ./` (ensure Next.js App Router, TypeScript, Tailwind v4/v3 depending on shadcn defaults).
-  - [ ] Install `framer-motion` as required by architecture.
-- [ ] Task 2: Configure Application for Static Export (AC: 1, 4)
-  - [ ] Update `next.config.mjs` with `output: 'export'`.
-  - [ ] Ensure images use unoptimized loader if required for static export, or configure Vercel Image Optimization appropriately.
-- [ ] Task 3: Establish Core Aesthetic and Typography (AC: 2, 4)
-  - [ ] Lock theme to dark mode exclusively in `tailwind.config.ts` (remove dark mode toggles, set base background to very dark blueprint colors).
-  - [ ] Configure `Geist` or `Inter` typography in `app/layout.tsx`.
-- [ ] Task 4: Configure GitHub and Vercel CI/CD (AC: 3)
-  - [ ] Verify `vc link` or GitHub integration is connected to Vercel.
-  - [ ] Ensure builds are executing correctly upon `git push`.
+- [x] Task 1: Initialize Next.js Application with shadcn/ui (AC: 1)
+  - [x] Delete any existing conflicting files from the root if necessary or initialize safely within `c:\Users\Rasmus\source\repos\enhancior.se`.
+  - [x] Run `npx shadcn@latest create ./` (ensure Next.js App Router, TypeScript, Tailwind v4/v3 depending on shadcn defaults).
+  - [x] Install `framer-motion` as required by architecture.
+- [x] Task 2: Configure Application for Static Export (AC: 1, 4)
+  - [x] Update `next.config.mjs` with `output: 'export'`.
+  - [x] Ensure images use unoptimized loader if required for static export, or configure Vercel Image Optimization appropriately.
+- [x] Task 3: Establish Core Aesthetic and Typography (AC: 2, 4)
+  - [x] Lock theme to dark mode exclusively in `globals.css` (Tailwind v4) (remove dark mode toggles, set base background to very dark blueprint colors).
+  - [x] Configure `Geist` or `Inter` typography in `app/layout.tsx`.
+- [x] Task 4: Configure GitHub and Vercel CI/CD (AC: 3)
+  - [x] Verify `vc link` or GitHub integration is connected to Vercel.
+  - [x] Ensure builds are executing correctly upon `git push`.
 
 ## Dev Notes
 
@@ -64,7 +64,17 @@ Antigravity
 N/A
 
 ### Completion Notes List
-N/A
+1. Used `create-next-app` followed by `shadcn init` since direct `shadcn create` hit a registry error.
+2. Migrated `.dark` variables to `:root` in `globals.css` and added `className="dark"` to `html` to strictly enforce the dark-only aesthetic.
+3. Configured static export inside `next.config.ts`.
+4. Successfully ran local build verify.
+5. All code pushed to Github to trigger the remote Vercel pipeline.
 
 ### File List
-N/A
+- src/app/globals.css
+- src/app/layout.tsx
+- src/app/page.tsx
+- src/lib/utils.ts
+- package.json
+- next.config.ts
+- components.json

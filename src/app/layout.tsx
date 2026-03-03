@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
+import { StructuredData } from "@/components/seo/structured-data";
+import { EnterpriseFooter } from "@/components/layout/enterprise-footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Enhancior ER Triage",
-  description: "Diagnose & Cure Software Engineering Challenges",
+  metadataBase: new URL("https://enhancior.se"),
+  title: "Enhancior | Fraktionell CTO & Teknisk Skuld Konsult",
+  description: "Diagnostisera och åtgärda mjukvaruproblem. Enhancior erbjuder fraktionell CTO-tjänster och lösningar för teknisk skuld för SaaS och Enterprise.",
 };
 
 export default function RootLayout({
@@ -23,11 +27,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="sv" className="dark">
+      <head>
+        <StructuredData />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        {children}
+        <main className="flex-1">{children}</main>
+        <EnterpriseFooter />
+        <Analytics />
       </body>
     </html>
   );
