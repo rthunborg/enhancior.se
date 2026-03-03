@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+.worktrees/
 _bmad-output/
 _bmad/
 .claude/
