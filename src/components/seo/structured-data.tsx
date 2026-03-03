@@ -8,25 +8,25 @@ export function StructuredData() {
                 name: "Enhancior AB",
                 url: "https://enhancior.se",
                 logo: "https://enhancior.se/enhancior_logo.png",
-                description: "Fraktionell CTO & Teknisk Skuld Konsult för SaaS och Enterprise."
+                description: "Senior mjukvaruarkitekt och teknisk ledning för SaaS-bolag och enterprise."
             },
             {
                 "@type": "Service",
                 "@id": "https://enhancior.se/#service",
-                name: "Teknisk Skuld Konsult",
+                name: "Teknisk Revision",
                 provider: {
                     "@id": "https://enhancior.se/#organization"
                 },
-                description: "Diagnostisera och åtgärda mjukvaruproblem, infrastruktur och arkitektur för SaaS-plattformar."
+                description: "Identifiera och åtgärda teknisk skuld i kodbas, arkitektur och leveransprocesser."
             },
             {
                 "@type": "Service",
                 "@id": "https://enhancior.se/#service2",
-                name: "Fraktionell CTO",
+                name: "Teknisk ledning på deltid",
                 provider: {
                     "@id": "https://enhancior.se/#organization"
                 },
-                description: "Strategisk teknisk ledning och rådgivning för start-ups och scale-ups."
+                description: "Inbäddad arkitekt som driver tekniska beslut och stabiliserar er teknikgrund."
             }
         ]
     };
