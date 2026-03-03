@@ -19,7 +19,7 @@ export default function FounderRescuePage() {
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
           Er tekniska ledare är borta och teamet tappar fart. Ni behöver inte
-          rusa in i en felrekrytering — ni behöver någon som stabiliserar
+          rusa in i en felrekrytering. Ni behöver någon som stabiliserar
           verksamheten, skapar en roadmap styrelsen kan lita på och hjälper er
           hitta rätt permanent CTO i lugn och ro.
         </p>
@@ -33,7 +33,7 @@ export default function FounderRescuePage() {
         <div className="space-y-4">
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
             <p className="text-base font-semibold text-[#EDEDED] mb-1">
-              Teamet driver utan riktning — hastigheten sjunker vecka för vecka
+              Teamet driver utan riktning. Hastigheten sjunker vecka för vecka
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Utan en senior ledare som sätter prioriteringar tappar teamet fart.
@@ -47,14 +47,14 @@ export default function FounderRescuePage() {
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Due diligence-risken växer. Ni saknar trovärdiga underlag om
-              teamets kapacitet, tekniska risker och leveransförmåga — och varje
+              teamets kapacitet, tekniska risker och leveransförmåga. Varje
               styrelsemöte blottlägger kunskapsluckan.
             </p>
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
             <p className="text-base font-semibold text-[#EDEDED] mb-1">
-              Ingen kan bedöma om teamet gör rätt saker — eller bränner kapital
-              på fel
+              Ingen kan bedöma om teamet gör rätt saker, eller om ni bränner
+              kapital på fel prioriteringar
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Utan teknisk ledning fattas beslut i blindo. Ni vet inte om teamet
@@ -102,7 +102,7 @@ export default function FounderRescuePage() {
           </div>
           <div className="border border-dashed border-[rgba(255,255,255,0.15)] rounded p-12 flex items-center justify-center">
             <p className="font-mono text-sm text-[#919191]">
-              Resultatberättelse — kommer i nästa fas
+              Resultatberättelse (kommer i nästa fas)
             </p>
           </div>
         </div>
