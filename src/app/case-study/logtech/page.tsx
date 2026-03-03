@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { ArchitectureViewer } from "@/components/architecture";
 import {
-  PlaceholderBefore,
-  PlaceholderIntervention,
-  PlaceholderAfter,
+  ArchitectureViewer,
+  LogTechBefore,
+  LogTechIntervention,
+  LogTechAfter,
 } from "@/components/architecture";
 
 export const metadata: Metadata = {
@@ -78,9 +78,9 @@ export default function LogtechCaseStudyPage() {
         }
         architectureViewer={
           <ArchitectureViewer
-            beforeContent={PlaceholderBefore}
-            interventionContent={PlaceholderIntervention}
-            afterContent={PlaceholderAfter}
+            beforeContent={LogTechBefore}
+            interventionContent={LogTechIntervention}
+            afterContent={LogTechAfter}
           />
         }
         interventionNarrative={

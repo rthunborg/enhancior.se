@@ -1,6 +1,11 @@
 export { ArchitectureViewer } from "./architecture-viewer";
 export {
-  PlaceholderBefore,
-  PlaceholderIntervention,
-  PlaceholderAfter,
-} from "./placeholder-diagrams";
+  GenericCrisisBefore,
+  GenericCrisisIntervention,
+  GenericCrisisAfter,
+} from "./generic-crisis-diagrams";
+export {
+  LogTechBefore,
+  LogTechIntervention,
+  LogTechAfter,
+} from "./logtech-diagrams";

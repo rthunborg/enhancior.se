@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { PathwayShell } from "@/components/pathway/pathway-shell";
 import {
   ArchitectureViewer,
-  PlaceholderBefore,
-  PlaceholderIntervention,
-  PlaceholderAfter,
+  GenericCrisisBefore,
+  GenericCrisisIntervention,
+  GenericCrisisAfter,
 } from "@/components/architecture";
 import { PathwayCaseStudies } from "@/components/pathway/pathway-case-studies";
 import { EngagementTiers } from "@/components/engagement-tiers";
@@ -107,9 +107,9 @@ export default function CtooCrisisPage() {
             </div>
           </div>
           <ArchitectureViewer
-            beforeContent={PlaceholderBefore}
-            interventionContent={PlaceholderIntervention}
-            afterContent={PlaceholderAfter}
+            beforeContent={GenericCrisisBefore}
+            interventionContent={GenericCrisisIntervention}
+            afterContent={GenericCrisisAfter}
           />
         </div>
       </section>
