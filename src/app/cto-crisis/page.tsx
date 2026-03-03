@@ -23,9 +23,9 @@ export default function CtooCrisisPage() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
           Ni vet redan att teknisk skuld kostar er.
         </h1>
-        <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
-          Er pipeline är fragil och varje release är ett hasardspel. Teamet
-          tappar fart. En 30-dagars Teknisk Revision identifierar exakt var
+        <p className="text-center text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+          Er pipeline är fragil och varje release är en risk. Teamet
+          tappar fart. En 30-dagars teknisk revision identifierar exakt var
           problemen sitter och ger er en konkret åtgärdsplan som ert team kan
           börja implementera dag 31.
         </p>
@@ -43,8 +43,7 @@ export default function CtooCrisisPage() {
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Er CI/CD-pipeline misslyckas oftare än den lyckas. Hotfixes
-              genererar nya buggar och rollback-planen är &quot;be till
-              molngudarna&quot;.
+              genererar nya buggar och rollback-planen är &quot;blunda och hoppas allt går bra&quot;.
             </p>
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
@@ -53,7 +52,7 @@ export default function CtooCrisisPage() {
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Monoliten har blivit en flaskhals. Varje nytt feature-team krockar
-              med samma kodområden och ingen vågar refaktorera kärnan.
+              med samma kodområden och ingen vågar ta ansvaret refaktorera spagetti-koden.
             </p>
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
@@ -62,8 +61,7 @@ export default function CtooCrisisPage() {
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Utvecklarna spenderar mer tid på att släcka bränder än att bygga
-              features. Teknisk skuld äter sprint-kapacitet och senior-devs
-              börjar titta på dörren.
+              features. Teknisk skuld äter sprint-kapacitet och de seniora utvecklarna börjar titta mot dörren.
             </p>
           </div>
         </div>
@@ -93,12 +91,13 @@ export default function CtooCrisisPage() {
                 Incidenter
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
-                <span className="text-[#22C55E]">−73%</span>
+              −36% →{" "}
+                <span className="text-[#22C55E]">−3%</span>
               </p>
             </div>
             <div>
               <p className="font-mono text-sm text-[#919191] mb-1">
-                Lead time
+                Tid till produktion
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
                 14d →{" "}
