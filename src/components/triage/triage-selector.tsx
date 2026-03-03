@@ -22,10 +22,10 @@ const TRIAGE_OPTIONS = [
   {
     id: "founder-rescue",
     label:
-      "Vi saknar rätt senior tech-kompetens för att ta oss till nästa nivå.",
+      "Vi saknar rätt senior tech-kompetens och behöver en erfaren arkitekt som håller oss på rätt kurs.",
     href: "/founder-rescue",
     ariaLabel:
-      "Vi saknar rätt senior tech-kompetens för att ta oss till nästa nivå. Välj för att se lösningar.",
+      "Vi saknar rätt senior tech-kompetens och behöver en erfaren arkitekt som håller oss på rätt kurs. Välj för att se lösningar.",
   },
 ] as const;
 
