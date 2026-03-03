@@ -15,5 +15,5 @@ export interface CalendlyConfig {
 
 export const calendly: CalendlyConfig = {
   baseUrl: "https://calendly.com/rasmus-enhancior/whiteboard-45",
-  ctaLabel: "Boka gratis whiteboard-session",
+  ctaLabel: "Boka ett kostnadsfritt samtal",
 };
