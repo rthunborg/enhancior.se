@@ -28,6 +28,7 @@ _bmad-output/
 _bmad/
 .claude/
 CLAUDE.md
+scripts/
 
 
 # debug
