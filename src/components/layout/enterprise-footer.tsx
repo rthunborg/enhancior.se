@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const tjänsterLinks = [
   { label: "30-dagars Audit", href: "/cto-crisis" },
-  { label: "Fraktionell Arkitekt", href: "/cto-proactive" },
+  { label: "Teknisk ledning", href: "/cto-proactive" },
   { label: "Enterprise Rescue", href: "/founder-rescue" },
 ] as const;
 
@@ -52,7 +52,7 @@ export function EnterpriseFooter() {
             <div>
               <p className={headingClasses}>Enhancior AB</p>
               <p className="text-muted-foreground text-sm">
-                Fraktionell CTO &amp; Teknisk Arkitekt
+                Senior arkitekt. Teknisk ledning. Deltid eller uppdrag.
               </p>
             </div>
 
