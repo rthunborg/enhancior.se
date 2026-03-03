@@ -82,7 +82,7 @@ Four interactions that must feel like they require **zero thought**:
 The defining moment is the first 2 seconds after initial page load. If the visitor encounters a generic fade-in animation, a cookie banner blocking text, or a layout shift — the Michelin-Star / Special Forces illusion shatters permanently. The visitor must be hit immediately with:
 
 - Stark dark-mode minimalism
-- The piercing question: "Var blöder systemet?" / "Where is the system bleeding?"
+- The piercing question: "Var är ert tekniska slukål?" / "Where is the system bleeding?"
 - Flawless typography (no FOUT, no layout reflow)
 - The sensation of being granted access to a high-end diagnostic tool, not visiting a marketing website
 
@@ -307,15 +307,15 @@ The ER Triage is not a navigation pattern — it's a diagnostic ritual. The visi
 
 ### Experience Mechanics
 
-**Headline:** *"Var blöder systemet?"*
+**Headline:** *"Var är ert tekniska slukål?"*
 
 #### Triage Options
 
 | # | Internal Name | Swedish Label | Target Persona | Routes To |
 |---|--------------|---------------|----------------|----------|
-| 1 | The Delivery Crisis | *"Features tar evigheter att skeppa och teknisk skuld bromsar oss."* | CTO / VPE | 30-Day Tech Rescue Audit |
-| 2 | The Scaling Bottleneck | *"Teamet växer snabbt, men arkitekturen hänger inte med."* | CTO (proactive) / Scale-up | Fractional Architect Retainer |
-| 3 | The Leadership Void | *"Vi saknar rätt senior tech-kompetens för att ta oss till nästa nivå."* | Founder / CEO | Fractional Architect Retainer (founder copy) |
+| 1 | The Delivery Crisis | *"Features tar evigheter att skeppa och teknisk skuld bromsar oss."* | CTO / VPE | 30-dagars Teknisk Revision |
+| 2 | The Scaling Bottleneck | *"Teamet växer snabbt, men arkitekturen hänger inte med."* | CTO (proactive) / Scale-up | Teknisk ledning på deltid |
+| 3 | The Leadership Void | *"Vi saknar rätt senior tech-kompetens för att ta oss till nästa nivå."* | Founder / CEO | Teknisk ledning på deltid (founder copy) |
 | — | Enterprise Bypass | *"Enterprise: LOU, Compliance & Leverantörsinfo →"* | Procurement (Anna) | Vendor packet + credentials |
 
 **Label voice:** Quotes pulled from a stressed Slack channel or tense board meeting. Swedish with English technical terms where industry-standard (FR33).
@@ -472,18 +472,18 @@ The visual foundation was so precisely defined across Steps 5–8 that explorati
 
 ### Journey 1: Erik (CTO) — "The Burning Platform"
 
-**Entry:** Google search / LinkedIn → **Goal:** Book 30-Day Tech Rescue Audit
+**Entry:** Google search / LinkedIn → **Goal:** Book 30-dagars Teknisk Revision
 
 ```mermaid
 flowchart TD
     A["Google / LinkedIn"] --> B["Landing: Triage Screen"]
-    B --> C{"Var blöder systemet?"}
+    B --> C{"Var är ert tekniska slukål?"}
     C -->|"Features tar evigheter..."| D["CTO Pathway"]
     C -->|Scroll down| F["Footer Navigation"]
     D --> E["Case Study: Diagnose & Cure"]
     E --> G["SVG Toggle: Before / Intervention / After"]
     G --> H["DORA Metrics Bar"]
-    H --> I["Engagement Tier: 30-Day Audit"]
+    H --> I["Engagement Tier: Teknisk Revision"]
     I --> J["Availability Badge"]
     J -->|Available| K["Calendly CTA"]
     J -->|Waitlisted| L["Waitlist CTA"]
@@ -500,17 +500,17 @@ flowchart TD
 
 ### Journey 2: Sara (Founder) — "The Strategic Void"
 
-**Entry:** Referral / LinkedIn → **Goal:** Book Fractional Architect discovery session
+**Entry:** Referral / LinkedIn → **Goal:** Book Teknisk ledning på deltid discovery session
 
 ```mermaid
 flowchart TD
     A["Referral / LinkedIn"] --> B["Landing: Triage Screen"]
-    B --> C{"Var blöder systemet?"}
+    B --> C{"Var är ert tekniska slukål?"}
     C -->|"Vi saknar rätt senior..."| D["Founder Pathway"]
     C -->|"Teamet växer snabbt..."| D2["CTO Pathway crossover"]
     D --> E["Outcome-Focused Proof"]
     E --> F["Business Impact Narrative"]
-    F --> G["Engagement Tier: Fractional Retainer"]
+    F --> G["Engagement Tier: Teknisk ledning på deltid"]
     G --> H["Calendly CTA"]
     H --> I["Discovery Session Booked"]
 ```
