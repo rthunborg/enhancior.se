@@ -38,7 +38,7 @@ Project complexity is Low-Medium regarding backend architecture, but High regard
 ### Technical Constraints & Dependencies
 
 - **Design System Constraint:** Must use shadcn/ui and Tailwind CSS as the foundation.
-- **Animation Dependency:** Framer Motion required for the complex three-state SVG architecture viewer.
+- **Animation Dependency:** Framer Motion required for the animated SVG architecture viewer with diagram primitives.
 - **Hosting:** Must support robust Static Site Generation (SSG) and edge routing.
 - **Zero-DB Constraint:** All content must be statically defined or pulled at build time (CMS/Markdown). No runtime data fetching allowed for V1 content.
 
@@ -218,7 +218,7 @@ enhancior-se/
 │   ├── components/
 │   │   ├── ui/               # shadcn/ui components (auto-generated)
 │   │   ├── triage/           # The specialized homepage triage cards
-│   │   ├── architecture/     # The 3-state Framer Motion SVG viewer
+│   │   ├── architecture/     # Architecture viewer + animated SVG diagram components
 │   │   ├── conversion/       # Pricing tiers and Calendly wrappers
 │   │   └── layout/           # Header, Enterprise Footer
 │   ├── lib/
@@ -231,6 +231,12 @@ enhancior-se/
     └── images/
         └── architecture/     # SVGs for the Diagnose & Cure viewer
 ```
+
+**Architecture Viewer Components (actual implementation):**
+- `architecture-viewer.tsx` — Tabbed Före/Åtgärd/Efter viewer with state-colored border glow (red→amber→green), step progress dots, and Framer Motion content transitions
+- `diagram-primitives.tsx` — Shared animated SVG building blocks: `ServiceBox`, `PipelineArrow`, `StatusDot`, `QualityGate`, `MetricBadge`, `DiagramLabel`
+- `generic-crisis-diagrams.tsx` — Generic CI/CD crisis → resolution diagrams (used on `/cto-crisis`)
+- `logtech-diagrams.tsx` — LogTech-specific pipeline diagrams (used on `/case-study/logtech`)
 
 ### Architectural Boundaries & Mapping
 
