@@ -6,7 +6,7 @@ import { EngagementTiers } from "@/components/engagement-tiers";
 export const metadata: Metadata = {
   title: "Skalbar Arkitektur | Enhancior",
   description:
-    "Teamet växer snabbare än arkitekturen. En fraktionell arkitekt som integreras i ert team, stabiliserar er teknik och hjälper er skala.",
+    "Teamet växer snabbare än arkitekturen. En inbäddad arkitekt som integreras i ert team, driver besluten och hjälper er skala utan att tappa fart.",
 };
 
 export default function CtoProactivePage() {
@@ -18,8 +18,8 @@ export default function CtoProactivePage() {
           Teamet växer. Arkitekturen måste hänga med.
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
-          Ni skalas snabbt — men arkitekturen designades för ett mindre team. En
-          fraktionell arkitekt integreras direkt i ert team, driver
+          Ni skalas snabbt, men arkitekturen designades för ett mindre team. En
+          inbäddad arkitekt integreras direkt i ert team, driver
           arkitekturbesluten och säkerställer att er tekniska grund håller för
           nästa tillväxtfas.
         </p>
@@ -61,7 +61,7 @@ export default function CtoProactivePage() {
             <p className="text-sm text-[#A1A1A1]">
               Arkitekturbeslut fattas ad hoc utan långsiktig strategi. Ni
               behöver en erfaren teknisk ledare som kan guida
-              arkitekturevolutionen — men en heltidsrekrytering tar för lång
+              arkitekturevolutionen. Men en heltidsrekrytering tar för lång
               tid.
             </p>
           </div>
@@ -108,7 +108,7 @@ export default function CtoProactivePage() {
           </div>
           <div className="border border-dashed border-[rgba(255,255,255,0.15)] rounded p-12 flex items-center justify-center">
             <p className="font-mono text-sm text-[#919191]">
-              Interaktiv arkitektur-visualisering — Epic 3
+              Interaktiv arkitektur-visualisering (Epic 3)
             </p>
           </div>
         </div>
