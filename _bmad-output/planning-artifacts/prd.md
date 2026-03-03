@@ -23,11 +23,11 @@ classification:
 
 Enhancior.se is the company website for Enhancior AB — a solo software engineering and architecture consultancy that helps SaaS companies and scale-ups close the Trust Gap between business ambition and engineering execution. The site targets three distinct audiences — CTOs under scaling pressure, non-technical founders facing technical bankruptcy, and enterprise procurement leads — and routes each through a tailored conversion path designed to pre-sell authority and filter out unqualified leads before any human interaction occurs.
 
-The site replaces a word-of-mouth business model (which sells hours) with a digital asset that sells productized authority: a 30-Day Tech Rescue Audit, Fractional Technical Leadership retainers, and Enterprise Rescue engagements. Built on Next.js and deployed on Vercel, enhancior.se functions as a 24/7 autonomous sales engineer — building Michelin-star exclusivity, diagnosing visitor pain in real time, and converting qualified prospects into pre-sold discovery calls.
+The site replaces a word-of-mouth business model (which sells hours) with a digital asset that sells productized authority: a 30-dagars Teknisk Revision, Teknisk ledning på deltid, and Enterprise Rescue engagements. Built on Next.js and deployed on Vercel, enhancior.se functions as a 24/7 autonomous sales engineer — building Michelin-star exclusivity, diagnosing visitor pain in real time, and converting qualified prospects into pre-sold discovery calls.
 
 ### What Makes This Special
 
-The site inverts the standard consultancy website paradigm. Instead of proving credentials to visitors, it immediately diagnoses their pain through an ER Triage homepage — a stark, dark-mode screen asking "Where is the system bleeding?" Visitors self-select their symptom, triggering a persona-routed flow that delivers targeted proof of competence (war-story architecture diagrams, before→after case studies, verifiable impact metrics) directly relevant to their specific crisis. Radical pricing transparency and scarcity mechanics (real-time availability, cohort-based scheduling) further filter and pre-qualify prospects, ensuring every discovery call begins with "When can we start?" rather than "What do you do?"
+The site inverts the standard consultancy website paradigm. Instead of proving credentials to visitors, it immediately diagnoses their pain through an ER Triage homepage — a stark, dark-mode screen asking "Var är ert tekniska slukål?" Visitors self-select their symptom, triggering a persona-routed flow that delivers targeted proof of competence (war-story architecture diagrams, before→after case studies, verifiable impact metrics) directly relevant to their specific crisis. Radical pricing transparency and scarcity mechanics (real-time availability, cohort-based scheduling) further filter and pre-qualify prospects, ensuring every discovery call begins with "When can we start?" rather than "What do you do?"
 
 The brand DNA fuses four analogies into a cohesive identity: ER Triage UX (immediate diagnostic routing), Michelin-Star Aesthetic (dark mode, blueprint motifs, negative space), Real Estate Authority (quarterly Nordic SaaS Architecture Reports), and Special Forces Identity ("drop in, neutralize, train, extract" — explicitly anti-forever-consultant).
 
@@ -56,7 +56,7 @@ Success is measured by a qualitative shift in discovery call quality, not conver
 This V1 is a premium positioning asset, not a volume funnel. Business success is defined by lead quality transformation, not revenue quotas:
 
 - **100% pre-qualification** — every inbound inquiry arrives with budget awareness and a specific engagement in mind. "When are you available for the 30-Day Audit?" replaces "What's your hourly rate?"
-- **Model shift validated** — the pipeline moves from selling hours (word-of-mouth) to selling productized engagements (audits, fractional retainers). The site is the mechanism that makes this possible.
+- **Model shift validated** — the pipeline moves from selling hours (word-of-mouth) to selling productized engagements (audits, deltidsuppdrag). The site is the mechanism that makes this possible.
 - **Enterprise self-service** — procurement leads download vendor packets, verify F-skatt/compliance credentials, and complete their internal vetting without requiring custom proposals.
 
 ### Technical Success
@@ -97,13 +97,13 @@ Scope philosophy: flawless execution of a tiny scope over mediocre breadth. Deta
 
 Erik's deployment pipeline broke again last Friday. The third time this quarter. His VP of Engineering just quit, and the board is asking hard questions about why the platform can't handle their enterprise clients' SLA requirements. He's Googling at 11pm — not for "software consultant," but for "SaaS architecture rescue" and "fractional CTO Sweden."
 
-He lands on enhancior.se. No hero banner. No smiling stock photo team. A dark screen asking: **"Where is the system bleeding?"**
+He lands on enhancior.se. No hero banner. No smiling stock photo team. A dark screen asking: **"Var är ert tekniska slukål?"**
 
 He exhales. Someone gets it.
 
-**Branch A — Crisis:** Erik clicks *"Releases are constantly breaking."* The site responds with a Diagnose & Cure case study — a before→after architecture diagram of an eerily similar situation: a SaaS company whose CI/CD pipeline was a house of cards. He sees the intervention timeline (30 days), the specific decisions made, the measurable outcome (deployment frequency 1/week → 4/day). Below: the 30-Day Tech Rescue Audit tier with a transparent starting price. He clicks "Book a Whiteboarding Session" and picks a Calendly slot. When he gets on the call, his first words are: *"I read the case study. Our situation is almost identical. When can we start the Audit?"*
+**Branch A — Crisis:** Erik clicks *"Releases are constantly breaking."* The site responds with a Diagnose & Cure case study — a before→after architecture diagram of an eerily similar situation: a SaaS company whose CI/CD pipeline was a house of cards. He sees the intervention timeline (30 days), the specific decisions made, the measurable outcome (deployment frequency 1/week → 4/day). Below: the 30-dagars Teknisk Revision tier with a transparent starting price. He clicks "Book a Whiteboarding Session" and picks a Calendly slot. When he gets on the call, his first words are: *"I read the case study. Our situation is almost identical. When can we start the Audit?"*
 
-**Branch B — Proactive:** Erik clicks *"The team is growing faster than our architecture."* He's routed to content about the Fractional Architect Retainer — 1-2 days/week of embedded technical leadership. The tone is explicit: *"I stabilize your tech and help you hire my replacement."* He sees the engagement model, the anti-forever-consultant guarantee, and the focus on knowledge transfer. He books a whiteboarding session to explore fit. On the call, he already knows the retainer structure and is asking about availability for Q2.
+**Branch B — Proactive:** Erik clicks *"The team is growing faster than our architecture."* He's routed to content about Teknisk ledning på deltid — 1-2 days/week of embedded technical leadership. The tone is explicit: *"I stabilize your tech and help you hire my replacement."* He sees the engagement model, the anti-forever-consultant guarantee, and the focus on knowledge transfer. He books a whiteboarding session to explore fit. On the call, he already knows the retainer structure and is asking about availability for Q2.
 
 **Reveals:** ER Triage routing logic, Diagnose & Cure interactive case study, engagement tier presentation, Calendly integration, persona-specific copy and proof artifacts.
 
@@ -119,7 +119,7 @@ A fellow founder mentions Enhancior at a startup dinner. Sara visits enhancior.s
 
 The triage screen doesn't intimidate her. *"Where is the system bleeding?"* She scans the options — they're written in business language, not jargon. She picks *"We lost our technical leader and the team is drifting."* She's routed into content framed as business outcomes: stabilize velocity, create a technical roadmap the board can understand, bridge the gap until a permanent CTO hire. The messaging is clear: *"I'm not here to replace your CTO. I'm here to keep the ship steady while you find the right one."*
 
-She sees the Fractional Leadership retainer, the transparent pricing bracket, and realizes the budget fits within her current burn. The case study she reads isn't about code — it's about a founder who went from "terrified of technical due diligence" to "closed their Series A with a clean architecture story." She books the whiteboarding session. On the call, she says: *"I need exactly what you described — the bridge. Can you start this month?"*
+She sees the Teknisk ledning på deltid retainer, the transparent pricing bracket, and realizes the budget fits within her current burn. The case study she reads isn't about code — it's about a founder who went from "terrified of technical due diligence" to "closed their Series A with a clean architecture story." She books the whiteboarding session. On the call, she says: *"I need exactly what you described — the bridge. Can you start this month?"*
 
 **Reveals:** Business-outcome messaging per persona, non-technical copy variants, mobile-first responsive design, founder-specific case study framing, Calendly CTA within persona flow.
 
@@ -181,7 +181,7 @@ Later, he updates his availability status from "fully booked" to "1 slot opening
 - **Primary site language: Swedish.** All narrative copy, CTAs, persona pathway content, case study text, and engagement tier descriptions are written in Swedish.
 - **Technical terminology in English where industry-standard.** Terms like "CI/CD pipeline," "microservices," "event-driven architecture," and framework names remain in English — this mirrors how Swedish tech professionals actually communicate.
 - **No language toggle.** The site is Swedish-only. No i18n infrastructure, no bilingual content management.
-- **SEO in Swedish.** Meta titles, descriptions, and structured data target Swedish-language search queries (e.g., "fraktionell arkitekt SaaS" not "fractional architect SaaS").
+- **SEO in Swedish.** Meta titles, descriptions, and structured data target Swedish-language search queries (e.g., "teknisk revision SaaS", "teknisk ledning konsult" not "fractional architect SaaS").
 - **Enterprise Vendor Packet** — the downloadable PDF may include English sections where required by international procurement processes, but the site itself remains Swedish.
 
 ## Innovation & Novel Patterns
@@ -238,7 +238,7 @@ A statically generated Next.js web application deployed on Vercel, optimized for
 ### SEO Strategy
 
 - **Primary language:** Swedish
-- **Meta titles & descriptions:** Swedish-language, targeting queries like "fraktionell arkitekt SaaS," "teknisk skuld konsult," "arkitektur rescue Stockholm"
+- **Meta titles & descriptions:** Swedish-language, targeting queries like "teknisk revision SaaS", "teknisk ledning konsult," "arkitektur rescue Stockholm"
 - **Structured data:** Organization, Service, FAQ schemas in Swedish
 - **Static generation:** inherently SEO-friendly — fast load, clean HTML, zero client-rendered content for crawlers
 - **No bloated marketing scripts** — Vercel Analytics or PostHog only, lightweight and async
@@ -303,7 +303,7 @@ Full WCAG 2.1 AA compliance is a hard requirement, not a stretch goal:
 | ER Triage Homepage | Core UX innovation — the entire thesis depends on this |
 | Three Persona Pathways | Without routing, the triage screen is a dead end |
 | One Diagnose & Cure case study | Proof of competence artifact — validates the "pre-sell" thesis |
-| Engagement Tiers (Audit / Fractional / Rescue) | Without productized offerings, there's nothing to convert to |
+| Engagement Tiers (Revision / Deltid / Rescue) | Without productized offerings, there's nothing to convert to |
 | Calendly CTA | Without frictionless booking, qualified leads drop off |
 | Enterprise Footer (Orgnr, F-skatt) | Procurement self-service requires this from day one |
 | Michelin-Star Dark-Mode Aesthetic | The aesthetic *is* the authority signal — can't launch without it |
@@ -374,7 +374,7 @@ Implementation: pure SVGs managed via React state + Framer Motion for smooth lay
 ### Engagement Tiers & Conversion
 
 - **FR13:** Visitors can view productized engagement offerings with transparent pricing brackets
-- **FR14:** The system presents three engagement tiers: 30-Day Tech Rescue Audit, Fractional Architect Retainer, and Enterprise Rescue
+- **FR14:** The system presents three engagement tiers: 30-dagars Teknisk Revision, Teknisk ledning på deltid, and Enterprise Rescue
 - **FR15:** Each engagement tier displays starting price, scope, and timeline information
 - **FR16:** Visitors can book a discovery call directly from within persona pathways via embedded Calendly
 - **FR17:** The booking CTA is framed as "Free 45-min Whiteboarding Session"
