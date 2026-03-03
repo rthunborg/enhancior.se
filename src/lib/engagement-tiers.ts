@@ -23,7 +23,7 @@ function getCalendlyUrl(tierSlug: string): string {
 export const engagementTiers: EngagementTier[] = [
   {
     id: "tech-rescue-audit",
-    name: "30-dagars Teknisk Revision",
+    name: "30-dagars teknisk revision",
     tagline: "För system som dränerar sprint-kapacitet och bromsar leveransen",
     scope:
       "Djupanalys av kodbas, arkitektur och leveransprocesser under 30 dagar. Ni får en konkret åtgärdsplan rankad efter affärsnytta och teknisk risk, redo att implementera dag 31.",
@@ -40,7 +40,7 @@ export const engagementTiers: EngagementTier[] = [
   },
   {
     id: "fractional-retainer",
-    name: "Teknisk ledning på deltid",
+    name: "Teknisk ledning vid behov",
     tagline: "En inbäddad arkitekt som driver beslut och stannar tills ert team är stabilt",
     scope:
       "Senior arkitekt som integreras i ert team 1–2 dagar per vecka. Driver arkitekturbeslut, mentorskapar teamet och stabiliserar er tekniska grund. Hjälper er hitta en permanent ersättare när ni är redo.",
@@ -57,7 +57,7 @@ export const engagementTiers: EngagementTier[] = [
   },
   {
     id: "enterprise-rescue",
-    name: "Enterprise Rescue",
+    name: "Enterprise Rescue (arkitek som resurs)",
     tagline: "Storskalig modernisering av legacysystem",
     scope:
       "Djupgående moderniseringsuppdrag för enterprise-system som kräver modernisering. Compliance-säkrad process med full transparens, från diagnostik till leverans.",

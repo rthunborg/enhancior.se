@@ -12,7 +12,7 @@ import { EngagementTiers } from "@/components/engagement-tiers";
 export const metadata: Metadata = {
   title: "Leveranskris | Enhancior",
   description:
-    "Er tekniska skuld bromsar leveransen. En 30-dagars Teknisk Revision som identifierar exakt var problemen sitter och ger er en konkret åtgärdsplan.",
+    "Er tekniska skuld bromsar leveransen. En 30-dagars teknisk revision som identifierar exakt var problemen sitter och ger er en konkret åtgärdsplan.",
 };
 
 export default function CtooCrisisPage() {
@@ -23,7 +23,7 @@ export default function CtooCrisisPage() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
           Ni vet redan att teknisk skuld kostar er.
         </h1>
-        <p className="text-center text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+        <p className="items-center text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
           Er pipeline är fragil och varje release är en risk. Teamet
           tappar fart. En 30-dagars teknisk revision identifierar exakt var
           problemen sitter och ger er en konkret åtgärdsplan som ert team kan
@@ -91,8 +91,8 @@ export default function CtooCrisisPage() {
                 Incidenter
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
-              −36% →{" "}
-                <span className="text-[#22C55E]">−3%</span>
+              −60% →{" "}
+                <span className="text-[#22C55E]">−2%</span>
               </p>
             </div>
             <div>

@@ -46,7 +46,7 @@ export default function VendorPacketPage() {
                 Organisationsnummer
               </span>
               <p className="font-mono text-base text-[#EDEDED]">
-                559XXX-XXXX
+                559244-2775
               </p>
             </div>
             <div>
@@ -67,10 +67,10 @@ export default function VendorPacketPage() {
             </div>
             <div>
               <span className="font-mono text-sm text-[#919191]">
-                Verksamhetstyp
+                Kontakt
               </span>
               <p className="font-mono text-base text-[#EDEDED]">
-                Enskild konsult: Mjukvaruarkitektur och teknisk ledning
+                rasmus.thunborg@enhancior.se
               </p>
             </div>
           </div>
@@ -91,8 +91,7 @@ export default function VendorPacketPage() {
               Erfarenhet
             </span>
             <p className="text-base text-[#EDEDED]">
-              15+ år inom mjukvaruarkitektur, SaaS-plattformar och teknisk
-              ledning
+              10+ år inom mjukvaruarkitektur, backend-utveckling och teknisk ledning. Specialiserad på integrationer,cloud computing och agentic AI.
             </p>
           </div>
           <div className="border-t border-[rgba(255,255,255,0.08)] pt-4 mt-4">
@@ -109,12 +108,12 @@ export default function VendorPacketPage() {
             </span>
             <div className="mt-1 space-y-1">
               <p className="text-sm text-[#A1A1A1]">
-                30-dagars Teknisk Revision
+                30-dagars teknisk revision
               </p>
               <p className="text-sm text-[#A1A1A1]">
-                Teknisk ledning på deltid
+                Teknisk ledning vid behov
               </p>
-              <p className="text-sm text-[#A1A1A1]">Enterprise Rescue</p>
+              <p className="text-sm text-[#A1A1A1]">Enterprise Rescue (arkitek som resurs)</p>
             </div>
           </div>
         </div>

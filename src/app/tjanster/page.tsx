@@ -4,7 +4,7 @@ import { EngagementTiers } from "@/components/engagement-tiers";
 export const metadata: Metadata = {
   title: "Tjänster | Enhancior",
   description:
-    "Tre uppdragsformer med tydlig omfattning, tidslinje och leverabler: 30-dagars Teknisk Revision, Teknisk ledning på deltid och Enterprise Rescue.",
+    "Tre uppdragsformer med tydlig omfattning, tidslinje och leverabler: 30-dagars teknisk revision, Teknisk ledning vid behov och Enterprise Rescue (arkitek som resurs).",
 };
 
 export default function TjansterPage() {

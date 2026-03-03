@@ -13,7 +13,7 @@ export function StructuredData() {
             {
                 "@type": "Service",
                 "@id": "https://enhancior.se/#service",
-                name: "Teknisk Revision",
+                name: "teknisk revision",
                 provider: {
                     "@id": "https://enhancior.se/#organization"
                 },
@@ -22,7 +22,7 @@ export function StructuredData() {
             {
                 "@type": "Service",
                 "@id": "https://enhancior.se/#service2",
-                name: "Teknisk ledning på deltid",
+                name: "Teknisk ledning vid behov",
                 provider: {
                     "@id": "https://enhancior.se/#organization"
                 },

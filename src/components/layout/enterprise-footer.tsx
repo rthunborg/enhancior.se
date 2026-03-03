@@ -3,7 +3,7 @@ import Link from "next/link";
 const tjänsterLinks = [
   { label: "30-dagars Audit", href: "/cto-crisis" },
   { label: "Teknisk ledning", href: "/cto-proactive" },
-  { label: "Enterprise Rescue", href: "/founder-rescue" },
+  { label: "Enterprise Rescue (arkitek som resurs)", href: "/founder-rescue" },
 ] as const;
 
 const bevisLinks = [
@@ -82,7 +82,7 @@ export function EnterpriseFooter() {
             &copy; 2026 Enhancior AB{" "}
             <span aria-hidden="true">&middot;</span>{" "}
             <span className="font-mono">
-              Organisationsnummer: 559XXX-XXXX
+              Organisationsnummer: 559244-2775
             </span>{" "}
             <span aria-hidden="true">&middot;</span>{" "}
             <span className="font-mono">Godkänd för F-skatt</span>
