@@ -67,3 +67,7 @@ development_status:
   4-3-calendly-booking-integration: done
   4-4-enterprise-vendor-packet-download: done
   epic-4-retrospective: optional
+
+  # Post-MVP: Copy & UX Polish
+  post-mvp-swedish-copy-rewrite: done
+  post-mvp-architecture-viewer-upgrade: done
