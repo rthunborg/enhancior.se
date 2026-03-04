@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { PathwayShell } from "@/components/pathway/pathway-shell";
 import { PathwayCaseStudies } from "@/components/pathway/pathway-case-studies";
 import { EngagementTiers } from "@/components/engagement-tiers";
+import {
+  ArchitectureViewer,
+  PolestarScalingBefore,
+  PolestarScalingIntervention,
+  PolestarScalingAfter,
+} from "@/components/architecture";
 
 export const metadata: Metadata = {
   title: "Skalbar Arkitektur | Enhancior",
@@ -106,11 +112,11 @@ export default function CtoProactivePage() {
               </p>
             </div>
           </div>
-          <div className="border border-dashed border-[rgba(255,255,255,0.15)] rounded p-12 flex items-center justify-center">
-            <p className="font-mono text-sm text-[#919191]">
-              Interaktiv arkitektur-visualisering (Epic 3)
-            </p>
-          </div>
+          <ArchitectureViewer
+            beforeContent={PolestarScalingBefore}
+            interventionContent={PolestarScalingIntervention}
+            afterContent={PolestarScalingAfter}
+          />
         </div>
       </section>
 

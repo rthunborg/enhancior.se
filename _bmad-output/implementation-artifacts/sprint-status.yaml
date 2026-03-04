@@ -71,3 +71,8 @@ development_status:
   # Post-MVP: Copy & UX Polish
   post-mvp-swedish-copy-rewrite: done
   post-mvp-architecture-viewer-upgrade: done
+
+  # Epic 5: Pathway-Specific Proof Artifacts
+  epic-5: done
+  5-1-cto-proactive-polestar-proof-artifact: done
+  5-2-founder-rescue-timeline-proof-artifact: done

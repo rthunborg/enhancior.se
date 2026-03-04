@@ -4,3 +4,8 @@ export {
   GenericCrisisIntervention,
   GenericCrisisAfter,
 } from "./generic-crisis-diagrams";
+export {
+  PolestarScalingBefore,
+  PolestarScalingIntervention,
+  PolestarScalingAfter,
+} from "./polestar-scaling-diagrams";

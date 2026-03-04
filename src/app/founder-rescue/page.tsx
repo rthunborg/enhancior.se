@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { PathwayShell } from "@/components/pathway/pathway-shell";
 import { PathwayCaseStudies } from "@/components/pathway/pathway-case-studies";
 import { EngagementTiers } from "@/components/engagement-tiers";
+import { ArchitectureViewer } from "@/components/architecture";
+import {
+  FounderTimelineSituation,
+  FounderTimelineIntervention,
+  FounderTimelineResult,
+} from "@/components/proof-artifacts/founder-timeline";
 
 export const metadata: Metadata = {
   title: "Teknisk Ledning för Grundare | Enhancior",
@@ -72,7 +78,7 @@ export default function FounderRescuePage() {
       >
         <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-8">
           <p className="font-mono text-sm text-[#919191] mb-6">
-            Kundberättelse
+            Typiskt uppdrag
           </p>
           <div className="flex flex-wrap gap-6 mb-8">
             <div>
@@ -100,11 +106,12 @@ export default function FounderRescuePage() {
               </p>
             </div>
           </div>
-          <div className="border border-dashed border-[rgba(255,255,255,0.15)] rounded p-12 flex items-center justify-center">
-            <p className="font-mono text-sm text-[#919191]">
-              Resultatberättelse (kommer i nästa fas)
-            </p>
-          </div>
+          <ArchitectureViewer
+            beforeContent={FounderTimelineSituation}
+            interventionContent={FounderTimelineIntervention}
+            afterContent={FounderTimelineResult}
+            labels={{ before: "Situation", intervention: "Insats", after: "Resultat" }}
+          />
         </div>
       </section>
 
