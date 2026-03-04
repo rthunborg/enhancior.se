@@ -75,34 +75,34 @@ export default function CtoProactivePage() {
       >
         <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-8">
           <p className="font-mono text-sm text-[#919191] mb-6">
-            Case Study: Skalningsresa
+            Case Study: Polestar
           </p>
           <div className="flex flex-wrap gap-6 mb-8">
             <div>
               <p className="font-mono text-sm text-[#919191] mb-1">
-                Team-storlek
+                Velocity
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
-                8 →{" "}
-                <span className="text-[#22C55E]">35 dev</span>
+                Baseline →{" "}
+                <span className="text-[#22C55E]">+45%</span>
               </p>
             </div>
             <div>
               <p className="font-mono text-sm text-[#919191] mb-1">
-                Moduler
+                Uptime
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
-                monolit →{" "}
-                <span className="text-[#22C55E]">12 domäner</span>
+                98.5% →{" "}
+                <span className="text-[#22C55E]">99.9%</span>
               </p>
             </div>
             <div>
               <p className="font-mono text-sm text-[#919191] mb-1">
-                Time-to-market
+                Onboarding
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
-                6v →{" "}
-                <span className="text-[#22C55E]">2v</span>
+                3 mån →{" "}
+                <span className="text-[#22C55E]">3v</span>
               </p>
             </div>
           </div>
