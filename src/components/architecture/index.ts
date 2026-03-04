@@ -4,8 +4,3 @@ export {
   GenericCrisisIntervention,
   GenericCrisisAfter,
 } from "./generic-crisis-diagrams";
-export {
-  LogTechBefore,
-  LogTechIntervention,
-  LogTechAfter,
-} from "./logtech-diagrams";
