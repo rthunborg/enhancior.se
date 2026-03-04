@@ -15,7 +15,7 @@ export default function FounderRescuePage() {
       {/* Hero Section */}
       <div className="mb-16 md:mb-24 lg:mb-32">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
-          Ni behöver inte en ny CTO. Ni behöver en bro.
+          Står ni utan teknisk ledare? Undvik en panikrekrytering.
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
           Er tekniska ledare är borta och teamet tappar fart. Ni behöver inte

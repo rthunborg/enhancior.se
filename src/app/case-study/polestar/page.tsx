@@ -61,11 +61,6 @@ export default function PolestarCaseStudyPage() {
               tydlig teknisk riktning växte komplexiteten snabbare än
               teamets förmåga att hantera den.
             </p>
-            <p>
-              Polestar behövde en erfaren teknisk ledare som kunde driva
-              beslut, mentorskapa teamet och stabilisera den tekniska
-              grunden. En heltidsrekrytering hade tagit för lång tid.
-            </p>
           </>
         }
         architectureViewer={
@@ -114,7 +109,7 @@ export default function PolestarCaseStudyPage() {
         outcomeNarrative={
           <>
             <p className="mb-4">
-              Under fyra år som teknisk ledare ökade teamets velocity med
+              Under de fyra år jag samarbetade med Polestar ökade teamets velocity med
               45%. Uptime förbättrades från 98.5% till 99.9% och
               onboarding-tiden minskade från tre månader till tre veckor.
             </p>

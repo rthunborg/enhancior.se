@@ -115,8 +115,7 @@ export default function VismaCaseStudyPage() {
             <p className="mb-4">
               Credentials roteras nu automatiskt var 30:e dag utan
               driftstörningar. Deploy-processen gick från manuell till
-              helautomatiserad med CI/CD, och plattformen har nu tre
-              separata miljöer istället för en.
+              helautomatiserad med CI/CD.
             </p>
             <p>
               Säkerhetsrisken minskade från hög till minimal.

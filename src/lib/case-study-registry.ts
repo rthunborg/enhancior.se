@@ -12,7 +12,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     slug: "lindex",
     title: "Från Legacy till Eventdriven Arkitektur",
     client: "Lindex",
-    engagement: "Teknisk Revision + Teknisk ledning",
+    engagement: "Enterprise Rescue",
     metrics: [
       { label: "Deploy-frekvens", value: "1/mån → 3/vecka" },
       { label: "Incidenter", value: "↓ 88%" },
@@ -25,7 +25,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     slug: "polestar",
     title: "Teknisk Ledning för Finansiella Integrationer",
     client: "Polestar",
-    engagement: "Teknisk ledning på deltid",
+    engagement: "Teknisk ledning",
     metrics: [
       { label: "Velocity", value: "↑ 45%" },
       { label: "Uptime", value: "98.5% → 99.9%" },
@@ -50,7 +50,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     slug: "visma",
     title: "Automatiserad Credential-Rotation",
     client: "Visma",
-    engagement: "30-dagars Teknisk Revision",
+    engagement: "Teknisk Revision",
     metrics: [
       { label: "Rotation", value: "manuell → var 30:e dag" },
       { label: "Deploy", value: "manuell → automatiserad" },

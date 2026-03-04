@@ -33,7 +33,7 @@ const metrics: CaseStudyMetric[] = [
   },
   {
     label: "Legacy-kartläggning",
-    before: "Odokumenterad",
+    before: "Nada",
     after: "Fullständig",
     delta: "Komplett plan",
     improvement: "positive",

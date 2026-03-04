@@ -74,7 +74,7 @@ export default function CtooCrisisPage() {
       >
         <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-8">
           <p className="font-mono text-sm text-[#919191] mb-6">
-            Case Study: Lindex
+            Teknisk Revision
           </p>
           <div className="flex flex-wrap gap-6 mb-8">
             <div>
@@ -92,7 +92,7 @@ export default function CtooCrisisPage() {
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
                 8/mån →{" "}
-                <span className="text-[#22C55E]">1/mån (−88%)</span>
+                <span className="text-[#22C55E]">1/mån</span>
               </p>
             </div>
             <div>
