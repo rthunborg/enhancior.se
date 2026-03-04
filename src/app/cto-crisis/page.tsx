@@ -74,7 +74,7 @@ export default function CtooCrisisPage() {
       >
         <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-8">
           <p className="font-mono text-sm text-[#919191] mb-6">
-            Case Study: Diagnose &amp; Cure
+            Case Study: Lindex
           </p>
           <div className="flex flex-wrap gap-6 mb-8">
             <div>
@@ -82,8 +82,8 @@ export default function CtooCrisisPage() {
                 Deploy-frekvens
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
-                1/vecka →{" "}
-                <span className="text-[#22C55E]">4/dag</span>
+                1/mån →{" "}
+                <span className="text-[#22C55E]">3/vecka</span>
               </p>
             </div>
             <div>
@@ -91,17 +91,17 @@ export default function CtooCrisisPage() {
                 Incidenter
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
-              −60% →{" "}
-                <span className="text-[#22C55E]">−2%</span>
+                8/mån →{" "}
+                <span className="text-[#22C55E]">1/mån (−88%)</span>
               </p>
             </div>
             <div>
               <p className="font-mono text-sm text-[#919191] mb-1">
-                Tid till produktion
+                Lead time
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
-                14d →{" "}
-                <span className="text-[#22C55E]">2d</span>
+                3v →{" "}
+                <span className="text-[#22C55E]">4d</span>
               </p>
             </div>
           </div>
