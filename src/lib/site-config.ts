@@ -8,12 +8,12 @@ export const availability: AvailabilityConfig = {
   text: "1 plats ledig Q3 2026",
 };
 
-export interface CalendlyConfig {
+export interface BookingConfig {
   baseUrl: string;
   ctaLabel: string;
 }
 
-export const calendly: CalendlyConfig = {
-  baseUrl: "https://calendly.com/rasmus-enhancior/whiteboard-45",
+export const booking: BookingConfig = {
+  baseUrl: "https://calendar.app.google/pPdyTJW9TRptpS15A",
   ctaLabel: "Boka ett kostnadsfritt samtal",
 };

@@ -1,4 +1,4 @@
-import { calendly } from "./site-config";
+import { booking } from "./site-config";
 
 export interface EngagementTier {
   id: string;
@@ -10,14 +10,6 @@ export interface EngagementTier {
   deliverables: string[];
   ctaLabel: string;
   ctaHref: string;
-}
-
-function getCalendlyUrl(tierSlug: string): string {
-  const url = new URL(calendly.baseUrl);
-  url.searchParams.set("utm_source", "enhancior.se");
-  url.searchParams.set("utm_medium", "tier_cta");
-  url.searchParams.set("utm_campaign", tierSlug);
-  return url.toString();
 }
 
 export const engagementTiers: EngagementTier[] = [
@@ -35,8 +27,8 @@ export const engagementTiers: EngagementTier[] = [
       "Mätbara förbättringsmål med baseline-värden",
       "Konkret roadmap för de första 90 dagarna",
     ],
-    ctaLabel: calendly.ctaLabel,
-    ctaHref: getCalendlyUrl("rescue-audit"),
+    ctaLabel: booking.ctaLabel,
+    ctaHref: booking.baseUrl,
   },
   {
     id: "fractional-retainer",
@@ -52,8 +44,8 @@ export const engagementTiers: EngagementTier[] = [
       "Strukturerad kunskapsöverföring till ert team",
       "Stöd vid rekrytering av permanent teknisk ledare",
     ],
-    ctaLabel: calendly.ctaLabel,
-    ctaHref: getCalendlyUrl("fractional-retainer"),
+    ctaLabel: booking.ctaLabel,
+    ctaHref: booking.baseUrl,
   },
   {
     id: "enterprise-rescue",
@@ -68,7 +60,7 @@ export const engagementTiers: EngagementTier[] = [
       "Fasad migration med minimerad affärsrisk",
       "Löpande statusrapportering och styrelseklar dokumentation",
     ],
-    ctaLabel: calendly.ctaLabel,
-    ctaHref: getCalendlyUrl("enterprise-rescue"),
+    ctaLabel: booking.ctaLabel,
+    ctaHref: booking.baseUrl,
   },
 ];

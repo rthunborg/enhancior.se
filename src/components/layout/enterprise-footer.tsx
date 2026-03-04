@@ -82,10 +82,14 @@ export function EnterpriseFooter() {
             &copy; 2026 Enhancior AB{" "}
             <span aria-hidden="true">&middot;</span>{" "}
             <span className="font-mono">
-              Organisationsnummer: 559244-2775
+              Org.nr: 559244-2775
             </span>{" "}
             <span aria-hidden="true">&middot;</span>{" "}
             <span className="font-mono">Godkänd för F-skatt</span>
+            <span aria-hidden="true">&middot;</span>{" "}
+            <a href="mailto:rasmus.thunborg@enhancior.se" className="font-mono">
+              rasmus.thunborg@enhancior.se
+            </a>
           </p>
         </div>
       </div>
