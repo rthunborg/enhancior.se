@@ -73,27 +73,24 @@ export function EnterpriseFooter() {
           </div>
         </nav>
 
-        {/* Logo */}
-        <div className="mt-12 flex justify-center">
-          <Link
-            href="/"
-            className="opacity-50 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
-            aria-label="Tillbaka till startsidan"
-          >
-            <Image
-              src="/images/enhancior_logo.png"
-              alt="Enhancior logotyp"
-              width={48}
-              height={43}
-              className="w-12 h-auto"
-            />
-          </Link>
-        </div>
-
         {/* Credentials Bar */}
         <div className="mt-12 border-t border-border pt-8">
-          <p className="text-sm text-muted-foreground text-center">
-            &copy; 2026 Enhancior AB{" "}
+          <div className="flex items-center justify-center gap-3 text-sm text-muted-foreground">
+            <Link
+              href="/"
+              className="opacity-50 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm flex-shrink-0"
+              aria-label="Tillbaka till startsidan"
+            >
+              <Image
+                src="/images/enhancior_logo.png"
+                alt="Enhancior logotyp"
+                width={24}
+                height={22}
+                className="w-6 h-auto"
+              />
+            </Link>
+            <p>
+              &copy; 2026 Enhancior AB{" "}
             <span aria-hidden="true">&middot;</span>{" "}
             <span className="font-mono">Org.nr: 559244-2775</span>{" "}
             <span aria-hidden="true">&middot;</span>{" "}
@@ -102,7 +99,8 @@ export function EnterpriseFooter() {
             <a href="mailto:rasmus.thunborg@enhancior.se" className="font-mono hover:underline">
               rasmus.thunborg@enhancior.se
             </a>
-          </p>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
