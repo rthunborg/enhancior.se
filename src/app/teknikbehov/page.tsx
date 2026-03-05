@@ -13,7 +13,7 @@ export default function TeknikbehovPage() {
     <PathwayShell breadcrumbSegments={[{ label: "teknikbehov" }]}>
       <div className="mb-16 md:mb-24 lg:mb-32">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
-          Bra — du vet att du behöver hjälp. Låt oss reda ut vilken typ.
+        Ni vet att ni behöver förstärkning. Låt oss reda ut exakt vilken typ.
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed mb-12">
           Er situation avgör vilken typ av stöd som gör mest nytta. Välj det som
