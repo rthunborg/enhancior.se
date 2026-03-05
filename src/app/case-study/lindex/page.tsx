@@ -41,8 +41,8 @@ const metrics: CaseStudyMetric[] = [
 
 export default function LindexCaseStudyPage() {
   return (
-    <div className="bg-[#0A0A0A]">
       <CaseStudyLayout
+        slug="lindex"
         title="Från Legacy till Eventdriven Arkitektur"
         industry="Retail / Global E-handel"
         timeline="2.5 år (on demand, 8–24h/vecka)"
@@ -127,6 +127,5 @@ export default function LindexCaseStudyPage() {
           </>
         }
       />
-    </div>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EngagementTiers } from "@/components/engagement-tiers";
+import { PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
   title: "Tjänster | Enhancior",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function TjansterPage() {
   return (
-    <div className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-12 py-16 md:py-24 lg:py-32">
+    <PageShell breadcrumbSegments={[{ label: "tjänster" }]}>
       <div className="mb-12 md:mb-16">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
           Tjänster
@@ -21,6 +22,6 @@ export default function TjansterPage() {
       </div>
 
       <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue"]} />
-    </div>
+    </PageShell>
   );
 }

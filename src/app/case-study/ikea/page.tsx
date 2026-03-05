@@ -42,8 +42,8 @@ const metrics: CaseStudyMetric[] = [
 
 export default function IkeaCaseStudyPage() {
   return (
-    <div className="bg-[#0A0A0A]">
       <CaseStudyLayout
+        slug="ikea"
         title="Backend-Arkitektur för 3D-Modellering"
         industry="Detaljhandel / Enterprise"
         timeline="6 månader (2021)"
@@ -127,6 +127,5 @@ export default function IkeaCaseStudyPage() {
           </>
         }
       />
-    </div>
   );
 }

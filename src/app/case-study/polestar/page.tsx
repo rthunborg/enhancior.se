@@ -41,8 +41,8 @@ const metrics: CaseStudyMetric[] = [
 
 export default function PolestarCaseStudyPage() {
   return (
-    <div className="bg-[#0A0A0A]">
       <CaseStudyLayout
+        slug="polestar"
         title="Teknisk Ledning för Finansiella Integrationer"
         industry="Fordon / FinTech"
         timeline="4 år (2021–2025)"
@@ -122,6 +122,5 @@ export default function PolestarCaseStudyPage() {
           </>
         }
       />
-    </div>
   );
 }

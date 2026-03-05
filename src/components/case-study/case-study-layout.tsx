@@ -1,7 +1,9 @@
 import type { CaseStudyLayoutProps } from "./types";
 import { MetricCard } from "./metric-card";
+import { PageShell } from "@/components/page-shell";
 
 export function CaseStudyLayout({
+  slug,
   title,
   industry,
   timeline,
@@ -12,9 +14,10 @@ export function CaseStudyLayout({
   outcomeNarrative,
 }: CaseStudyLayoutProps) {
   return (
+    <PageShell breadcrumbSegments={[{ label: "case-studies", href: "/case-studies" }, { label: slug }]}>
     <article>
       {/* Header */}
-      <header className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-24 pb-12">
+      <header className="max-w-4xl mx-auto pb-12">
         <div className="flex flex-wrap items-center gap-3 mb-6">
           <span className="font-mono text-xs uppercase tracking-widest text-[#919191] border border-[rgba(255,255,255,0.08)] rounded-full px-3 py-1 inline-block">
             {industry}
@@ -27,7 +30,7 @@ export function CaseStudyLayout({
       </header>
 
       {/* Problem Narrative — Före */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 border-t border-[rgba(255,255,255,0.08)]">
+      <section className="max-w-4xl mx-auto py-12 sm:py-16 border-t border-[rgba(255,255,255,0.08)]">
         <h2 className="font-mono text-xs uppercase tracking-widest text-[#919191] mb-4">
           Före: Problemet
         </h2>
@@ -37,12 +40,12 @@ export function CaseStudyLayout({
       </section>
 
       {/* Architecture Viewer */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <section className="max-w-5xl mx-auto py-12 sm:py-16">
         {architectureViewer}
       </section>
 
       {/* Intervention Narrative — Åtgärd */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 border-t border-[rgba(255,255,255,0.08)]">
+      <section className="max-w-4xl mx-auto py-12 sm:py-16 border-t border-[rgba(255,255,255,0.08)]">
         <h2 className="font-mono text-xs uppercase tracking-widest text-[#919191] mb-4">
           Åtgärd: Insatsen
         </h2>
@@ -52,7 +55,7 @@ export function CaseStudyLayout({
       </section>
 
       {/* Impact Metrics — Resultat */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 border-t border-[rgba(255,255,255,0.08)]">
+      <section className="max-w-4xl mx-auto py-12 sm:py-16 border-t border-[rgba(255,255,255,0.08)]">
         <h2 className="font-mono text-xs uppercase tracking-widest text-[#919191] mb-6">
           Resultat: Mätbar påverkan
         </h2>
@@ -64,7 +67,7 @@ export function CaseStudyLayout({
       </section>
 
       {/* Outcome Narrative — Effekt */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 border-t border-[rgba(255,255,255,0.08)] pb-16 sm:pb-20 lg:pb-24">
+      <section className="max-w-4xl mx-auto py-12 sm:py-16 border-t border-[rgba(255,255,255,0.08)]">
         <h2 className="font-mono text-xs uppercase tracking-widest text-[#919191] mb-4">
           Effekt: Affärsresultat
         </h2>
@@ -73,5 +76,6 @@ export function CaseStudyLayout({
         </div>
       </section>
     </article>
+    </PageShell>
   );
 }

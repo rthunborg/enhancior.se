@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BackLink } from "@/components/back-link";
+import { PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
   title: "Metodik | Enhancior",
@@ -44,9 +44,7 @@ const phases = [
 
 export default function MetodikPage() {
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
-      <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-16 pt-16 md:pt-24 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
-        <BackLink />
+    <PageShell breadcrumbSegments={[{ label: "metodik" }]}>
         <div className="mb-16 md:mb-24">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
             Så arbetar jag
@@ -93,7 +91,6 @@ export default function MetodikPage() {
             </section>
           ))}
         </div>
-      </div>
-    </div>
+    </PageShell>
   );
 }

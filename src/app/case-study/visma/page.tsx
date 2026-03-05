@@ -41,8 +41,8 @@ const metrics: CaseStudyMetric[] = [
 
 export default function VismaCaseStudyPage() {
   return (
-    <div className="bg-[#0A0A0A]">
       <CaseStudyLayout
+        slug="visma"
         title="Automatiserad Credential-Rotation"
         industry="HR-Tech / Enterprise SaaS"
         timeline="4 månader (2026)"
@@ -125,6 +125,5 @@ export default function VismaCaseStudyPage() {
           </>
         }
       />
-    </div>
   );
 }

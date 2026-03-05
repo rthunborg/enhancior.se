@@ -7,6 +7,7 @@ export interface CaseStudyMetric {
 }
 
 export interface CaseStudyLayoutProps {
+  slug: string;
   title: string;
   industry: string;
   timeline: string;
