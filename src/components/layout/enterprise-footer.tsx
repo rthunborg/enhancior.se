@@ -4,18 +4,14 @@ const tjänsterLinks = [
   { label: "30-dagars Audit", href: "/cto-crisis" },
   { label: "Teknisk ledning", href: "/cto-proactive" },
   { label: "Enterprise Rescue (arkitek som resurs)", href: "/founder-rescue" },
+  { label: "IT-rådgivning", href: "/it-radgivning" },
 ] as const;
 
 const bevisLinks = [
   { label: "Case Studies", href: "/case-studies" },
   { label: "Metodik", href: "/metodik" },
   { label: "Om", href: "/om" },
-] as const;
-
-const enterpriseLinks = [
   { label: "LOU & Compliance", href: "/vendor-packet" },
-  { label: "Leverantörspaket", href: "/vendor-packet" },
-  { label: "F-skatt & Org.nr", href: "/vendor-packet#credentials" },
 ] as const;
 
 const linkClasses =
@@ -47,7 +43,7 @@ export function EnterpriseFooter() {
     <footer aria-label="Sidfot" className="py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <nav aria-label="Sidfotnavigation">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-4 lg:gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
             {/* Column 1 — Brand */}
             <div>
               <p className={headingClasses}>Enhancior AB</p>
@@ -66,12 +62,6 @@ export function EnterpriseFooter() {
             <div>
               <p className={headingClasses}>Bevis</p>
               <FooterLinkList links={bevisLinks} />
-            </div>
-
-            {/* Column 4 — Enterprise */}
-            <div>
-              <p className={headingClasses}>Enterprise</p>
-              <FooterLinkList links={enterpriseLinks} />
             </div>
           </div>
         </nav>

@@ -114,6 +114,9 @@ export default function VendorPacketPage() {
                 Teknisk ledning vid behov
               </p>
               <p className="text-sm text-[#A1A1A1]">Enterprise Rescue (arkitek som resurs)</p>
+              <p className="text-sm text-[#A1A1A1]">
+                Oberoende IT-rådgivning
+              </p>
             </div>
           </div>
         </div>
@@ -122,29 +125,6 @@ export default function VendorPacketPage() {
       {/* Engagement Tiers */}
       <EngagementTiers emphasizedTierId="enterprise-rescue" tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue"]} />
 
-      {/* Vendor Packet Download */}
-      <section aria-label="Leverantörspaket">
-        <p className="font-mono text-sm text-[#919191] uppercase tracking-widest mb-6">
-          LEVERANTÖRSPAKET
-        </p>
-        <p className="text-base text-[#A1A1A1] leading-relaxed mb-6 max-w-[600px]">
-          Leverantörspaketet innehåller CV, certifieringar, referensuppdrag och
-          prisintervall, allt samlat i ett dokument för intern kvalificering.
-        </p>
-        <div className="flex flex-col items-start">
-          <a
-            href="/Enhancior_AB_Vendor_Packet.pdf"
-            download
-            aria-label="Ladda ner leverantörspaket som PDF-fil"
-            className="inline-flex items-center justify-center min-h-[44px] px-6 py-3 bg-[#F59E0B] hover:bg-[#D97706] text-[#0A0A0A] font-semibold rounded-lg text-sm outline-none ring-offset-[#0A0A0A] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 transition-colors duration-200 ease-out motion-reduce:transition-none w-full sm:w-auto"
-          >
-            Ladda ner leverantörspaket (PDF)
-          </a>
-          <p className="font-mono text-xs text-[#919191] mt-3">
-            Innehåller CV, certifieringar, referensuppdrag och prisintervall
-          </p>
-        </div>
-      </section>
     </PathwayShell>
   );
 }
