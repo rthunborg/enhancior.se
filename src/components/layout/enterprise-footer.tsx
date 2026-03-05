@@ -73,9 +73,10 @@ export function EnterpriseFooter() {
           </div>
         </nav>
 
-        {/* Credentials Bar */}
-        <div className="mt-12 border-t border-border pt-8">
-          <div className="flex items-center justify-center gap-3 text-sm text-muted-foreground">
+    {/* Credentials Bar */}
+    <div className="mt-12 border-t border-border pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-4 text-sm text-muted-foreground">
+            
             <Link
               href="/"
               className="opacity-50 hover:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm flex-shrink-0"
@@ -89,17 +90,18 @@ export function EnterpriseFooter() {
                 className="w-10 h-auto"
               />
             </Link>
-            <p>
-              &copy; 2026 Enhancior AB{" "}
-            <span aria-hidden="true">&middot;</span>{" "}
-            <span className="font-mono">Org.nr: 559244-2775</span>{" "}
-            <span aria-hidden="true">&middot;</span>{" "}
-            <span className="font-mono">Godkänd för F-skatt</span>{" "}
-            <span aria-hidden="true">&middot;</span>{" "}
-            <a href="mailto:rasmus.thunborg@enhancior.se" className="font-mono hover:underline">
-              rasmus.thunborg@enhancior.se
-            </a>
-            </p>
+
+            <div className="flex flex-col items-center justify-center gap-2 md:flex-row md:flex-wrap md:gap-3 text-center">
+              <span>&copy; 2026 Enhancior AB</span>
+              <span className="hidden md:block" aria-hidden="true">&middot;</span>
+              <span className="font-mono">Org.nr: 559244-2775</span>
+              <span className="hidden md:block" aria-hidden="true">&middot;</span>
+              <span className="font-mono">Godkänd för F-skatt</span>
+              <span className="hidden md:block" aria-hidden="true">&middot;</span>
+              <a href="mailto:rasmus.thunborg@enhancior.se" className="font-mono hover:underline">
+                rasmus.thunborg@enhancior.se
+              </a>
+            </div>
           </div>
         </div>
       </div>
