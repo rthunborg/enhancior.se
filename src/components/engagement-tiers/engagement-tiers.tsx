@@ -8,6 +8,7 @@ import { AvailabilityBadge } from "./availability-badge";
 
 interface EngagementTiersProps {
   emphasizedTierId?: string;
+  tierIds?: string[];
 }
 
 const containerVariants = {
@@ -19,8 +20,11 @@ const containerVariants = {
   },
 };
 
-export function EngagementTiers({ emphasizedTierId }: EngagementTiersProps) {
+export function EngagementTiers({ emphasizedTierId, tierIds }: EngagementTiersProps) {
   const reducedMotion = useReducedMotion() ?? false;
+  const tiers = tierIds
+    ? engagementTiers.filter((t) => tierIds.includes(t.id))
+    : engagementTiers;
 
   return (
     <section aria-label="Engagemang" className="mb-16 md:mb-24 lg:mb-32">
@@ -40,7 +44,7 @@ export function EngagementTiers({ emphasizedTierId }: EngagementTiersProps) {
         viewport={{ once: true, amount: 0.1 }}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
       >
-        {engagementTiers.map((tier) => (
+        {tiers.map((tier) => (
           <EngagementTierCard
             key={tier.id}
             tier={tier}

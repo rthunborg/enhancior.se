@@ -63,4 +63,53 @@ export const engagementTiers: EngagementTier[] = [
     ctaLabel: booking.ctaLabel,
     ctaHref: booking.baseUrl,
   },
+  {
+    id: "advisory-quick-review",
+    name: "Snabbgranskning",
+    tagline: "Oberoende second opinion innan ni skriver på",
+    scope:
+      "En erfaren arkitekt granskar leverantörens förslag, avtal och tekniska lösning under 1–2 veckor. Ni får en ärlig bedömning av risker, dolda kostnader och alternativ — innan ni binder er.",
+    timeline: "1–2 veckor",
+    startingPrice: "Från 45 000 kr",
+    deliverables: [
+      "Oberoende granskning av leverantörens tekniska förslag",
+      "Riskanalys med identifierade dolda kostnader",
+      "Konkret rekommendation: signera, omförhandla eller avbryt",
+    ],
+    ctaLabel: "Boka ett kostnadsfritt orienteringssamtal",
+    ctaHref: booking.baseUrl,
+  },
+  {
+    id: "advisory-procurement",
+    name: "Upphandlingsstöd",
+    tagline: "Teknisk expertis genom hela upphandlingsprocessen",
+    scope:
+      "Komplett tekniskt stöd från kravspecifikation till avtalsskrivning. Ni får en oberoende expert som säkerställer att ni ställer rätt krav, utvärderar rätt och förhandlar från en styrkeposition.",
+    timeline: "2–4 månader",
+    startingPrice: "Från 120 000 kr",
+    deliverables: [
+      "Teknisk kravspecifikation anpassad för upphandling",
+      "Oberoende utvärdering av leverantörsförslag",
+      "Förhandlingsstöd med teknisk argumentation",
+      "Avtalsgenomgång med fokus på leveransvillkor och lock-in",
+    ],
+    ctaLabel: "Boka ett kostnadsfritt orienteringssamtal",
+    ctaHref: booking.baseUrl,
+  },
+  {
+    id: "advisory-retainer",
+    name: "Löpande IT-rådgivning",
+    tagline: "En oberoende teknisk rådgivare ni kan lita på",
+    scope:
+      "Löpande tillgång till en senior arkitekt som hjälper er fatta bättre IT-beslut. Från systemval och leverantörsbedömningar till tekniska vägval — utan att sälja er något.",
+    timeline: "Löpande · 2–4 dagar/månad",
+    startingPrice: "Från 35 000 kr/mån",
+    deliverables: [
+      "Löpande teknisk rådgivning vid IT-beslut",
+      "Oberoende leverantörsbedömningar",
+      "Strategiskt IT-stöd inför lednings- och styrelsemöten",
+    ],
+    ctaLabel: "Boka ett kostnadsfritt orienteringssamtal",
+    ctaHref: booking.baseUrl,
+  },
 ];

@@ -124,7 +124,7 @@ export default function CtoProactivePage() {
       <PathwayCaseStudies persona="cto-proactive" />
 
       {/* Engagement Tiers */}
-      <EngagementTiers emphasizedTierId="fractional-retainer" />
+      <EngagementTiers emphasizedTierId="fractional-retainer" tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue"]} />
     </PathwayShell>
   );
 }

@@ -117,7 +117,7 @@ export default function CtooCrisisPage() {
       <PathwayCaseStudies persona="cto-crisis" />
 
       {/* Engagement Tiers */}
-      <EngagementTiers emphasizedTierId="tech-rescue-audit" />
+      <EngagementTiers emphasizedTierId="tech-rescue-audit" tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue"]} />
     </PathwayShell>
   );
 }

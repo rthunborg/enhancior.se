@@ -20,7 +20,7 @@ export default function TjansterPage() {
         </p>
       </div>
 
-      <EngagementTiers />
+      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue"]} />
     </div>
   );
 }

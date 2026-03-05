@@ -23,7 +23,7 @@ const TRIAGE_OPTIONS = [
     id: "founder-rescue",
     label:
       "Vi saknar rätt senior tech-kompetens och behöver en erfaren arkitekt som håller oss på rätt kurs.",
-    href: "/founder-rescue",
+    href: "/teknikbehov",
     ariaLabel:
       "Vi saknar rätt senior tech-kompetens och behöver en erfaren arkitekt som håller oss på rätt kurs. Välj för att se lösningar.",
   },

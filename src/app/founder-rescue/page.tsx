@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function FounderRescuePage() {
   return (
-    <PathwayShell breadcrumbLabel="grundare">
+    <PathwayShell breadcrumbSegments={[{ label: "teknikbehov", href: "/teknikbehov" }, { label: "grundare" }]}>
       {/* Hero Section */}
       <div className="mb-16 md:mb-24 lg:mb-32">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
@@ -119,7 +119,7 @@ export default function FounderRescuePage() {
       <PathwayCaseStudies persona="founder-rescue" />
 
       {/* Engagement Tiers */}
-      <EngagementTiers emphasizedTierId="fractional-retainer" />
+      <EngagementTiers emphasizedTierId="fractional-retainer" tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue"]} />
     </PathwayShell>
   );
 }

@@ -1,11 +1,23 @@
 import Link from "next/link";
 
+interface BreadcrumbSegment {
+  label: string;
+  href?: string;
+}
+
 interface PathwayShellProps {
-  breadcrumbLabel: string;
+  breadcrumbLabel?: string;
+  breadcrumbSegments?: BreadcrumbSegment[];
   children: React.ReactNode;
 }
 
-export function PathwayShell({ breadcrumbLabel, children }: PathwayShellProps) {
+export function PathwayShell({
+  breadcrumbLabel,
+  breadcrumbSegments,
+  children,
+}: PathwayShellProps) {
+  const segments: BreadcrumbSegment[] = breadcrumbSegments ?? (breadcrumbLabel ? [{ label: breadcrumbLabel }] : []);
+
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
       <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-16 pt-16 md:pt-24 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
@@ -20,8 +32,24 @@ export function PathwayShell({ breadcrumbLabel, children }: PathwayShellProps) {
             >
               triage
             </Link>
-            <span className="text-[#666666]"> / </span>
-            <span className="text-[#A1A1A1]">{breadcrumbLabel}</span>
+            {segments.map((segment, index) => {
+              const isLast = index === segments.length - 1;
+              return (
+                <span key={segment.label}>
+                  <span className="text-[#666666]"> / </span>
+                  {isLast || !segment.href ? (
+                    <span className="text-[#A1A1A1]">{segment.label}</span>
+                  ) : (
+                    <Link
+                      href={segment.href}
+                      className="text-[#666666] hover:text-[#A1A1A1] outline-none ring-offset-[#0A0A0A] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 transition-colors duration-200 ease-out motion-reduce:transition-none min-h-[44px] inline-flex items-center"
+                    >
+                      {segment.label}
+                    </Link>
+                  )}
+                </span>
+              );
+            })}
           </p>
         </nav>
 

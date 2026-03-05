@@ -120,7 +120,7 @@ export default function VendorPacketPage() {
       </section>
 
       {/* Engagement Tiers */}
-      <EngagementTiers emphasizedTierId="enterprise-rescue" />
+      <EngagementTiers emphasizedTierId="enterprise-rescue" tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue"]} />
 
       {/* Vendor Packet Download */}
       <section aria-label="Leverantörspaket">
