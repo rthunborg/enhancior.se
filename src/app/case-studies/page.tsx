@@ -61,7 +61,7 @@ export default function CaseStudiesPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
             Case Studies
           </h1>
-          <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+          <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
             Verkliga uppdrag med mätbara resultat. Varje case är ett riktigt
             projekt, med riktiga utmaningar och konkreta förbättringar.
           </p>

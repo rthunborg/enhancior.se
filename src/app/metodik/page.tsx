@@ -49,7 +49,7 @@ export default function MetodikPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
             Så arbetar jag
           </h1>
-          <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+          <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
             Varje uppdrag följer samma struktur: identifiera problemet, lös det,
             överför kompetensen, lämna. Ingen forever-consulting, bara konkret
             förändring.

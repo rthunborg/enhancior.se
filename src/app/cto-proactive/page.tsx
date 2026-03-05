@@ -23,7 +23,7 @@ export default function CtoProactivePage() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
           Teamet växer. Arkitekturen måste hänga med.
         </h1>
-        <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+        <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
           Ni skalas snabbt, men arkitekturen designades för ett mindre team. En
           inbäddad arkitekt integreras direkt i ert team, driver
           arkitekturbesluten och säkerställer att er tekniska grund håller för

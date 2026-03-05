@@ -15,7 +15,7 @@ export default function TeknikbehovPage() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
         Ni vet att ni behöver förstärkning. Låt oss reda ut exakt vilken typ.
         </h1>
-        <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed mb-12">
+        <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed mb-12">
           Er situation avgör vilken typ av stöd som gör mest nytta. Välj det som
           bäst beskriver er.
         </p>

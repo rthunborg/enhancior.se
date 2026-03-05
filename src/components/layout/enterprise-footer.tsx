@@ -84,9 +84,9 @@ export function EnterpriseFooter() {
               <Image
                 src="/images/enhancior_logo.png"
                 alt="Enhancior logotyp"
-                width={24}
-                height={22}
-                className="w-6 h-auto"
+                width={40}
+                height={36}
+                className="w-10 h-auto"
               />
             </Link>
             <p>

@@ -35,7 +35,7 @@ export default function ITRadgivningPage() {
           Du ska fatta ett beslut värt miljoner. Säljaren har en agenda. Du
           behöver någon som bara har din.
         </h1>
-        <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+        <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
           Innan ni skriver på ett IT-avtal behöver ni veta vad ni faktiskt
           köper, vad ni inte behöver och vad det egentligen kommer att kosta.
           En oberoende granskning ger er svar — utan att sälja er något.

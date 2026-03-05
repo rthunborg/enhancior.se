@@ -30,14 +30,14 @@ export default function OmPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
             Rasmus Thunborg
           </h1>
-          <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+          <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
             Senior mjukvaruarkitekt | Göteborg
           </p>
         </div>
 
         {/* Intro */}
         <section className="mb-8 md:mb-12">
-          <div className="max-w-[600px] space-y-6 text-base text-[#A1A1A1] leading-relaxed">
+          <div className="max-w-2xl space-y-6 text-base text-[#A1A1A1] leading-relaxed">
             
             <div>
               <h2 className="text-lg text-[#EDEDED] font-semibold mb-2">

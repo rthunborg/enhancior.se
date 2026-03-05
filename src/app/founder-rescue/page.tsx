@@ -23,7 +23,7 @@ export default function FounderRescuePage() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
           Står ni utan teknisk ledare? Undvik en panikrekrytering.
         </h1>
-        <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+        <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
           Er tekniska ledare är borta och teamet tappar fart. Ni behöver inte
           rusa in i en felrekrytering. Ni behöver någon som stabiliserar
           verksamheten, skapar en roadmap styrelsen kan lita på och hjälper er

@@ -23,7 +23,7 @@ export default function CtooCrisisPage() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
           Ni vet redan att teknisk skuld kostar er.
         </h1>
-        <p className="items-center text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+        <p className="items-center text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
           Er pipeline är fragil och varje release är en risk. Teamet
           tappar fart. En 30-dagars teknisk revision identifierar exakt var
           problemen sitter och ger er en konkret åtgärdsplan som ert team kan

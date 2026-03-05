@@ -15,7 +15,7 @@ export default function TjansterPage() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
           Tjänster
         </h1>
-        <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
+        <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
           Tre uppdragsformer. Varje engagemang har tydlig omfattning, tidslinje
           och leverabler. Ingen vag konsultrådgivning, bara konkret förändring.
         </p>
