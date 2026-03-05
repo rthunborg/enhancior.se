@@ -14,6 +14,6 @@ export interface BookingConfig {
 }
 
 export const booking: BookingConfig = {
-  baseUrl: "https://calendar.app.google/pPdyTJW9TRptpS15A",
-  ctaLabel: "Boka ett kostnadsfritt samtal",
+  baseUrl: "", // Deprecated — contact modal replaces external booking
+  ctaLabel: "Kontakta oss",
 };

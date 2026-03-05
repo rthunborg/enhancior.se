@@ -14,7 +14,7 @@ const caseStudies = [
     company: "Polestar",
     title: "Teknisk Ledning för Finansiella Integrationer",
     summary:
-      "Senior teknisk ledning som drev arkitekturbeslut, mentorskapade teamet och stabiliserade komplexa finansiella integrationer.",
+      "Senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
     metric: { label: "Team velocity", delta: "+45%" },
     industry: "Fordon / FinTech",
     timeline: "4 år (2021–2025)",

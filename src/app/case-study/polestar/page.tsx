@@ -5,7 +5,7 @@ import type { CaseStudyMetric } from "@/components/case-study";
 export const metadata: Metadata = {
   title: "Polestar: Teknisk Ledning för Finansiella Integrationer | Enhancior",
   description:
-    "Hur Polestar fick senior teknisk ledning som drev arkitekturbeslut, mentorskapade teamet och stabiliserade komplexa finansiella integrationer.",
+    "Hur Polestar fick senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
 };
 
 const metrics: CaseStudyMetric[] = [
@@ -49,7 +49,7 @@ export default function PolestarCaseStudyPage() {
         problemNarrative={
           <>
             <p className="mb-4">
-              Polestars customer-financing journey krävde integrationer mot
+              Polestars kundfinansieringsflöde krävde integrationer mot
               flera externa finansiella leverantörer. Systemet kördes på AWS
               serverless men saknade senior teknisk ledning.
               Arkitekturbeslut fattades ad hoc och onboarding av nya

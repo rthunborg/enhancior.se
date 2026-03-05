@@ -7,10 +7,10 @@ import { useRouter } from "next/navigation";
 const TRIAGE_OPTIONS = [
   {
     id: "cto-crisis",
-    label: "Features tar evigheter att skeppa och teknisk skuld bromsar oss.",
+    label: "Features tar evigheter att leverera och teknisk skuld bromsar oss.",
     href: "/cto-crisis",
     ariaLabel:
-      "Features tar evigheter att skeppa och teknisk skuld bromsar oss. Välj för att se lösningar.",
+      "Features tar evigheter att leverera och teknisk skuld bromsar oss. Välj för att se lösningar.",
   },
   {
     id: "cto-proactive",
@@ -95,7 +95,16 @@ export function TriageSelector() {
         ))}
       </div>
 
-      <div className="mt-8 text-center">
+      <div className="mt-6 text-center">
+        <Link
+          href="/generellt"
+          className="min-h-11 inline-flex items-center text-sm text-[#A1A1A1] no-underline outline-none ring-offset-[#0A0A0A] transition-colors duration-200 ease-out hover:text-[#EDEDED] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 motion-reduce:transition-none"
+        >
+          Vet ni inte riktigt? Vi hjälper er ta reda på det →
+        </Link>
+      </div>
+
+      <div className="mt-4 text-center">
         <Link
           href="/vendor-packet"
           className="min-h-11 inline-flex items-center text-sm text-[#A1A1A1] no-underline outline-none ring-offset-[#0A0A0A] transition-colors duration-200 ease-out hover:text-[#F59E0B] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 motion-reduce:transition-none"

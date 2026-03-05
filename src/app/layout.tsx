@@ -4,6 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { StructuredData } from "@/components/seo/structured-data";
 import { EnterpriseFooter } from "@/components/layout/enterprise-footer";
+import { ContactModalProvider } from "@/components/contact";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,8 +43,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <main className="flex-1">{children}</main>
-        <EnterpriseFooter />
+        <ContactModalProvider>
+          <main className="flex-1">{children}</main>
+          <EnterpriseFooter />
+        </ContactModalProvider>
         <Analytics />
       </body>
     </html>

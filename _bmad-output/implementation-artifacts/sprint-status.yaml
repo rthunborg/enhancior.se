@@ -78,5 +78,16 @@ development_status:
   5-2-founder-rescue-timeline-proof-artifact: done
 
   # Epic 6: Triage Journey Enhancement
-  epic-6: in-progress
+  epic-6: done
   6-1-triage-fork-and-it-advisory-pathway: done
+
+  # Epic 7: Site Feedback & Lead Conversion Overhaul
+  epic-7: done
+  7-1-fourth-triage-option-general-discovery-page: done
+  7-2-landing-page-ctas-cv-download: done
+  7-3-remove-pricing-from-engagement-tiers: done
+  7-4-footer-desktop-gap-mobile-centering-fix: done
+  7-5-swedish-text-content-audit: done
+  7-6-contact-form-modal-component: done
+  7-7-contact-api-route-email-sending: done
+  7-8-replace-booking-ctas-with-contact-modal: done

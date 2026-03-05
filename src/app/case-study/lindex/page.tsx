@@ -97,7 +97,7 @@ export default function LindexCaseStudyPage() {
                 Cosmos DB, Service Bus, Event Grid och Kafka:
               </strong>{" "}
               Rätt verktyg för varje integration. Service Bus för kommandon,
-              Event Grid för notifieringar, Kafka för högthroughput-strömmar
+              Event Grid för notifieringar, Kafka för högkapacitetsströmmar
               och Cosmos DB för domändata.
             </li>
             <li>

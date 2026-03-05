@@ -5,7 +5,7 @@ import { PageShell } from "@/components/page-shell";
 export const metadata: Metadata = {
   title: "Tjänster | Enhancior",
   description:
-    "Tre uppdragsformer med tydlig omfattning, tidslinje och leverabler: 30-dagars teknisk revision, Teknisk ledning vid behov och Enterprise Rescue (arkitek som resurs).",
+    "Tre uppdragsformer med tydlig omfattning, tidslinje och leverabler: 30-dagars teknisk revision, Teknisk ledning vid behov och Enterprise Rescue (arkitekt som resurs).",
 };
 
 export default function TjansterPage() {

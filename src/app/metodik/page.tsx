@@ -21,7 +21,7 @@ const phases = [
     name: "Insats",
     tagline: "Händerna i koden, inte bara PowerPoint",
     description:
-      "Hands-on implementation sida vid sida med ert team. Jag driver arkitekturbeslut, implementerar lösningar och ser till att förändringar levereras. Ingen teori utan resultat, bara konkret execution.",
+      "Hands-on implementation sida vid sida med ert team. Jag driver arkitekturbeslut, implementerar lösningar och ser till att förändringar levereras. Ingen teori utan resultat, bara konkret genomförande.",
     deliverable: "Implementerade förbättringar med mätbara resultat",
   },
   {

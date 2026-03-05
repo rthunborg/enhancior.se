@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useContactModal } from "@/components/contact";
 
 const tjänsterLinks = [
   { label: "30-dagars Audit", href: "/cto-crisis" },
@@ -40,11 +43,13 @@ function FooterLinkList({
 }
 
 export function EnterpriseFooter() {
+  const { openContactModal } = useContactModal();
+
   return (
     <footer aria-label="Sidfot" className="py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-6 lg:px-8">
         <nav aria-label="Sidfotnavigation">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-6">
             {/* Column 1 — Brand */}
             <div className="text-center md:text-left">
               <p className={headingClasses}>Enhancior AB</p>
@@ -98,9 +103,13 @@ export function EnterpriseFooter() {
               <span className="hidden md:block" aria-hidden="true">&middot;</span>
               <span className="font-mono">Godkänd för F-skatt</span>
               <span className="hidden md:block" aria-hidden="true">&middot;</span>
-              <a href="mailto:rasmus.thunborg@enhancior.se" className="font-mono hover:underline">
+              <button
+                type="button"
+                onClick={() => openContactModal()}
+                className="font-mono hover:underline cursor-pointer bg-transparent border-none p-0 text-inherit"
+              >
                 rasmus.thunborg@enhancior.se
-              </a>
+              </button>
             </div>
           </div>
         </div>

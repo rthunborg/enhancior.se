@@ -35,7 +35,7 @@ export const engagementTiers: EngagementTier[] = [
     name: "Teknisk ledning vid behov",
     tagline: "En inbäddad arkitekt som driver beslut och stannar tills ert team är stabilt",
     scope:
-      "Senior arkitekt som integreras i ert team 1–2 dagar per vecka. Driver arkitekturbeslut, mentorskapar teamet och stabiliserar er tekniska grund. Hjälper er hitta en permanent ersättare när ni är redo.",
+      "Senior arkitekt som integreras i ert team 1–2 dagar per vecka. Driver arkitekturbeslut, handleder teamet och stabiliserar er tekniska grund. Hjälper er hitta en permanent ersättare när ni är redo.",
     timeline: "Löpande · 1–2 dagar/vecka",
     startingPrice: "Från 45 000 kr/mån",
     deliverables: [
@@ -49,7 +49,7 @@ export const engagementTiers: EngagementTier[] = [
   },
   {
     id: "enterprise-rescue",
-    name: "Enterprise Rescue (arkitek som resurs)",
+    name: "Enterprise Rescue (arkitekt som resurs)",
     tagline: "Storskalig modernisering av legacysystem",
     scope:
       "Djupgående moderniseringsuppdrag för enterprise-system som kräver modernisering. Compliance-säkrad process med full transparens, från diagnostik till leverans.",

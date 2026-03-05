@@ -147,6 +147,11 @@ FR41: Epic 4 - Engagement Tiers & Conversion
 
 ## Epic List
 
+### Epic 7: Site Feedback & Lead Conversion Overhaul
+**User Outcome:** Visitors who don't fit the three primary personas have a clear path forward. All lead capture happens on-site via a contact modal with email notification. The site is linguistically polished, pricing is removed, and the footer is pixel-perfect.
+**FRs covered:** FR1 (expanded), FR16 (replaced), FR17 (replaced), FR13 (modified — pricing removed), FR15 (modified — pricing hidden)
+*Note: This epic modifies existing FR implementations — replacing Calendly/Calendar booking with an on-site contact modal, removing visible pricing, and expanding triage options.*
+
 ### Epic 1: Project Setup, Infrastructure & ER Triage Homepage
 **User Outcome:** Visitors can immediately self-diagnose their technical pain point, experiencing the core UX innovation of the site on a jank-free, lightning-fast, fully accessible "blueprint" application with built-in analytics.
 **FRs covered:** FR1, FR2, FR3, FR4, FR20, FR23, FR24, FR25, FR26, FR27, FR28, FR29, FR30, FR31, FR32, FR33, FR34, FR35, FR36, FR37, FR38, FR39, FR40
@@ -392,3 +397,208 @@ So that I can add Enhancior AB to our internal vendor system immediately.
 **And** the file name is clearly formatted (e.g., `Enhancior_AB_Vendor_Packet.pdf`).
 
 
+## Epic 7: Site Feedback & Lead Conversion Overhaul
+
+The site evolves from a static showcase with external booking links into an integrated lead-capture platform. Visitor friction is reduced by adding an inclusive fourth triage option, removing premature pricing, and replacing all external Calendar CTAs with an on-site contact modal that sends lead emails via SMTP. Footer polish and a Swedish copy audit round out the quality improvements.
+
+**User Outcome:** Visitors who don't fit the three primary personas still have a clear path forward. All prospects can express interest directly on-site without being sent to external tools. The site feels polished, linguistically correct, and conversion-optimized.
+
+**Depends on:** Epics 1-6 (all complete or in-progress)
+
+### Story 7.1: Fourth Triage Option & General Discovery Page
+
+As a visitor who doesn't identify with the three specific pain-point journeys,
+I want a fourth "escape hatch" option on the triage homepage that acknowledges my uncertainty,
+So that I still feel welcome and can easily reach out for help figuring out what I need.
+
+**Acceptance Criteria:**
+
+**Given** I am on the ER Triage homepage
+**When** the page loads
+**Then** I see a fourth option below the three main triage cards, styled as a softer secondary element (not competing visually with the primary three)
+**And** the option text communicates uncertainty acceptance (e.g., "Vi vet inte riktigt vad vi behover — hjolp oss ta reda pa det")
+**And** clicking it routes me to `/generellt`
+
+**Given** I arrive at `/generellt`
+**When** the page loads
+**Then** I see a brief, warm introductory section acknowledging that not every problem fits a box
+**And** the contact modal auto-opens after the page renders
+**And** the page has Swedish SEO metadata targeting general IT consulting terms
+**And** the page meets all DoD NFRs (100/100 Lighthouse, WCAG 2.1 AA, <1s LCP, 0 CLS)
+
+### Story 7.2: Landing Page CTAs & CV Download
+
+As a visitor exploring the site,
+I want quick-access buttons below the triage options to learn more about the consultant or download a CV,
+So that I can evaluate the person behind the services without committing to a specific journey.
+
+**Acceptance Criteria:**
+
+**Given** I am on the ER Triage homepage
+**When** I scroll past the triage options
+**Then** I see two orange/amber CTA buttons matching the site's existing button color scheme
+**And** the first button says "Mer om mig" and links to `/om`
+**And** the second button says "Ladda ner CV" and triggers a download of the CV PDF file
+
+**Given** the CV download button is clicked (on homepage or Om page)
+**When** the browser initiates the download
+**Then** the file served is `/cv/rasmus-thunborg-cv.pdf` from the public directory
+**And** the site owner can replace this single file to update the CV without code changes
+
+**Given** I am on the `/om` page
+**When** I view the background/credentials section
+**Then** I see a "Ladda ner CV" button placed contextually near certifications/specializations
+**And** the button matches the amber/orange CTA style used elsewhere on the site
+
+### Story 7.3: Remove Pricing From Engagement Tiers
+
+As a site owner,
+I want all pricing information removed from engagement tier displays,
+So that pricing discussions happen during personal contact rather than creating premature anchoring or sticker shock.
+
+**Acceptance Criteria:**
+
+**Given** I am viewing any page with engagement tiers
+**When** the tier cards render
+**Then** no pricing information (startingPrice) is displayed
+**And** the tier card layout adjusts cleanly to the absence of the price field (no empty gaps or broken layout)
+**And** the data model retains the price field internally for future use but it is not rendered in any component
+
+### Story 7.4: Footer Desktop Gap & Mobile Centering Fix
+
+As a visitor on desktop or mobile,
+I want the footer layout to feel polished and properly aligned,
+So that the site maintains its premium enterprise aesthetic down to the last pixel.
+
+**Acceptance Criteria:**
+
+**Given** I am viewing the site on desktop (>=1024px)
+**When** I scroll to the footer
+**Then** the gap between the three footer columns (Enhancior AB, Tjanster, Bevis) is visually tighter than the current spacing
+**And** the columns feel grouped together rather than spread across the full width
+
+**Given** I am viewing the site on mobile (<768px)
+**When** I scroll to the footer's "Bevis" section
+**Then** all links including "Om" are correctly centered
+**And** no link appears misaligned relative to the others in the same column
+
+### Story 7.5: Swedish Text Content Audit & Corrections
+
+As a Swedish-speaking visitor,
+I want all site copy to use correct Swedish spelling and natural phrasing,
+So that the site feels professionally written rather than machine-translated or anglicized.
+
+**Acceptance Criteria:**
+
+**Given** a full audit of all Swedish text across every page
+**When** reviewed for correctness
+**Then** all spelling errors are fixed (e.g., "arkitek" corrected to "arkitekt")
+**And** anglicized words that sound unnatural in Swedish are replaced with proper Swedish equivalents (e.g., "fragil" replaced with "skort" or "brachklig", "skeppa" replaced with "leverera" or "shippa" if colloquially accepted)
+**And** the audit covers: homepage, all pathway pages, Om page, case studies, footer, engagement tiers, metadata
+**And** technical English terms that are industry-standard in Swedish IT contexts (e.g., "microservices", "CI/CD", "Kubernetes") are preserved as-is
+
+### Story 7.6: Contact Form Modal Component
+
+As a visitor who wants to reach out,
+I want a smooth, on-site contact modal where I can submit my details and describe my needs,
+So that I can express interest without being redirected to external tools.
+
+**Acceptance Criteria:**
+
+**Given** I trigger the contact modal from any CTA on the site
+**When** the modal opens
+**Then** I see a slide-up or fade-in modal with fields: Namn (required), Foretag (required), E-post (required, validated), Telefon (optional), Tjanst (dropdown pre-populated from engagement tier names, optional, pre-selected if I clicked from a specific tier), and a free-text "Beskriv er situation" textarea (required)
+**And** the modal has a clear "Skicka" button and a close/cancel option
+**And** the modal is fully accessible (focus trap, Escape to close, screen-reader announced)
+**And** the modal works correctly on both mobile and desktop viewports
+
+**Given** I successfully submit the form
+**When** the API responds with success
+**Then** I see a confirmation state inside the modal (e.g., "Tack! Vi hor av oss inom 24 timmar.")
+**And** the modal auto-closes after a brief delay or on user action
+
+**Given** the form submission fails
+**When** the API returns an error
+**Then** I see a user-friendly error message inside the modal
+**And** my form data is preserved so I can retry
+
+**Implementation Notes:**
+- Create `ContactModalProvider` context wrapping root layout
+- Expose `openContactModal({ service?: string })` function via context
+- Use shadcn/ui Dialog component as the base
+- Modal component at `src/components/contact/contact-modal.tsx`
+- Provider at `src/components/contact/contact-modal-provider.tsx`
+
+### Story 7.7: Contact API Route & Email Sending
+
+As the site owner,
+I want form submissions from the contact modal to be sent to my email as structured lead notifications,
+So that I can follow up personally with every prospect.
+
+**Acceptance Criteria:**
+
+**Given** a visitor submits the contact form
+**When** the API route `/api/contact` receives the POST request
+**Then** an email is sent to `rasmus.thunborg@enhancior.se` via SMTP containing: visitor name, company, email, phone (if provided), selected service interest (if any), and their message
+**And** the email is formatted in a readable, structured way (not raw JSON)
+**And** the API returns appropriate success/error status codes
+
+**Given** the SMTP configuration
+**When** the API route initializes
+**Then** it reads credentials from environment variables: SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, SMTP_FROM, SMTP_SECURE
+**And** these are configured in Vercel environment variables (not committed to code)
+
+**Given** the site currently uses `output: 'export'` in next.config
+**When** this story is implemented
+**Then** `output: 'export'` is removed from next.config.ts to enable the serverless API route
+**And** all existing static pages continue to be statically generated (ISR/SSG behavior preserved)
+**And** only `/api/contact` runs as a serverless function
+
+**Given** a malicious actor attempts to abuse the contact form
+**When** they send automated requests
+**Then** basic server-side validation rejects malformed submissions (missing required fields, invalid email format)
+**And** a simple rate-limiting mechanism is in place (e.g., IP-based cooldown or honeypot field)
+
+**Implementation Notes:**
+- Install `nodemailer` as dependency
+- API route at `src/app/api/contact/route.ts`
+- Remove `output: 'export'` from `next.config.ts`
+- Add `images: { unoptimized: true }` to preserve current image behavior
+- Honeypot field for basic bot protection
+
+### Story 7.8: Replace All Booking CTAs With Contact Modal Trigger
+
+As the site owner,
+I want every "Boka ett kostnadsfritt samtal" button and email mailto link across the site to open the contact modal instead,
+So that all lead capture flows through one consistent, on-site experience.
+
+**Acceptance Criteria:**
+
+**Given** any page with an engagement tier CTA button
+**When** I click the CTA
+**Then** the contact modal opens with the corresponding service pre-selected in the Tjanst dropdown
+**And** no external Google Calendar link is opened
+
+**Given** the footer email link
+**When** I click the email address in the credentials bar
+**Then** the contact modal opens (without a pre-selected service)
+**And** the mailto link is replaced with a button/link that triggers the modal
+
+**Given** the Om page contact section
+**When** I click the primary contact button
+**Then** the contact modal opens
+**And** the button label is updated from the email address to something like "Kontakta mig"
+
+**Given** the site config booking section
+**When** this story is complete
+**Then** the `booking.baseUrl` (Google Calendar link) is removed or deprecated from site-config.ts
+**And** `booking.ctaLabel` is updated to reflect the new contact action (e.g., "Kontakta oss")
+**And** all references to the old booking URL across the codebase are removed
+
+**Implementation Notes:**
+- Update `EngagementTierCard` to call `openContactModal({ service: tier.name })` on CTA click
+- Update `EnterpriseFooter` email link to trigger modal
+- Update `/om` page CTA to trigger modal
+- Update `/generellt` page to auto-open modal
+- Audit all pages for any remaining Google Calendar or mailto references
+- The `EngagementTierCard` CTA becomes a `<button>` instead of an `<a>` tag

@@ -91,7 +91,7 @@ export default function VendorPacketPage() {
               Erfarenhet
             </span>
             <p className="text-base text-[#EDEDED]">
-              10+ år inom mjukvaruarkitektur, backend-utveckling och teknisk ledning. Specialiserad på integrationer,cloud computing och agentic AI.
+              10+ år inom mjukvaruarkitektur, backend-utveckling och teknisk ledning. Specialiserad på integrationer, cloud computing och agentic AI.
             </p>
           </div>
           <div className="border-t border-[rgba(255,255,255,0.08)] pt-4 mt-4">
@@ -113,7 +113,7 @@ export default function VendorPacketPage() {
               <p className="text-sm text-[#A1A1A1]">
                 Teknisk ledning vid behov
               </p>
-              <p className="text-sm text-[#A1A1A1]">Enterprise Rescue (arkitek som resurs)</p>
+              <p className="text-sm text-[#A1A1A1]">Enterprise Rescue (arkitekt som resurs)</p>
               <p className="text-sm text-[#A1A1A1]">
                 Oberoende IT-rådgivning
               </p>

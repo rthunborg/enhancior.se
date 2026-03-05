@@ -1,0 +1,313 @@
+"use client";
+
+import { useState, useEffect, type FormEvent } from "react";
+import * as Dialog from "@radix-ui/react-dialog";
+import { AnimatePresence, motion } from "framer-motion";
+import { X } from "lucide-react";
+import { engagementTiers } from "@/lib/engagement-tiers";
+
+type FormState = "idle" | "submitting" | "success" | "error";
+
+interface ContactModalProps {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+  preselectedService?: string;
+}
+
+const inputStyles =
+  "w-full bg-[#0A0A0A] border border-[rgba(255,255,255,0.12)] rounded-lg px-4 py-3 text-[#EDEDED] text-sm placeholder:text-[#666666] focus:border-[#F59E0B] focus:outline-none focus:ring-1 focus:ring-[#F59E0B] transition-colors";
+
+const labelStyles = "block text-sm font-medium text-[#A1A1A1] mb-1.5";
+
+export function ContactModal({
+  open,
+  onOpenChange,
+  preselectedService,
+}: ContactModalProps) {
+  const [formState, setFormState] = useState<FormState>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [namn, setNamn] = useState("");
+  const [foretag, setForetag] = useState("");
+  const [epost, setEpost] = useState("");
+  const [telefon, setTelefon] = useState("");
+  const [tjanst, setTjanst] = useState(preselectedService ?? "");
+  const [meddelande, setMeddelande] = useState("");
+  const [honeypot, setHoneypot] = useState("");
+
+  useEffect(() => {
+    if (preselectedService !== undefined) {
+      setTjanst(preselectedService);
+    }
+  }, [preselectedService]);
+
+  useEffect(() => {
+    if (!open) {
+      // Reset form when modal closes, after animation
+      const timer = setTimeout(() => {
+        setFormState("idle");
+        setErrorMessage("");
+        setNamn("");
+        setForetag("");
+        setEpost("");
+        setTelefon("");
+        setTjanst(preselectedService ?? "");
+        setMeddelande("");
+        setHoneypot("");
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [open, preselectedService]);
+
+  useEffect(() => {
+    if (formState === "success") {
+      const timer = setTimeout(() => {
+        onOpenChange(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [formState, onOpenChange]);
+
+  async function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+    setFormState("submitting");
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          namn,
+          foretag,
+          epost,
+          telefon: telefon || undefined,
+          tjanst: tjanst || undefined,
+          meddelande,
+          honeypot: honeypot || undefined,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error("Servern svarade med ett fel.");
+      }
+
+      setFormState("success");
+    } catch {
+      setFormState("error");
+      setErrorMessage(
+        "Något gick fel. Försök igen eller mejla oss direkt på rasmus.thunborg@enhancior.se",
+      );
+    }
+  }
+
+  return (
+    <Dialog.Root open={open} onOpenChange={onOpenChange}>
+      <AnimatePresence>
+        {open && (
+          <Dialog.Portal forceMount>
+            <Dialog.Overlay asChild>
+              <motion.div
+                className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              />
+            </Dialog.Overlay>
+
+            <Dialog.Content asChild>
+              <motion.div
+                className="fixed z-50 w-full max-w-lg bg-[#111111] border border-[rgba(255,255,255,0.08)] overflow-y-auto max-h-[90vh] bottom-0 left-0 right-0 rounded-t-2xl md:rounded-xl md:bottom-auto md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 p-6 md:p-8 focus:outline-none"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 100 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              >
+                <div className="flex items-center justify-between mb-6">
+                  <Dialog.Title className="text-xl font-bold text-[#EDEDED]">
+                    Kontakta oss
+                  </Dialog.Title>
+                  <Dialog.Close asChild>
+                    <button
+                      className="rounded-lg p-2 text-[#A1A1A1] hover:text-[#EDEDED] hover:bg-[rgba(255,255,255,0.06)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F59E0B]"
+                      aria-label="Stäng"
+                    >
+                      <X className="h-5 w-5" />
+                    </button>
+                  </Dialog.Close>
+                </div>
+
+                <Dialog.Description className="text-sm text-[#A1A1A1] mb-6">
+                  Berätta om er situation så hör vi av oss inom 24 timmar.
+                </Dialog.Description>
+
+                <AnimatePresence mode="wait">
+                  {formState === "success" ? (
+                    <motion.div
+                      key="success"
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="py-12 text-center"
+                      role="status"
+                    >
+                      <p className="text-lg font-semibold text-[#EDEDED] mb-2">
+                        Tack!
+                      </p>
+                      <p className="text-sm text-[#A1A1A1]">
+                        Vi hör av oss inom 24 timmar.
+                      </p>
+                    </motion.div>
+                  ) : (
+                    <motion.form
+                      key="form"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      onSubmit={handleSubmit}
+                      className="space-y-4"
+                      noValidate={false}
+                    >
+                      <div className="absolute -left-[9999px]" aria-hidden="true">
+                        <label htmlFor="contact-website">Website</label>
+                        <input
+                          id="contact-website"
+                          type="text"
+                          name="website"
+                          tabIndex={-1}
+                          autoComplete="off"
+                          value={honeypot}
+                          onChange={(e) => setHoneypot(e.target.value)}
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="contact-namn" className={labelStyles}>
+                          Namn *
+                        </label>
+                        <input
+                          id="contact-namn"
+                          type="text"
+                          required
+                          value={namn}
+                          onChange={(e) => setNamn(e.target.value)}
+                          className={inputStyles}
+                          placeholder="Ditt namn"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="contact-foretag"
+                          className={labelStyles}
+                        >
+                          Företag *
+                        </label>
+                        <input
+                          id="contact-foretag"
+                          type="text"
+                          required
+                          value={foretag}
+                          onChange={(e) => setForetag(e.target.value)}
+                          className={inputStyles}
+                          placeholder="Ert företag"
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="contact-epost" className={labelStyles}>
+                          E-post *
+                        </label>
+                        <input
+                          id="contact-epost"
+                          type="email"
+                          required
+                          value={epost}
+                          onChange={(e) => setEpost(e.target.value)}
+                          className={inputStyles}
+                          placeholder="namn@foretag.se"
+                        />
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="contact-telefon"
+                          className={labelStyles}
+                        >
+                          Telefon
+                        </label>
+                        <input
+                          id="contact-telefon"
+                          type="tel"
+                          value={telefon}
+                          onChange={(e) => setTelefon(e.target.value)}
+                          className={inputStyles}
+                          placeholder="070-123 45 67"
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="contact-tjanst" className={labelStyles}>
+                          Tjänst
+                        </label>
+                        <select
+                          id="contact-tjanst"
+                          value={tjanst}
+                          onChange={(e) => setTjanst(e.target.value)}
+                          className={inputStyles}
+                        >
+                          <option value="">Välj tjänst...</option>
+                          {engagementTiers.map((tier) => (
+                            <option key={tier.id} value={tier.name}>
+                              {tier.name}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="contact-meddelande"
+                          className={labelStyles}
+                        >
+                          Beskriv er situation *
+                        </label>
+                        <textarea
+                          id="contact-meddelande"
+                          required
+                          rows={4}
+                          value={meddelande}
+                          onChange={(e) => setMeddelande(e.target.value)}
+                          className={`${inputStyles} resize-y`}
+                          placeholder="Berätta kort om er situation och vad ni behöver hjälp med..."
+                        />
+                      </div>
+
+                      {formState === "error" && (
+                        <div
+                          role="alert"
+                          className="text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-lg p-3"
+                        >
+                          {errorMessage}
+                        </div>
+                      )}
+
+                      <button
+                        type="submit"
+                        disabled={formState === "submitting"}
+                        aria-disabled={formState === "submitting"}
+                        className="w-full inline-flex items-center justify-center min-h-11 rounded-lg bg-[#F59E0B] px-8 py-3 text-base font-semibold text-[#0A0A0A] transition-colors duration-200 ease-out hover:bg-[#D97706] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 ring-offset-[#111111] focus:outline-none disabled:opacity-60 disabled:cursor-not-allowed motion-reduce:transition-none"
+                      >
+                        {formState === "submitting" ? "Skickar..." : "Skicka"}
+                      </button>
+                    </motion.form>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            </Dialog.Content>
+          </Dialog.Portal>
+        )}
+      </AnimatePresence>
+    </Dialog.Root>
+  );
+}

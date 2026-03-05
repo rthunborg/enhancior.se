@@ -24,7 +24,7 @@ export default function CtooCrisisPage() {
           Ni vet redan att teknisk skuld kostar er.
         </h1>
         <p className="items-center text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
-          Er pipeline är fragil och varje release är en risk. Teamet
+          Er pipeline är instabil och varje release är en risk. Teamet
           tappar fart. En 30-dagars teknisk revision identifierar exakt var
           problemen sitter och ger er en konkret åtgärdsplan som ert team kan
           börja implementera dag 31.
@@ -52,7 +52,7 @@ export default function CtooCrisisPage() {
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Monoliten har blivit en flaskhals. Varje nytt feature-team krockar
-              med samma kodområden och ingen vågar ta ansvaret refaktorera spagetti-koden.
+              med samma kodområden och ingen vågar ta ansvaret att refaktorera spagetti-koden.
             </p>
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">

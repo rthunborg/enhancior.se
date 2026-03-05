@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import type { EngagementTier } from "@/lib/engagement-tiers";
+import { useContactModal } from "@/components/contact";
 import { cn } from "@/lib/utils";
 
 interface EngagementTierCardProps {
@@ -20,6 +21,8 @@ export function EngagementTierCard({
   emphasized = false,
   reducedMotion,
 }: EngagementTierCardProps) {
+  const { openContactModal } = useContactModal();
+
   return (
     <motion.article
       variants={cardVariants}
@@ -54,21 +57,11 @@ export function EngagementTierCard({
           {tier.scope}
         </p>
 
-        <div className="flex flex-wrap gap-x-8 gap-y-2 mb-6">
-          <div>
-            <span className="font-mono text-xs text-[#919191] uppercase tracking-wider">
-              Tidslinje
-            </span>
-            <p className="font-mono text-sm text-[#EDEDED]">{tier.timeline}</p>
-          </div>
-          <div>
-            <span className="font-mono text-xs text-[#919191] uppercase tracking-wider">
-              Pris
-            </span>
-            <p className="font-mono text-sm text-[#EDEDED]">
-              {tier.startingPrice}
-            </p>
-          </div>
+        <div className="mb-6">
+          <span className="font-mono text-xs text-[#919191] uppercase tracking-wider">
+            Tidslinje
+          </span>
+          <p className="font-mono text-sm text-[#EDEDED]">{tier.timeline}</p>
         </div>
 
         <ul className="space-y-2 mb-8" aria-label={`Leverabler: ${tier.name}`}>
@@ -87,11 +80,10 @@ export function EngagementTierCard({
         </ul>
       </div>
 
-      <a
-        href={tier.ctaHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`${tier.ctaLabel} (öppnas i ny flik)`}
+      <button
+        type="button"
+        onClick={() => openContactModal({ service: tier.name })}
+        aria-label={tier.ctaLabel}
         className={cn(
           "inline-flex items-center justify-center min-h-[44px] px-6 py-3 font-semibold rounded-lg text-sm",
           "outline-none ring-offset-[#0A0A0A] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2",
@@ -102,7 +94,7 @@ export function EngagementTierCard({
         )}
       >
         {tier.ctaLabel}
-      </a>
+      </button>
     </motion.article>
   );
 }
