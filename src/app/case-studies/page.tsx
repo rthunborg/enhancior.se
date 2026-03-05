@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BackLink } from "@/components/back-link";
 
 export const metadata: Metadata = {
   title: "Case Studies | Enhancior",
@@ -57,6 +58,7 @@ export default function CaseStudiesPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
       <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-16 pt-16 md:pt-24 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
+        <BackLink />
         <div className="mb-12 md:mb-16">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
             Case Studies

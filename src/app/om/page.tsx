@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BackLink } from "@/components/back-link";
 
 export const metadata: Metadata = {
   title: "Om Rasmus Thunborg | Enhancior",
@@ -26,36 +27,47 @@ export default function OmPage() {
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
       <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-16 pt-16 md:pt-24 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
+        <BackLink />
         <div className="mb-16 md:mb-24">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
             Rasmus Thunborg
           </h1>
           <p className="text-lg text-[#A1A1A1] max-w-[600px] leading-relaxed">
-            Senior mjukvaruarkitekt. 10+ års erfarenhet från enterprise-system
-            till startup-skalning. Göteborg.
+            Senior mjukvaruarkitekt | Göteborg
           </p>
         </div>
 
         {/* Intro */}
-        <section className="mb-16 md:mb-24">
-          <div className="max-w-[600px] space-y-4 text-base text-[#A1A1A1] leading-relaxed">
-            <p>
-              Jag hjälper bolag som har växtvärk i sin teknik. Systemen som
-              fungerade för två år sedan börjar krackelera, teamet växer
-              snabbare än arkitekturen, och beslut som borde ta en dag tar tre
-              veckor.
-            </p>
-            <p>
-              Min bakgrund är nästan tio år i enterprise-backends — från Volvo
-              och Ericsson till IKEA, Polestar och Lindex. Jag har byggt
-              microservices, lett team och moderniserat legacy-system i både
-              AWS- och Azure-miljöer.
-            </p>
-            <p>
-              När ni anlitar Enhancior får ni mig. Inte en account manager, inte
-              en junior som lånar sig in, utan arkitekten som gör jobbet. Det
-              är hela poängen med att driva eget.
-            </p>
+        <section className="mb-8 md:mb-12">
+          <div className="max-w-[600px] space-y-6 text-base text-[#A1A1A1] leading-relaxed">
+            
+            <div>
+              <h2 className="text-lg text-[#EDEDED] font-semibold mb-2">
+                Mötet mellan startup-fart och enterprise-stabilitet
+              </h2>
+              <p>
+                Jag löser teknisk växtvärk. När era system krackelerar under tillväxten, eller när tekniska beslut tar tre veckor istället för en dag, kliver jag in och skapar struktur.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-lg text-[#EDEDED] font-semibold mb-2">
+                Erfarenhet som gör skillnad
+              </h2>
+              <p>
+                Jag tar med mig över tio års erfarenhet av tunga enterprise-backends från IKEA, Polestar, Volvo och Ericsson in i bolag som behöver skala upp utan att gå sönder på vägen. Mina verktyg är modernisering av legacy-system, microservices och molnarkitektur i AWS och Azure.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-lg text-[#EDEDED] font-semibold mb-2">
+                Det ni ser är det ni får
+              </h2>
+              <p>
+                Med Enhancior är det enkelt. När ni anlitar mig får ni mig. Inga account managers och inga juniorer. Bara en erfaren arkitekt som gör jobbet.
+              </p>
+            </div>
+
           </div>
         </section>
 

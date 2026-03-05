@@ -98,7 +98,7 @@ export const engagementTiers: EngagementTier[] = [
   },
   {
     id: "advisory-retainer",
-    name: "Löpande IT-rådgivning",
+    name: "Oberoende IT-rådgivning",
     tagline: "En oberoende teknisk rådgivare ni kan lita på",
     scope:
       "Löpande tillgång till en senior arkitekt som hjälper er fatta bättre IT-beslut. Från systemval och leverantörsbedömningar till tekniska vägval — utan att sälja er något.",

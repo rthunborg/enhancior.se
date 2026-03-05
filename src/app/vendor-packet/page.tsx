@@ -123,7 +123,7 @@ export default function VendorPacketPage() {
       </section>
 
       {/* Engagement Tiers */}
-      <EngagementTiers emphasizedTierId="enterprise-rescue" tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue"]} />
+      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue", "advisory-retainer"]} />
 
     </PathwayShell>
   );

@@ -3,7 +3,7 @@ import Link from "next/link";
 const tjänsterLinks = [
   { label: "30-dagars Audit", href: "/cto-crisis" },
   { label: "Teknisk ledning", href: "/cto-proactive" },
-  { label: "Enterprise Rescue (arkitek som resurs)", href: "/founder-rescue" },
+  { label: "Enterprise Rescue", href: "/founder-rescue" },
   { label: "IT-rådgivning", href: "/it-radgivning" },
 ] as const;
 
@@ -48,7 +48,13 @@ export function EnterpriseFooter() {
             <div>
               <p className={headingClasses}>Enhancior AB</p>
               <p className="text-muted-foreground text-sm">
-                Senior arkitekt. Teknisk ledning. Deltid eller uppdrag.
+                Senior arkitekt.
+              </p>
+              <p className="text-muted-foreground text-sm">
+                Teknisk ledning.
+              </p>
+              <p className="text-muted-foreground text-sm">
+                Deltid eller uppdrag.
               </p>
             </div>
 
@@ -71,11 +77,9 @@ export function EnterpriseFooter() {
           <p className="text-sm text-muted-foreground">
             &copy; 2026 Enhancior AB{" "}
             <span aria-hidden="true">&middot;</span>{" "}
-            <span className="font-mono">
-              Org.nr: 559244-2775
-            </span>{" "}
+            <span className="font-mono">Org.nr: 559244-2775</span>{" "}
             <span aria-hidden="true">&middot;</span>{" "}
-            <span className="font-mono">Godkänd för F-skatt</span>
+            <span className="font-mono">Godkänd för F-skatt</span>{" "}
             <span aria-hidden="true">&middot;</span>{" "}
             <a href="mailto:rasmus.thunborg@enhancior.se" className="font-mono">
               rasmus.thunborg@enhancior.se
