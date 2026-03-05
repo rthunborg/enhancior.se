@@ -28,7 +28,7 @@ function FooterLinkList({
   return (
     <ul className="space-y-3" role="list">
       {links.map((link) => (
-        <li key={link.label}>
+        <li key={link.label} className="flex justify-center md:justify-start">
           <Link href={link.href} className={linkClasses}>
             {link.label}
           </Link>
@@ -45,7 +45,7 @@ export function EnterpriseFooter() {
         <nav aria-label="Sidfotnavigation">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
             {/* Column 1 — Brand */}
-            <div>
+            <div className="text-center md:text-left">
               <p className={headingClasses}>Enhancior AB</p>
               <p className="text-muted-foreground text-sm">
                 Senior arkitekt.
@@ -59,13 +59,13 @@ export function EnterpriseFooter() {
             </div>
 
             {/* Column 2 — Tjänster */}
-            <div>
+            <div className="text-center md:text-left">
               <p className={headingClasses}>Tjänster</p>
               <FooterLinkList links={tjänsterLinks} />
             </div>
 
             {/* Column 3 — Bevis */}
-            <div>
+            <div className="text-center md:text-left">
               <p className={headingClasses}>Bevis</p>
               <FooterLinkList links={bevisLinks} />
             </div>
@@ -74,7 +74,7 @@ export function EnterpriseFooter() {
 
         {/* Credentials Bar */}
         <div className="mt-12 border-t border-border pt-8">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground text-center md:text-left">
             &copy; 2026 Enhancior AB{" "}
             <span aria-hidden="true">&middot;</span>{" "}
             <span className="font-mono">Org.nr: 559244-2775</span>{" "}
