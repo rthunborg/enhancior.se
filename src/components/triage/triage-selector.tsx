@@ -94,7 +94,7 @@ export function TriageSelector() {
             <span>{option.label}</span>
             <ChevronRight
               aria-hidden="true"
-              className="animate-nudge-right ml-auto w-5 h-5 flex-shrink-0 text-[#A1A1A1] transition-colors duration-200 group-hover:text-[#F59E0B] group-focus-visible:text-[#F59E0B]"
+              className="animate-nudge-right ml-auto w-5 h-5 flex-shrink-0 text-[#F59E0B] transition-colors duration-200 group-hover:text-[#F59E0B] group-focus-visible:text-[#F59E0B]"
             />
           </Link>
         ))}

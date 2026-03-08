@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { PathwayShell } from "@/components/pathway/pathway-shell";
-import { AutoOpenContact } from "./auto-open-contact";
+
 import { ContactCTA } from "./contact-cta";
 
 export const metadata: Metadata = {
@@ -25,7 +25,6 @@ export const metadata: Metadata = {
 export default function GenerelltPage() {
   return (
     <PathwayShell breadcrumbSegments={[{ label: "generellt" }]}>
-      <AutoOpenContact />
       {/* Hero Section */}
       <div className="mb-16 md:mb-24 lg:mb-32">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">

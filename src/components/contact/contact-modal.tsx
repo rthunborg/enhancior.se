@@ -295,6 +295,7 @@ export function ContactModal({
                               {tier.name}
                             </option>
                           ))}
+                          <option value="Övrigt">Övrigt</option>
                         </select>
                       </div>
 

@@ -4,7 +4,7 @@ import { useReducedMotion } from "framer-motion";
 import { motion } from "framer-motion";
 import { engagementTiers } from "@/lib/engagement-tiers";
 import { EngagementTierCard } from "./engagement-tier-card";
-import { AvailabilityBadge } from "./availability-badge";
+
 
 interface EngagementTiersProps {
   emphasizedTierId?: string;
@@ -31,8 +31,6 @@ export function EngagementTiers({ emphasizedTierId, tierIds }: EngagementTiersPr
       <h2 className="text-2xl font-bold text-[#EDEDED] mb-8">
         Välj den modell som passar er situation
       </h2>
-
-      <AvailabilityBadge />
 
       <motion.div
         variants={containerVariants}

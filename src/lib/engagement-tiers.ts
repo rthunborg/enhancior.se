@@ -76,7 +76,7 @@ export const engagementTiers: EngagementTier[] = [
       "Riskanalys med identifierade dolda kostnader",
       "Konkret rekommendation: signera, omförhandla eller avbryt",
     ],
-    ctaLabel: "Boka ett kostnadsfritt orienteringssamtal",
+    ctaLabel: "Kontakta oss",
     ctaHref: booking.baseUrl,
   },
   {
@@ -93,7 +93,7 @@ export const engagementTiers: EngagementTier[] = [
       "Förhandlingsstöd med teknisk argumentation",
       "Avtalsgenomgång med fokus på leveransvillkor och lock-in",
     ],
-    ctaLabel: "Boka ett kostnadsfritt orienteringssamtal",
+    ctaLabel: "Kontakta oss",
     ctaHref: booking.baseUrl,
   },
   {
@@ -109,7 +109,7 @@ export const engagementTiers: EngagementTier[] = [
       "Oberoende leverantörsbedömningar",
       "Strategiskt IT-stöd inför lednings- och styrelsemöten",
     ],
-    ctaLabel: "Boka ett kostnadsfritt orienteringssamtal",
+    ctaLabel: "Kontakta oss",
     ctaHref: booking.baseUrl,
   },
 ];

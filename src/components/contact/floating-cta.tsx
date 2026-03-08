@@ -100,7 +100,7 @@ export function FloatingCta() {
           ref={buttonRef}
           type="button"
           onClick={() => openContactModal()}
-          aria-label="Boka ett samtal"
+          aria-label="Kontakt"
           className={`fixed bottom-6 left-1/2 z-40 rounded-full px-6 py-3 text-sm font-semibold shadow-lg min-h-12 min-w-12 md:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0A] motion-reduce:transition-none ${
             inverted ? "shadow-black/20" : "shadow-amber-500/20"
           }`}

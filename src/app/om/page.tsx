@@ -33,8 +33,8 @@ const certifications = [
 export default function OmPage() {
   return (
     <PageShell breadcrumbSegments={[{ label: "om" }]}>
-        <div className="mb-16 md:mb-24">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
+        <div className="mb-12 md:mb-16">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-4">
             Rasmus Thunborg
           </h1>
           <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">

@@ -17,13 +17,7 @@ export const metadata: Metadata = {
 export default function TjansterPage() {
   return (
     <PageShell breadcrumbSegments={[{ label: "tjänster" }]}>
-      <div className="mb-12 md:mb-16">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
-          Tjänster
-        </h1>
-      </div>
-
-      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue", "advisory-quick-review"]} />
+      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue", "advisory-quick-review", "advisory-procurement", "advisory-retainer"]} />
     </PageShell>
   );
 }
