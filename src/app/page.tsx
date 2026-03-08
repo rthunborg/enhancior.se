@@ -14,18 +14,18 @@ export const metadata: Metadata = {
 
 const teasers = [
   {
-    heading: "Så arbetar vi",
-    hook: "En strukturerad metodik i fyra faser — från diagnos till överföring. Ingen vag rådgivning.",
+    heading: "Arbetsmetodik",
+    hook: "En strukturerad metodik i fyra faser - från diagnos till leverans.",
     href: "/metodik",
   },
   {
-    heading: "Våra tjänster",
-    hook: "Tre uppdragsformer med tydlig omfattning, tidslinje och leverabler.",
+    heading: "Tjänster",
+    hook: "Olika uppdragsformer med tydlig omfattningar och tidslinjer.",
     href: "/tjanster",
   },
   {
     heading: "Kundcase",
-    hook: "Verkliga uppdrag med mätbara resultat hos IKEA, Polestar, Lindex och Visma.",
+    hook: "Verkliga uppdrag med mätbara resultat.",
     href: "/case-studies",
   },
 ] as const;

@@ -5,7 +5,7 @@ import { PageShell } from "@/components/page-shell";
 export const metadata: Metadata = {
   title: "Tjänster | Enhancior",
   description:
-    "Tre uppdragsformer med tydlig omfattning, tidslinje och leverabler: 30-dagars teknisk revision, Teknisk ledning vid behov och Enterprise Rescue (arkitekt som resurs).",
+    "Uppdragsformer med tydlig omfattning, tidslinje och leveranser.",
   openGraph: {
     url: "https://enhancior.se/tjanster",
   },
@@ -27,7 +27,7 @@ export default function TjansterPage() {
         </p>
       </div>
 
-      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue"]} />
+      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue", "advisory-quick-review"]} />
     </PageShell>
   );
 }

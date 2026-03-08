@@ -7,7 +7,7 @@ import { useContactModal } from "@/components/contact";
 const tjänsterLinks = [
   { label: "30-dagars Audit", href: "/cto-crisis" },
   { label: "Teknisk ledning", href: "/cto-proactive" },
-  { label: "Enterprise Rescue", href: "/founder-rescue" },
+  { label: "Arkitekt som resurs", href: "/founder-rescue" },
   { label: "IT-rådgivning", href: "/it-radgivning" },
 ] as const;
 

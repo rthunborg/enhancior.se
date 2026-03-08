@@ -12,7 +12,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     slug: "lindex",
     title: "Från Legacy till Eventdriven Arkitektur",
     client: "Lindex",
-    engagement: "Enterprise Rescue",
+    engagement: "Arkitekt som resurs",
     metrics: [
       { label: "Deploy-frekvens", value: "1/mån → 3/vecka" },
       { label: "Incidenter", value: "↓ 88%" },
@@ -38,7 +38,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     slug: "ikea",
     title: "Backend-Arkitektur för 3D-Modellering",
     client: "IKEA",
-    engagement: "Enterprise Rescue",
+    engagement: "Arkitekt som resurs",  
     metrics: [
       { label: "Design till MVP", value: "8 veckor" },
       { label: "API-endpoints", value: "24 st" },

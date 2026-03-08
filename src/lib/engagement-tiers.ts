@@ -49,7 +49,7 @@ export const engagementTiers: EngagementTier[] = [
   },
   {
     id: "enterprise-rescue",
-    name: "Enterprise Rescue (arkitekt som resurs)",
+    name: "Arkitekt som resurs",
     tagline: "Storskalig modernisering av legacysystem",
     scope:
       "Djupgående moderniseringsuppdrag för enterprise-system som kräver modernisering. Compliance-säkrad process med full transparens, från diagnostik till leverans.",
