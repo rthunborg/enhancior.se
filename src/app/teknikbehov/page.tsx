@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Teknikbehov — Bygg eller Köp? | Enhancior",
   description:
     "Ni vet att ni behöver teknisk hjälp. Bygger ni egen teknik eller köper ni in IT-system? Vi hjälper er oavsett väg.",
+  openGraph: {
+    url: "https://enhancior.se/teknikbehov",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/teknikbehov",
+  },
 };
 
 export default function TeknikbehovPage() {

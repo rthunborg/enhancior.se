@@ -602,3 +602,153 @@ So that all lead capture flows through one consistent, on-site experience.
 - Update `/generellt` page to auto-open modal
 - Audit all pages for any remaining Google Calendar or mailto references
 - The `EngagementTierCard` CTA becomes a `<button>` instead of an `<a>` tag
+
+
+## Epic 9: SEO & LLM Discoverability
+
+The site gains complete SEO infrastructure (sitemap, robots.txt, OpenGraph, Twitter cards, canonical URLs, expanded structured data) and LLM discoverability via llms.txt files. This closes the gap between having great content and actually being found — by both traditional search engines and AI assistants.
+
+**User Outcome:** Search engines properly index all pages with rich snippets. Social shares display professional previews. AI assistants can discover and accurately recommend Enhancior when users ask for relevant consulting help.
+
+**FRs covered:** FR38 (expanded), FR39 (expanded), FR40 (expanded)
+
+**Depends on:** Epics 1-8 (all complete)
+
+### Story 9.1: SEO Fundamentals — Sitemap, Robots, OpenGraph, Structured Data
+
+As a site owner,
+I want complete SEO infrastructure including sitemap, robots.txt, OpenGraph/Twitter cards, canonical URLs, and expanded structured data,
+So that search engines can properly index the site, social shares look professional, and rich snippets appear in search results.
+
+**Acceptance Criteria:**
+
+**Given** the site is built
+**When** a crawler requests `/sitemap.xml` or `/robots.txt`
+**Then** valid, auto-generated files are served via Next.js Metadata API
+
+**Given** any page on the site
+**When** shared on social platforms
+**Then** OpenGraph and Twitter card metadata produce professional link previews
+
+**Given** the structured data component
+**When** the site renders
+**Then** Person, WebSite, and BreadcrumbList schemas are added to the existing JSON-LD graph
+
+**Given** any page on the site
+**When** crawled by search engines
+**Then** canonical URLs are present via `alternates.canonical`
+
+### Story 9.2: LLM Discoverability — llms.txt
+
+As a site owner,
+I want `llms.txt` and `llms-full.txt` files at the site root describing Enhancior's services and expertise,
+So that AI assistants can discover and accurately recommend Enhancior when users ask for relevant consulting help.
+
+**Acceptance Criteria:**
+
+**Given** the site is deployed
+**When** an LLM agent requests `/llms.txt`
+**Then** a structured plain-text summary of Enhancior is served following the llms.txt specification
+
+**Given** the site is deployed
+**When** an LLM agent requests `/llms-full.txt`
+**Then** a detailed version with case studies, methodology, and technology expertise is served
+
+**Given** the content of both files
+**When** reviewed against the live site
+**Then** all claims and descriptions are accurate and consistent
+
+
+## Epic 10: Mobile Conversion Optimization
+
+Mobile visitors currently must scroll through extensive homepage content before reaching services and contact CTAs. This epic introduces a persistent floating CTA for instant conversion access, then trims the homepage into a lean hub that routes to existing dedicated pages — eliminating scroll fatigue while improving conversion proximity.
+
+**User Outcome:** Mobile visitors can always reach the contact action without scrolling, and the homepage quickly routes them to the content they care about rather than presenting everything inline. Desktop experience is preserved or improved.
+
+**FRs covered:** FR31 (enhanced — mobile premium feel), FR16 (enhanced — conversion accessibility)
+
+**Depends on:** Epics 1-9 (all complete)
+
+**Epic-Level Acceptance Criteria:**
+- Contact modal is always reachable on mobile without scrolling
+- Homepage mobile scroll depth reduced by ~50%
+- Desktop experience unchanged or improved
+- All DoD NFRs maintained: 100/100 Lighthouse (Performance + Accessibility), <1s LCP, 0 CLS, WCAG 2.1 AA
+
+### Story 10.1: Floating CTA Pill (Mobile)
+
+As a mobile visitor on any page,
+I want a persistent contact button always within thumb reach,
+So that I can reach out the moment I'm ready without hunting for the CTA.
+
+**Acceptance Criteria:**
+
+**Given** I am browsing any page on a mobile device (<768px)
+**When** I scroll past the first ~200px of content
+**Then** a floating pill button labeled "Boka ett samtal" fades in with a subtle slide-up animation at the bottom center of the viewport
+
+**Given** the floating CTA pill is visible
+**When** I tap it
+**Then** the existing `ContactModal` opens (without a pre-selected service)
+
+**Given** I scroll to the contact section or footer area of any page
+**When** that section enters the viewport
+**Then** the floating CTA pill hides to avoid redundancy
+
+**Given** I am on a desktop viewport (>=768px)
+**When** browsing any page
+**Then** the floating CTA pill is not rendered (`md:hidden`)
+
+**Given** the floating CTA pill
+**When** evaluated for accessibility
+**Then** it has a minimum 48px tap target, proper ARIA label, and respects `prefers-reduced-motion`
+**And** the page meets all DoD NFRs (100/100 Lighthouse, WCAG 2.1 AA, <1s LCP, 0 CLS)
+
+**Implementation Notes:**
+- New client component: `src/components/contact/floating-cta.tsx`
+- Uses `IntersectionObserver` to watch two sentinels (top scroll threshold + contact/footer region)
+- Renders `null` when either sentinel is intersecting — no scroll event listeners
+- Accent color pill, `rounded-full`, Framer Motion fade+slide animation
+- Triggers `openContactModal()` from existing `ContactModalProvider` context
+- Add component to root layout (`src/app/layout.tsx`) inside the `ContactModalProvider`
+
+### Story 10.2: Homepage Hub Consolidation
+
+As a mobile visitor,
+I want the homepage to be a lean routing hub with teaser cards linking to dedicated pages,
+So that I reach the content I care about faster and encounter the contact section sooner.
+
+**Acceptance Criteria:**
+
+**Given** I am on the homepage on any device
+**When** the page loads
+**Then** the Hero section and triage pathway cards remain unchanged
+**And** the methodology section is replaced with a concise teaser card linking to `/metodik`
+**And** the services section is replaced with a concise teaser card linking to `/tjanster`
+**And** the case studies section is replaced with a concise teaser card linking to `/case-studies`
+**And** the contact/CTA section remains at the bottom, now much closer to the top of the page
+
+**Given** each teaser card
+**When** rendered
+**Then** it displays a clear Swedish heading (e.g., "Så arbetar vi", "Våra tjänster", "Kundcase")
+**And** one compelling hook sentence (not a summary)
+**And** a "Läs mer →" action link to the dedicated page
+**And** the card feels visually complete and intentional, not like stripped-down content
+
+**Given** the homepage after consolidation
+**When** measured on mobile
+**Then** total scroll depth is reduced by approximately 50% compared to pre-consolidation
+**And** the page meets all DoD NFRs (100/100 Lighthouse, WCAG 2.1 AA, <1s LCP, 0 CLS)
+
+**Given** the existing dedicated pages (`/metodik`, `/tjanster`, `/case-studies`, `/om`)
+**When** the homepage is consolidated
+**Then** no new pages are created — only the homepage is modified
+**And** all dedicated pages continue to function unchanged
+
+**Prerequisite Task:** Capture baseline mobile scroll depth from Vercel Analytics before making changes.
+
+**Implementation Notes:**
+- Primary changes in `src/app/page.tsx` — replacing verbose inline sections with lean teaser `<Card>` components
+- Teaser card component may be extracted to `src/components/homepage/teaser-card.tsx` if reuse warrants it
+- This is primarily an editorial/deletion task — more code removed than added
+- Desktop layout benefits equally from the consolidation

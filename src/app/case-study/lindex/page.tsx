@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Lindex: Från Legacy till Eventdriven Arkitektur | Enhancior",
   description:
     "Hur Lindex moderniserade legacy-system för order, lager och WMS med .NET microservices, event sourcing och Azure/Kubernetes.",
+  openGraph: {
+    url: "https://enhancior.se/case-study/lindex",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/case-study/lindex",
+  },
 };
 
 const metrics: CaseStudyMetric[] = [

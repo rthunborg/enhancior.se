@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Om Rasmus Thunborg | Enhancior",
   description:
     "Senior mjukvaruarkitekt med 10+ års erfarenhet från IKEA, Polestar, Lindex och Visma. Specialiserad på arkitektur, backend-utveckling och teknisk ledning.",
+  openGraph: {
+    url: "https://enhancior.se/om",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/om",
+  },
 };
 
 const clients = [

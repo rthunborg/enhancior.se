@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect, type FormEvent } from "react";
+import { useState, useEffect, useRef, type FormEvent } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { AnimatePresence, motion } from "framer-motion";
-import { X } from "lucide-react";
+import { X, CheckCircle } from "lucide-react";
+import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { engagementTiers } from "@/lib/engagement-tiers";
 
 type FormState = "idle" | "submitting" | "success" | "error";
@@ -19,6 +20,10 @@ const inputStyles =
 
 const labelStyles = "block text-sm font-medium text-[#A1A1A1] mb-1.5";
 
+function obfuscateEmail(user: string, domain: string) {
+  return `${user}@${domain}`;
+}
+
 export function ContactModal({
   open,
   onOpenChange,
@@ -33,6 +38,16 @@ export function ContactModal({
   const [tjanst, setTjanst] = useState(preselectedService ?? "");
   const [meddelande, setMeddelande] = useState("");
   const [honeypot, setHoneypot] = useState("");
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const [turnstileError, setTurnstileError] = useState(false);
+  const [mountTimestamp, setMountTimestamp] = useState("");
+  const turnstileRef = useRef<TurnstileInstance>(null);
+
+  useEffect(() => {
+    if (open) {
+      setMountTimestamp(btoa(String(Date.now())));
+    }
+  }, [open]);
 
   useEffect(() => {
     if (preselectedService !== undefined) {
@@ -42,7 +57,6 @@ export function ContactModal({
 
   useEffect(() => {
     if (!open) {
-      // Reset form when modal closes, after animation
       const timer = setTimeout(() => {
         setFormState("idle");
         setErrorMessage("");
@@ -53,6 +67,9 @@ export function ContactModal({
         setTjanst(preselectedService ?? "");
         setMeddelande("");
         setHoneypot("");
+        setTurnstileToken(null);
+        setTurnstileError(false);
+        turnstileRef.current?.reset();
       }, 300);
       return () => clearTimeout(timer);
     }
@@ -84,6 +101,8 @@ export function ContactModal({
           tjanst: tjanst || undefined,
           meddelande,
           honeypot: honeypot || undefined,
+          turnstileToken: turnstileToken || undefined,
+          _t: mountTimestamp,
         }),
       });
 
@@ -99,6 +118,8 @@ export function ContactModal({
       );
     }
   }
+
+  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? "";
 
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
@@ -151,6 +172,18 @@ export function ContactModal({
                       className="py-12 text-center"
                       role="status"
                     >
+                      <motion.div
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 300,
+                          damping: 20,
+                        }}
+                        className="mb-4"
+                      >
+                        <CheckCircle className="h-12 w-12 text-[#22C55E] mx-auto" />
+                      </motion.div>
                       <p className="text-lg font-semibold text-[#EDEDED] mb-2">
                         Tack!
                       </p>
@@ -292,12 +325,64 @@ export function ContactModal({
                         </div>
                       )}
 
+                      {siteKey && !turnstileError && (
+                        <div className="flex justify-center">
+                          <Turnstile
+                            ref={turnstileRef}
+                            siteKey={siteKey}
+                            onSuccess={setTurnstileToken}
+                            onError={() => setTurnstileError(true)}
+                            onExpire={() => setTurnstileToken(null)}
+                            options={{ theme: "dark" }}
+                          />
+                        </div>
+                      )}
+
+                      {turnstileError && (
+                        <p className="text-sm text-[#A1A1A1] text-center">
+                          Verifieringen kunde inte laddas. Kontakta oss direkt
+                          via{" "}
+                          <a
+                            href={`mailto:${obfuscateEmail("rasmus.thunborg", "enhancior.se")}`}
+                            className="text-[#F59E0B] underline"
+                          >
+                            e-post
+                          </a>
+                          .
+                        </p>
+                      )}
+
                       <button
                         type="submit"
                         disabled={formState === "submitting"}
                         aria-disabled={formState === "submitting"}
-                        className="w-full inline-flex items-center justify-center min-h-11 rounded-lg bg-[#F59E0B] px-8 py-3 text-base font-semibold text-[#0A0A0A] transition-colors duration-200 ease-out hover:bg-[#D97706] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 ring-offset-[#111111] focus:outline-none disabled:opacity-60 disabled:cursor-not-allowed motion-reduce:transition-none"
+                        className="w-full inline-flex items-center justify-center gap-2 min-h-11 rounded-lg bg-[#F59E0B] px-8 py-3 text-base font-semibold text-[#0A0A0A] transition-colors duration-200 ease-out hover:bg-[#D97706] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 ring-offset-[#111111] focus:outline-none disabled:opacity-60 disabled:cursor-not-allowed motion-reduce:transition-none"
                       >
+                        {formState === "submitting" && (
+                          <svg
+                            className="animate-spin"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle
+                              cx="8"
+                              cy="8"
+                              r="6.5"
+                              stroke="#0A0A0A"
+                              strokeOpacity="0.3"
+                              strokeWidth="3"
+                            />
+                            <path
+                              d="M14.5 8a6.5 6.5 0 0 0-6.5-6.5"
+                              stroke="#0A0A0A"
+                              strokeWidth="3"
+                              strokeLinecap="round"
+                            />
+                          </svg>
+                        )}
                         {formState === "submitting" ? "Skickar..." : "Skicka"}
                       </button>
                     </motion.form>

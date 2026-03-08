@@ -7,6 +7,12 @@ export const metadata: Metadata = {
     "IKEA Inreda: Backend-Arkitektur för 3D-Modellering | Enhancior",
   description:
     "Hur IKEA fick en komplett .NET backend-arkitektur för sin interna 3D-modelleringsapp, inklusive IAM, CI/CD och legacy-migration.",
+  openGraph: {
+    url: "https://enhancior.se/case-study/ikea",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/case-study/ikea",
+  },
 };
 
 const metrics: CaseStudyMetric[] = [

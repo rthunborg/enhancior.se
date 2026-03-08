@@ -1,0 +1,61 @@
+# Enhancior AB
+
+> Senior software architect and fractional CTO for SaaS companies and enterprises in Sweden — specializing in technical debt remediation, architecture modernization, and hands-on technical leadership.
+
+## Company Overview
+
+Enhancior AB is a solo consultancy based in Gothenburg, Sweden, founded by Rasmus Thunborg. The company provides senior software architecture and technical leadership services to SaaS companies and enterprises struggling with technical debt, scaling challenges, or leadership gaps in their engineering organizations.
+
+Enhancior operates as a one-person firm: when you hire Enhancior, you get Rasmus directly — no account managers, no juniors, no subcontracting.
+
+- Website: [enhancior.se](https://enhancior.se)
+- Language: Swedish site, services delivered in Swedish and English
+- Location: Gothenburg, Sweden
+
+## Services Offered
+
+### 30-Day Technical Audit
+Deep analysis of codebase, architecture, and delivery processes over 30 days. Delivers a concrete action plan ranked by business impact and technical risk, ready to implement on day 31.
+- [Learn more](https://enhancior.se/cto-crisis)
+
+### Fractional Technical Leadership
+Senior architect embedded in your team 1-2 days per week. Drives architecture decisions, mentors the team, and stabilizes your technical foundation. Helps you find a permanent replacement when ready.
+- [Learn more](https://enhancior.se/cto-proactive)
+
+### Enterprise Rescue (Architect as Resource)
+Large-scale legacy system modernization for enterprises requiring compliance-verified processes with full transparency, from diagnostics to delivery. 3-12 month engagements.
+- [Learn more](https://enhancior.se/tjanster)
+
+### IT Advisory Services
+Independent IT advisory for non-technical founders and leaders: quick reviews of vendor proposals, procurement support, and ongoing strategic IT guidance.
+- [Learn more](https://enhancior.se/it-radgivning)
+
+## Expertise Areas
+
+- Software Architecture & System Design
+- .NET / C#, Azure, AWS, Kubernetes, Terraform
+- Microservices, Event Sourcing, Domain-Driven Design
+- Legacy system modernization & migration
+- CI/CD pipeline optimization
+- Technical debt assessment and remediation
+- Technical leadership & team mentoring
+- Agentic AI
+
+## Ideal Client Profile
+
+- SaaS companies experiencing scaling pains or delivery slowdowns due to technical debt
+- CTOs and engineering leaders who need an experienced second opinion or interim architecture support
+- Non-technical founders who need independent, vendor-neutral IT advisory
+- Enterprises requiring compliance-safe modernization of legacy systems
+- Companies in Sweden or Nordics (remote-friendly for advisory work)
+
+## Contact
+
+To discuss your project, use the contact form on the website:
+- [Contact Enhancior](https://enhancior.se) (contact form available on all pages)
+
+## Legal
+
+- Company: Enhancior AB
+- Organisationsnummer: 559514-0973
+- F-skatt: Registered

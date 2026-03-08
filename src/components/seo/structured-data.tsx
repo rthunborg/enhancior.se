@@ -27,6 +27,27 @@ export function StructuredData() {
                     "@id": "https://enhancior.se/#organization"
                 },
                 description: "Inbäddad arkitekt som driver tekniska beslut och stabiliserar er teknikgrund."
+            },
+            {
+                "@type": "Person",
+                "@id": "https://enhancior.se/#person",
+                name: "Rasmus Thunborg",
+                jobTitle: "Senior Mjukvaruarkitekt",
+                worksFor: {
+                    "@id": "https://enhancior.se/#organization"
+                },
+                url: "https://enhancior.se",
+                sameAs: [
+                    "https://www.linkedin.com/in/rasmusthunborg/"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://enhancior.se/#website",
+                url: "https://enhancior.se",
+                name: "Enhancior",
+                description: "Senior mjukvaruarkitekt och teknisk ledning för SaaS-bolag och enterprise.",
+                inLanguage: "sv"
             }
         ]
     };

@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Tjänster | Enhancior",
   description:
     "Tre uppdragsformer med tydlig omfattning, tidslinje och leverabler: 30-dagars teknisk revision, Teknisk ledning vid behov och Enterprise Rescue (arkitekt som resurs).",
+  openGraph: {
+    url: "https://enhancior.se/tjanster",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/tjanster",
+  },
 };
 
 export default function TjansterPage() {

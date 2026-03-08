@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   title: "Teknisk Ledning för Grundare | Enhancior",
   description:
     "Ni saknar rätt senior tech-kompetens. En erfaren arkitekt som håller skeppet stadigt medan ni hittar rätt CTO.",
+  openGraph: {
+    url: "https://enhancior.se/founder-rescue",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/founder-rescue",
+  },
 };
 
 export default function FounderRescuePage() {

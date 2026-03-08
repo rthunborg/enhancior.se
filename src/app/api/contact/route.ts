@@ -9,20 +9,64 @@ interface ContactBody {
   tjanst?: string;
   meddelande: string;
   honeypot?: string;
+  turnstileToken?: string;
+  _t?: string;
 }
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const FAKE_OK = NextResponse.json({ ok: true });
+
+async function verifyTurnstile(token: string): Promise<boolean> {
+  const secret = process.env.TURNSTILE_SECRET_KEY;
+  if (!secret) return true; // Skip if not configured
+
+  try {
+    const res = await fetch(
+      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ secret, response: token }),
+      },
+    );
+    const data = await res.json();
+    return data.success === true;
+  } catch {
+    return false;
+  }
+}
 
 export async function POST(request: Request) {
   try {
     const body: ContactBody = await request.json();
 
-    // Honeypot check
+    // 1. Honeypot check
     if (body.honeypot) {
-      return NextResponse.json({ ok: true }); // Silent success for bots
+      return FAKE_OK;
     }
 
-    // Validate required fields
+    // 2. Timestamp check
+    if (body._t) {
+      try {
+        const ts = Number(atob(body._t));
+        if (Date.now() - ts < 3000) {
+          return FAKE_OK;
+        }
+      } catch {
+        return FAKE_OK;
+      }
+    }
+
+    // 3. Turnstile verification
+    if (body.turnstileToken) {
+      const valid = await verifyTurnstile(body.turnstileToken);
+      if (!valid) {
+        return FAKE_OK;
+      }
+    }
+
+    // 4. Validate required fields
     if (!body.namn?.trim() || !body.foretag?.trim() || !body.epost?.trim() || !body.meddelande?.trim()) {
       return NextResponse.json(
         { error: "Alla obligatoriska fält måste fyllas i." },
@@ -38,6 +82,7 @@ export async function POST(request: Request) {
       );
     }
 
+    // 5. Send email
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 587,

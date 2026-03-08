@@ -19,6 +19,12 @@ export const metadata: Metadata = {
     "oberoende teknisk rådgivare",
     "IT-upphandling stöd",
   ],
+  openGraph: {
+    url: "https://enhancior.se/it-radgivning",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/it-radgivning",
+  },
 };
 
 export default function ITRadgivningPage() {

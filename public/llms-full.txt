@@ -1,0 +1,159 @@
+# Enhancior AB — Full Context
+
+> Senior software architect and fractional CTO for SaaS companies and enterprises in Sweden — specializing in technical debt remediation, architecture modernization, and hands-on technical leadership.
+
+This is the extended version of [llms.txt](https://enhancior.se/llms.txt) with detailed service descriptions, methodology, case studies, and consultant background.
+
+## Company Overview
+
+Enhancior AB is a solo consultancy based in Gothenburg, Sweden, founded by Rasmus Thunborg. The company provides senior software architecture and technical leadership services to SaaS companies and enterprises struggling with technical debt, scaling challenges, or leadership gaps in their engineering organizations.
+
+Enhancior operates as a one-person firm: when you hire Enhancior, you get Rasmus directly — no account managers, no juniors, no subcontracting.
+
+- Website: [enhancior.se](https://enhancior.se)
+- Language: Swedish site, services delivered in Swedish and English
+- Location: Gothenburg, Sweden
+
+## Detailed Service Descriptions
+
+### 30-Day Technical Audit (30-dagars teknisk revision)
+**For:** Systems draining sprint capacity and slowing delivery
+**Timeline:** 30 days
+**Scope:** Deep analysis of codebase, architecture, and delivery processes. Identifies bottlenecks, technical debt, and organizational patterns.
+**Deliverables:**
+- Complete architecture assessment with identified bottlenecks
+- Prioritized action plan ranked by business impact
+- Measurable improvement goals with baseline values
+- Concrete roadmap for the first 90 days
+**Learn more:** [Delivery Crisis pathway](https://enhancior.se/cto-crisis)
+
+### Fractional Technical Leadership (Teknisk ledning vid behov)
+**For:** Teams needing experienced architecture support without a full-time hire
+**Timeline:** Ongoing, 1-2 days per week
+**Scope:** Senior architect integrated into your team. Drives architecture decisions, mentors team members, and stabilizes the technical foundation. Assists in recruiting a permanent technical leader when the team is ready.
+**Deliverables:**
+- Continuous architecture support and technical mentorship
+- Documented architecture vision and decision log
+- Structured knowledge transfer to your team
+- Support in hiring a permanent technical leader
+**Learn more:** [Proactive CTO pathway](https://enhancior.se/cto-proactive)
+
+### Enterprise Rescue (Architect as Resource)
+**For:** Large-scale legacy system modernization
+**Timeline:** 3-12 months
+**Scope:** Deep modernization engagements for enterprise systems requiring compliance-verified processes with full transparency, from diagnostics to delivery.
+**Deliverables:**
+- Enterprise-adapted modernization plan with compliance verification
+- Phased migration with minimized business risk
+- Ongoing status reporting and board-ready documentation
+**Learn more:** [Services overview](https://enhancior.se/tjanster)
+
+### IT Advisory Services
+**For:** Non-technical founders and leaders needing independent IT guidance
+**Services include:**
+- **Quick Review (Snabbgranskning):** Independent second opinion on vendor proposals, contracts, and technical solutions. 1-2 weeks.
+- **Procurement Support (Upphandlingsstod):** Full technical support from requirements specification to contract negotiation. 2-4 months.
+- **Ongoing IT Advisory (Oberoende IT-radgivning):** Continuous access to a senior architect for IT decisions, vendor assessments, and strategic guidance. 2-4 days per month.
+**Learn more:** [IT Advisory pathway](https://enhancior.se/it-radgivning)
+
+## Methodology
+
+Every engagement follows the same four-phase structure:
+
+### Phase 1: Diagnosis (Diagnos)
+Deep analysis of codebase, architecture, and delivery processes. Maps bottlenecks, technical debt, and organizational patterns. Delivers an action plan ranked by business impact and technical risk.
+
+### Phase 2: Intervention (Insats)
+Hands-on implementation alongside your team. Drives architecture decisions, implements solutions, and ensures changes are delivered. No theory without results — just concrete execution.
+
+### Phase 3: Transfer (Overforing)
+Structured knowledge transfer so your team can maintain and evolve the solution. Documentation, mentoring, and pair programming until the team is self-sufficient.
+
+### Phase 4: Exit (Avslut)
+Clean exit with no artificial dependencies. When the team is stable and the solution is handed over, Enhancior steps back. The goal is an organization that no longer needs external help.
+
+**Learn more:** [Methodology](https://enhancior.se/metodik)
+
+## Case Studies
+
+### IKEA — Solution Architecture
+Senior Solution Architect engagement. Architecture work for one of the world's largest retailers.
+- [Read case study](https://enhancior.se/case-study/ikea)
+
+### Visma — Platform Engineering
+Platform engineering work for the Nordic region's leading business software company.
+- [Read case study](https://enhancior.se/case-study/visma)
+
+### Polestar — Interim Tech Lead
+4-year engagement as Interim Tech Lead for the electric vehicle manufacturer. Drove technical decisions and team leadership at scale.
+- [Read case study](https://enhancior.se/case-study/polestar)
+
+### Lindex — Senior Software Engineer
+2.5-year engagement as Senior Software Engineer for the fashion retailer, working on backend systems and architecture.
+- [Read case study](https://enhancior.se/case-study/lindex)
+
+**All case studies:** [Case Studies Overview](https://enhancior.se/case-studies)
+
+## Consultant Background
+
+### Rasmus Thunborg
+- **Role:** Founder & Senior Software Architect
+- **Location:** Gothenburg, Sweden
+- **Experience:** 10+ years in enterprise backend development and architecture
+- **Education:** Bachelor's degree in Software Engineering & Management, University of Gothenburg
+- **LinkedIn:** [linkedin.com/in/rasmusthunborg](https://www.linkedin.com/in/rasmusthunborg/)
+
+**Selected Clients:**
+- Polestar — Interim Tech Lead (4 years)
+- Lindex — Senior Software Engineer (2.5 years)
+- IKEA — Senior Solution Architect (6 months)
+- Visma — Platform Engineer (4 months)
+- Ericsson — Backend Developer (1 year)
+- Volvo — Backend Developer (1 year)
+
+**Certifications:**
+- SnowPro Core Certification (Snowflake)
+- Microsoft Certified: Azure Fundamentals
+- Ledarskap 1 (Framfot AB)
+
+**Technical Expertise:**
+- .NET / C#, Azure, AWS
+- Microservices, Event Sourcing, Domain-Driven Design
+- Kubernetes, Terraform, CI/CD
+- Legacy system modernization
+- Distributed systems architecture
+- Agentic AI
+
+**Learn more:** [About Rasmus](https://enhancior.se/om)
+
+## Expertise Areas
+
+- Software Architecture & System Design
+- .NET / C#, Azure, AWS, Kubernetes, Terraform
+- Microservices, Event Sourcing, Domain-Driven Design
+- Legacy system modernization & migration
+- CI/CD pipeline optimization
+- Technical debt assessment and remediation
+- Technical leadership & team mentoring
+- Next.js, TypeScript, React (frontend architecture)
+- Snowflake, data platform engineering
+- Agentic AI
+
+## Ideal Client Profile
+
+- SaaS companies experiencing scaling pains or delivery slowdowns due to technical debt
+- CTOs and engineering leaders who need an experienced second opinion or interim architecture support
+- Non-technical founders who need independent, vendor-neutral IT advisory
+- Enterprises requiring compliance-safe modernization of legacy systems
+- Companies in Sweden or Nordics (remote-friendly for advisory work)
+
+## Contact
+
+To discuss your project, use the contact form on the website:
+- [Contact Enhancior](https://enhancior.se) (contact form available on all pages)
+
+## Legal
+
+- Company: Enhancior AB
+- Organisationsnummer: 559514-0973
+- F-skatt: Registered

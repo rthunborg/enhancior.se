@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     "teknisk konsult Stockholm",
     "IT-rådgivare",
   ],
+  openGraph: {
+    url: "https://enhancior.se/generellt",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/generellt",
+  },
 };
 
 export default function GenerelltPage() {

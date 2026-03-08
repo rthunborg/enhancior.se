@@ -1,3 +1,4 @@
+import { BreadcrumbJsonLd } from "@/components/seo/breadcrumb-jsonld";
 import Link from "next/link";
 
 interface BreadcrumbSegment {
@@ -20,6 +21,7 @@ export function PathwayShell({
 
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
+      <BreadcrumbJsonLd segments={segments} />
       <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-16 pt-16 md:pt-24 lg:pt-32 pb-16 md:pb-24 lg:pb-32">
         <nav
           aria-label="Brödsmulor"

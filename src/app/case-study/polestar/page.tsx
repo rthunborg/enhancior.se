@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Polestar: Teknisk Ledning för Finansiella Integrationer | Enhancior",
   description:
     "Hur Polestar fick senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
+  openGraph: {
+    url: "https://enhancior.se/case-study/polestar",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/case-study/polestar",
+  },
 };
 
 const metrics: CaseStudyMetric[] = [

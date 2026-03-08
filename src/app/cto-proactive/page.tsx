@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   title: "Skalbar Arkitektur | Enhancior",
   description:
     "Teamet växer snabbare än arkitekturen. En inbäddad arkitekt som integreras i ert team, driver besluten och hjälper er skala utan att tappa fart.",
+  openGraph: {
+    url: "https://enhancior.se/cto-proactive",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/cto-proactive",
+  },
 };
 
 export default function CtoProactivePage() {

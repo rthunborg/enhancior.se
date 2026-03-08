@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Case Studies | Enhancior",
   description:
     "Verkliga uppdrag med mätbara resultat. Se hur Enhancior har hjälpt IKEA, Polestar, Lindex och Visma med arkitektur, teknisk ledning och modernisering.",
+  openGraph: {
+    url: "https://enhancior.se/case-studies",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/case-studies",
+  },
 };
 
 const caseStudies = [

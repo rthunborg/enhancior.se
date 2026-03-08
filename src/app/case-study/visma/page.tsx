@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Visma: Automatiserad Credential-Rotation | Enhancior",
   description:
     "Hur Visma Enterprise gick från manuellt hanterade credentials till automatiserad rotation var 30:e dag med AWS Lambda och GitHub Actions.",
+  openGraph: {
+    url: "https://enhancior.se/case-study/visma",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/case-study/visma",
+  },
 };
 
 const metrics: CaseStudyMetric[] = [

@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   title: "Leveranskris | Enhancior",
   description:
     "Er tekniska skuld bromsar leveransen. En 30-dagars teknisk revision som identifierar exakt var problemen sitter och ger er en konkret åtgärdsplan.",
+  openGraph: {
+    url: "https://enhancior.se/cto-crisis",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/cto-crisis",
+  },
 };
 
 export default function CtooCrisisPage() {

@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Enterprise Compliance & Leverantörsinfo | Enhancior",
   description:
     "LOU-compliance, F-skatt, organisationsnummer och leverantörspaket för Enhancior AB. Allt du behöver för intern leverantörsgodkännande.",
+  openGraph: {
+    url: "https://enhancior.se/vendor-packet",
+  },
+  alternates: {
+    canonical: "https://enhancior.se/vendor-packet",
+  },
 };
 
 export default function VendorPacketPage() {

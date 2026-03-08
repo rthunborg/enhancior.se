@@ -91,3 +91,17 @@ development_status:
   7-6-contact-form-modal-component: done
   7-7-contact-api-route-email-sending: done
   7-8-replace-booking-ctas-with-contact-modal: done
+
+  # Epic 8: Contact Form Hardening
+  epic-8: done
+  8-1-contact-form-spam-prevention-ux-polish: done
+
+  # Epic 9: SEO & LLM Discoverability
+  epic-9: done
+  9-1-seo-fundamentals: done
+  9-2-llm-discoverability-llms-txt: done
+
+  # Epic 10: Mobile Conversion Optimization
+  epic-10: done
+  10-1-floating-cta-pill-mobile: done
+  10-2-homepage-hub-consolidation: done
