@@ -28,9 +28,6 @@ export function EngagementTiers({ emphasizedTierId, tierIds }: EngagementTiersPr
 
   return (
     <section aria-label="Engagemang" className="mb-16 md:mb-24 lg:mb-32">
-      <p className="font-mono text-sm text-[#919191] uppercase tracking-widest mb-6">
-        ENGAGEMANG
-      </p>
       <h2 className="text-2xl font-bold text-[#EDEDED] mb-8">
         Välj den modell som passar er situation
       </h2>

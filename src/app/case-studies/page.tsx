@@ -65,7 +65,7 @@ export default function CaseStudiesPage() {
     <PageShell breadcrumbSegments={[{ label: "case-studies" }]}>
         <div className="mb-12 md:mb-16">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
-            Case Studies
+            Kundcase
           </h1>
           <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
             Verkliga uppdrag med mätbara resultat. Varje case är ett riktigt

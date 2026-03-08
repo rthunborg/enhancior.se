@@ -3,6 +3,7 @@
 import { useRef, useState, useCallback } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { ChevronRight } from "lucide-react";
 
 const TRIAGE_OPTIONS = [
   {
@@ -88,28 +89,23 @@ export function TriageSelector() {
             aria-label={option.ariaLabel}
             tabIndex={focusedIndex === index ? 0 : -1}
             onFocus={() => setFocusedIndex(index)}
-            className="block rounded-lg border border-[rgba(255,255,255,0.08)] bg-[#111111] p-6 text-base font-normal text-[#EDEDED] no-underline outline-none ring-offset-[#0A0A0A] transition-[border-color,box-shadow] duration-200 ease-out hover:border-[#F59E0B] hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 motion-reduce:transition-none sm:text-lg"
+            className="group flex items-center rounded-lg border border-[rgba(255,255,255,0.08)] bg-[#111111] p-6 text-base font-normal text-[#EDEDED] no-underline outline-none ring-offset-[#0A0A0A] transition-[border-color,box-shadow] duration-200 ease-out hover:border-[#F59E0B] hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 motion-reduce:transition-none sm:text-lg"
           >
-            {option.label}
+            <span>{option.label}</span>
+            <ChevronRight
+              aria-hidden="true"
+              className="animate-nudge-right ml-auto w-5 h-5 flex-shrink-0 text-[#A1A1A1] transition-colors duration-200 group-hover:text-[#F59E0B] group-focus-visible:text-[#F59E0B]"
+            />
           </Link>
         ))}
       </div>
 
-      <div className="mt-6 text-center">
+      <div className="mt-8 text-center">
         <Link
           href="/generellt"
           className="min-h-11 inline-flex items-center text-sm text-[#A1A1A1] no-underline outline-none ring-offset-[#0A0A0A] transition-colors duration-200 ease-out hover:text-[#EDEDED] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 motion-reduce:transition-none"
         >
           Vet ni inte riktigt? Vi hjälper er ta reda på det →
-        </Link>
-      </div>
-
-      <div className="mt-4 text-center">
-        <Link
-          href="/vendor-packet"
-          className="min-h-11 inline-flex items-center text-sm text-[#A1A1A1] no-underline outline-none ring-offset-[#0A0A0A] transition-colors duration-200 ease-out hover:text-[#F59E0B] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 motion-reduce:transition-none"
-        >
-          Enterprise: LOU, Compliance & Leverantörsinfo &rarr;
         </Link>
       </div>
     </div>

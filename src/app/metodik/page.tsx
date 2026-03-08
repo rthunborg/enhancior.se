@@ -53,7 +53,7 @@ export default function MetodikPage() {
     <PageShell breadcrumbSegments={[{ label: "metodik" }]}>
         <div className="mb-16 md:mb-24">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
-            Så arbetar jag
+            Arbetsmetodik
           </h1>
           <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
             Varje uppdrag följer samma struktur: identifiera problemet, lös det,

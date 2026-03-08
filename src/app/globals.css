@@ -82,6 +82,26 @@
   --sidebar-ring: oklch(0.74 0.16 75);
 }
 
+@keyframes nudge-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+.animate-nudge-right {
+  animation: nudge-right 1.8s ease-in-out infinite;
+}
+
+.group:hover .animate-nudge-right,
+.group:focus-visible .animate-nudge-right {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-nudge-right {
+    animation: none;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

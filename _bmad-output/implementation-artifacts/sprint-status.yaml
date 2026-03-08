@@ -107,5 +107,5 @@ development_status:
   10-2-homepage-hub-consolidation: done
 
   # Epic 11: Triage UX Refinement
-  epic-11: in-progress
-  11-1-triage-card-affordance-and-cleanup: ready-for-dev
+  epic-11: done
+  11-1-triage-card-affordance-and-cleanup: done
