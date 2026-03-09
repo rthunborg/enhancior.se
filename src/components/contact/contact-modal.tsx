@@ -188,7 +188,7 @@ export function ContactModal({
                         Tack!
                       </p>
                       <p className="text-sm text-[#A1A1A1]">
-                        Vi hör av oss inom 24 timmar.
+                        Vi hör av oss så fort vi kan!
                       </p>
                     </motion.div>
                   ) : (
