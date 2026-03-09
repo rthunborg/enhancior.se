@@ -109,3 +109,12 @@ development_status:
   # Epic 11: Triage UX Refinement
   epic-11: done
   11-1-triage-card-affordance-and-cleanup: done
+
+  # Epic 12: Case Study Graphics & Nordiskt Rederi
+  epic-12: done
+  12-1-nordiskt-rederi-case-study-page: done
+  12-2-nordiskt-rederi-architecture-diagram: done
+  12-3-ikea-architecture-diagram: done
+  12-4-lindex-architecture-diagram: done
+  12-5-polestar-architecture-diagram: done
+  12-6-visma-architecture-diagram: done

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
+import { VismaDiagram } from "@/components/case-study/diagrams/visma-diagram";
 
 export const metadata: Metadata = {
   title: "Visma: Automatiserad Credential-Rotation | Enhancior",
@@ -73,13 +74,7 @@ export default function VismaCaseStudyPage() {
             </p>
           </>
         }
-        architectureViewer={
-          <div className="border border-dashed border-[rgba(255,255,255,0.15)] rounded p-12 flex items-center justify-center">
-            <p className="font-mono text-sm text-[#919191]">
-              Arkitekturdiagram kommer snart
-            </p>
-          </div>
-        }
+        architectureViewer={<VismaDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>

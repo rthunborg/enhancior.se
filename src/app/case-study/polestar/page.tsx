@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
+import { PolestarDiagram } from "@/components/case-study/diagrams/polestar-diagram";
 
 export const metadata: Metadata = {
   title: "Polestar: Teknisk Ledning för Finansiella Integrationer | Enhancior",
@@ -69,13 +70,7 @@ export default function PolestarCaseStudyPage() {
             </p>
           </>
         }
-        architectureViewer={
-          <div className="border border-dashed border-[rgba(255,255,255,0.15)] rounded p-12 flex items-center justify-center">
-            <p className="font-mono text-sm text-[#919191]">
-              Arkitekturdiagram kommer snart
-            </p>
-          </div>
-        }
+        architectureViewer={<PolestarDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>

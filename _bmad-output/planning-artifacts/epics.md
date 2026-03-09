@@ -752,3 +752,174 @@ So that I reach the content I care about faster and encounter the contact sectio
 - Teaser card component may be extracted to `src/components/homepage/teaser-card.tsx` if reuse warrants it
 - This is primarily an editorial/deletion task — more code removed than added
 - Desktop layout benefits equally from the consolidation
+
+
+## Epic 12: Case Study Graphics & Nordiskt Rederi
+
+A new case study for an anonymized client ("Nordiskt Rederi", obfuscated from a real maritime/HR engagement) is added to the site. All five case studies — including the four existing ones — receive bespoke SVG architecture diagrams replacing the current "Arkitekturdiagram kommer snart" placeholders. Diagrams are inline React/SVG components styled to match the dark-mode design system.
+
+**User Outcome:** Every case study page features a meaningful architecture diagram that visually tells the technical story of the engagement. The site gains a fifth case study demonstrating HR-tech/maritime domain expertise, broadening the proof-of-competence portfolio.
+
+**FRs covered:** FR8 (expanded — new proof artifact), FR9 (completed — architecture diagrams), FR10 (completed — visual states), FR11 (expanded — new metrics)
+
+**Depends on:** Epics 1-11 (all complete)
+
+**Epic-Level Acceptance Criteria:**
+- 5 case study pages total, each with a bespoke SVG architecture diagram
+- Nordiskt Rederi case fully anonymized (no real company or partner names)
+- All diagrams are inline SVG React components, dark-mode styled, accessible
+- Case study registry updated with the new entry
+- Case studies listing page includes the new case
+- All DoD NFRs maintained: 100/100 Lighthouse (Performance + Accessibility), <1s LCP, 0 CLS, WCAG 2.1 AA
+
+### Story 12.1: Nordiskt Rederi Case Study Page
+
+As a technical or non-technical prospect,
+I want to read a case study about a maritime HR-operations engagement where Excel chaos was replaced with a real-time platform,
+So that I can see Enhancior's ability to deliver full-stack solutions from concept to production as a solo resource.
+
+**Acceptance Criteria:**
+
+**Given** I navigate to `/case-study/nordiskt-rederi`
+**When** the page loads
+**Then** I see the full case study layout with: title, industry tag, timeline, problem narrative, architecture viewer (placeholder acceptable for this story — diagram added in Story 12.2), intervention narrative, 4 impact metrics, and outcome narrative
+**And** the client is identified as "Nordiskt Rederi" throughout — no real company name appears anywhere
+**And** all external partner names are genericized (see Anonymization Map below)
+**And** SEO metadata uses the anonymized name
+
+**Given** the case study registry
+**When** the new case is added
+**Then** the registry entry uses slug `nordiskt-rederi`, client `Nordiskt Rederi`, personas `["cto-crisis", "cto-proactive"]`
+**And** the registry metrics array contains 4 summary metrics
+
+**Given** the case studies listing page (`/case-studies`)
+**When** the page renders
+**Then** the Nordiskt Rederi case appears as a 5th card in the grid
+**And** the listing page metadata description is updated to include the new case
+
+**Anonymization Map:**
+| Real | Anonymized |
+|------|-----------|
+| Stena Line / Stena Lines | Nordiskt Rederi |
+| Sodexo | cateringpartner |
+| ÖMC | bemanningspartner |
+| Toplux | logistikpartner |
+| PE3 | personalcertifieringssystem |
+| lönekontor | lönekontor (already generic) |
+| besättningsplanering | besättningsplanering (already generic) |
+
+**Metrics (4 selected for 2×2 grid):**
+
+| Label | Before | After | Delta | Improvement |
+|-------|--------|-------|-------|-------------|
+| Tid för datadelning med extern part | Manuellt Excel-utskick via e-post, ~30–60 min per mottagare | Omedelbar tillgång via rollstyrd inloggning | ↓ ~95% | positive |
+| Datakvalitet och versionskontroll | Flera parallella Excel-versioner, ingen single source of truth | En gemensam realtidsdatabas med RLS | Eliminerat versionskaos | positive |
+| Spårbarhet vid revision/GDPR | Ingen loggning, okontrollerad spridning av känslig data | Fullständig ändringslogg, rollbaserad åtkomst, aktivitetsspårning | Från noll → revisionsklar | positive |
+| Tid från koncept till produktion | — | MVP levererat på 4 månader av en resurs | 542 commits, 42 migrationer, 69 PR:s | positive |
+
+**Implementation Notes:**
+- Create `src/app/case-study/nordiskt-rederi/page.tsx` following the exact pattern of `src/app/case-study/lindex/page.tsx`
+- Add entry to `src/lib/case-study-registry.ts`
+- Add entry to `src/app/case-studies/page.tsx` (the listing page's local `caseStudies` array)
+- Update listing page metadata description to mention the new case
+- All narrative text must be anonymized per the map above before being placed in the component
+- The `architectureViewer` prop can use the existing dashed-border placeholder for now — Story 12.2 will replace it
+- Source data: `docs/case-study-onboarding-system.json`
+
+### Story 12.2: Nordiskt Rederi Architecture Diagram
+
+As a technical visitor viewing the Nordiskt Rederi case study,
+I want to see a bespoke SVG architecture diagram illustrating the platform's layers,
+So that I can visually understand the technical solution and assess the architectural quality.
+
+**Acceptance Criteria:**
+
+**Given** I am viewing the Nordiskt Rederi case study
+**When** the architecture viewer section renders
+**Then** I see an inline SVG diagram showing: 7 role-based views at the top, Row Level Security as the gatekeeper layer, shared PostgreSQL/Supabase database with JSONB custom_data, and infrastructure layer (Vercel Cron, CSV/Excel import/export, backup pipeline)
+**And** the diagram uses the site's dark-mode palette (#0A0A0A background, #EDEDED text, #F59E0B accent, rgba borders)
+**And** the diagram is responsive — readable on mobile, expanded on desktop
+**And** the SVG includes `role="img"` and an appropriate `aria-label` for accessibility
+
+**Technical Notes:**
+- Create `src/components/case-study/diagrams/nordiskt-rederi-diagram.tsx` as a React component returning inline SVG
+- The diagram should visually emphasize "one source of truth, many controlled windows" — the RLS layer as a horizontal barrier between the role views and the shared database
+- Key visual elements: 7 labeled role boxes (HR-admin, Rekryterare, Cateringpartner, Bemanningspartner, Lönekontor, Logistikpartner, Besättning), RLS shield/barrier, single database cylinder, cron/automation indicators
+- Use `currentColor` and Tailwind-compatible colors where possible
+- No external image files — pure inline SVG
+
+### Story 12.3: IKEA Architecture Diagram
+
+As a technical visitor viewing the IKEA case study,
+I want to see a bespoke SVG architecture diagram illustrating the backend architecture,
+So that I can visually understand the .NET backend, AD integration, and legacy migration path.
+
+**Acceptance Criteria:**
+
+**Given** I am viewing the IKEA case study
+**When** the architecture viewer section renders
+**Then** I see an inline SVG diagram showing: React frontend → .NET API layer (24 endpoints) → MongoDB datastore, with Active Directory/Microsoft Graph integration for IAM, Azure DevOps CI/CD pipeline, and a separate legacy Python system with migration arrow
+**And** the diagram uses the site's dark-mode palette
+**And** the diagram is responsive and accessible (`role="img"`, `aria-label`)
+
+**Technical Notes:**
+- Create `src/components/case-study/diagrams/ikea-diagram.tsx`
+- Replace the placeholder in `src/app/case-study/ikea/page.tsx` with the new diagram component
+- Key visual elements: React app, .NET API gateway, MongoDB, AD/Graph auth flow, Azure DevOps pipeline, Python legacy box with dotted migration arrow
+
+### Story 12.4: Lindex Architecture Diagram
+
+As a technical visitor viewing the Lindex case study,
+I want to see a bespoke SVG architecture diagram illustrating the event-driven modernization,
+So that I can visually understand the transition from monolith to microservices.
+
+**Acceptance Criteria:**
+
+**Given** I am viewing the Lindex case study
+**When** the architecture viewer section renders
+**Then** I see an inline SVG diagram showing: domain-specific .NET microservices (Order, Lager, WMS), event bus (Service Bus + Event Grid + Kafka), Cosmos DB per service, Kubernetes/Azure hosting, Grafana monitoring layer, and a faded/crossed-out Oracle monolith representing the legacy state
+**And** the diagram uses the site's dark-mode palette
+**And** the diagram is responsive and accessible
+
+**Technical Notes:**
+- Create `src/components/case-study/diagrams/lindex-diagram.tsx`
+- Replace the placeholder in `src/app/case-study/lindex/page.tsx`
+- The visual story is "monolith → independent services with event backbone"
+
+### Story 12.5: Polestar Architecture Diagram
+
+As a technical visitor viewing the Polestar case study,
+I want to see a bespoke SVG architecture diagram illustrating the serverless financial integration platform,
+So that I can visually understand the AWS architecture and multi-vendor integration pattern.
+
+**Acceptance Criteria:**
+
+**Given** I am viewing the Polestar case study
+**When** the architecture viewer section renders
+**Then** I see an inline SVG diagram showing: React frontend → API Gateway → AWS Lambda (.NET/TypeScript) → DynamoDB, with multiple external financial provider integrations (OAuth2/TLS), Terraform IaC layer, and Datadog/Kibana monitoring
+**And** the diagram uses the site's dark-mode palette
+**And** the diagram is responsive and accessible
+
+**Technical Notes:**
+- Create `src/components/case-study/diagrams/polestar-diagram.tsx`
+- Replace the placeholder in `src/app/case-study/polestar/page.tsx`
+- Key visual: hub-and-spoke pattern with Lambda at center, financial providers as external nodes
+
+### Story 12.6: Visma Architecture Diagram
+
+As a technical visitor viewing the Visma case study,
+I want to see a bespoke SVG architecture diagram illustrating the credential rotation pipeline,
+So that I can visually understand the automated security infrastructure.
+
+**Acceptance Criteria:**
+
+**Given** I am viewing the Visma case study
+**When** the architecture viewer section renders
+**Then** I see an inline SVG diagram showing: AWS Secrets Manager at center, Lambda function (.NET 8 Native AOT) triggered on rotation schedule, target systems (MSSQL, RabbitMQ), GitHub Actions CI/CD pipeline, CloudFormation IaC, and the 3-environment strategy (Test → Staging → Prod)
+**And** the diagram uses the site's dark-mode palette
+**And** the diagram is responsive and accessible
+
+**Technical Notes:**
+- Create `src/components/case-study/diagrams/visma-diagram.tsx`
+- Replace the placeholder in `src/app/case-study/visma/page.tsx`
+- Key visual: circular rotation flow with Secrets Manager at center, environments as promotion pipeline

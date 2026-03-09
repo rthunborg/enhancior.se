@@ -59,7 +59,7 @@ export function CaseStudyLayout({
         <h2 className="font-mono text-xs uppercase tracking-widest text-[#919191] mb-6">
           Resultat: Mätbar påverkan
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           {metrics.map((metric) => (
             <MetricCard key={metric.label} metric={metric} />
           ))}

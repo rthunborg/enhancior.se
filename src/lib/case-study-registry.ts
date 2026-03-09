@@ -58,6 +58,19 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     ],
     personas: ["cto-crisis"],
   },
+  {
+    slug: "nordiskt-rederi",
+    title: "Från Excel-kaos till realtidsplattform för säsongsrekrytering",
+    client: "Nordiskt Rederi",
+    engagement: "Arkitekt som resurs",
+    metrics: [
+      { label: "Datadelning", value: "↓ ~95%" },
+      { label: "Versionskontroll", value: "Eliminerat kaos" },
+      { label: "Spårbarhet", value: "Noll → revisionsklar" },
+      { label: "Koncept → produktion", value: "4 mån, 1 resurs" },
+    ],
+    personas: ["cto-crisis", "cto-proactive"],
+  },
 ];
 
 export function getCardsByPersona(persona: string): CaseStudyCardMeta[] {

@@ -5,7 +5,7 @@ import { PageShell } from "@/components/page-shell";
 export const metadata: Metadata = {
   title: "Case Studies | Enhancior",
   description:
-    "Verkliga uppdrag med mätbara resultat. Se hur Enhancior har hjälpt IKEA, Polestar, Lindex och Visma med arkitektur, teknisk ledning och modernisering.",
+    "Verkliga uppdrag med mätbara resultat. Se hur Enhancior har hjälpt IKEA, Polestar, Lindex, Visma och Nordiskt Rederi med arkitektur, teknisk ledning och modernisering.",
   openGraph: {
     url: "https://enhancior.se/case-studies",
   },
@@ -54,6 +54,16 @@ const caseStudies = [
     metric: { label: "Säkerhetsrisk", delta: "Hög → Minimal" },
     industry: "HR-Tech / Enterprise SaaS",
     timeline: "4 månader (2026)",
+  },
+  {
+    slug: "nordiskt-rederi",
+    company: "Nordiskt Rederi",
+    title: "Från Excel-kaos till realtidsplattform för säsongsrekrytering",
+    summary:
+      "Ersatte manuella Excel-flöden med en modern realtidsplattform med rollbaserad åtkomst för sju externa parter, ändringslogg och GDPR-grund.",
+    metric: { label: "Datadelning", delta: "↓ ~95%" },
+    industry: "Maritim / HR-operations",
+    timeline: "4 månader (2025–2026)",
   },
 ] as const;
 

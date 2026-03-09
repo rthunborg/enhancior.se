@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
+import { LindexDiagram } from "@/components/case-study/diagrams/lindex-diagram";
 
 export const metadata: Metadata = {
   title: "Lindex: Från Legacy till Eventdriven Arkitektur | Enhancior",
@@ -73,13 +74,7 @@ export default function LindexCaseStudyPage() {
             </p>
           </>
         }
-        architectureViewer={
-          <div className="border border-dashed border-[rgba(255,255,255,0.15)] rounded p-12 flex items-center justify-center">
-            <p className="font-mono text-sm text-[#919191]">
-              Arkitekturdiagram kommer snart
-            </p>
-          </div>
-        }
+        architectureViewer={<LindexDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>
