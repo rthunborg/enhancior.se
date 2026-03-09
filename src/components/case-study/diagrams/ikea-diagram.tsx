@@ -381,7 +381,7 @@ export function IkeaDiagram() {
           fontSize="8"
           opacity={0.4}
         >
-          LEGACY — migreras
+          LEGACY (migreras)
         </text>
 
         {/* Migration arrow: Legacy → API (.NET) */}

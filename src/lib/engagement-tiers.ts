@@ -68,7 +68,7 @@ export const engagementTiers: EngagementTier[] = [
     name: "Snabbgranskning",
     tagline: "Oberoende second opinion innan ni skriver på",
     scope:
-      "En erfaren arkitekt granskar leverantörens förslag, avtal och tekniska lösning under 1–2 veckor. Ni får en ärlig bedömning av risker, dolda kostnader och alternativ — innan ni binder er.",
+      "En erfaren arkitekt granskar leverantörens förslag, avtal och tekniska lösning under 1–2 veckor. Ni får en ärlig bedömning av risker, dolda kostnader och alternativ innan ni binder er.",
     timeline: "1–2 veckor",
     startingPrice: "Från 45 000 kr",
     deliverables: [
@@ -101,7 +101,7 @@ export const engagementTiers: EngagementTier[] = [
     name: "Oberoende IT-rådgivning",
     tagline: "En oberoende teknisk rådgivare ni kan lita på",
     scope:
-      "Löpande tillgång till en senior arkitekt som hjälper er fatta bättre IT-beslut. Från systemval och leverantörsbedömningar till tekniska vägval — utan att sälja er något.",
+      "Löpande tillgång till en senior arkitekt som hjälper er fatta bättre IT-beslut. Från systemval och leverantörsbedömningar till tekniska vägval, helt utan säljagenda.",
     timeline: "Löpande · 2–4 dagar/månad",
     startingPrice: "Från 35 000 kr/mån",
     deliverables: [

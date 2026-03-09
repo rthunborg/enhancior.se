@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Oberoende IT-rådgivning | Enhancior",
   description:
-    "Oberoende teknisk granskning och IT-rådgivning för kommun, myndighet och organisationer. Säkerställ att ni fattar rätt IT-beslut — utan leverantörens agenda.",
+    "Oberoende teknisk granskning och IT-rådgivning för kommun, myndighet och organisationer. Säkerställ att ni fattar rätt IT-beslut utan leverantörens agenda.",
   keywords: [
     "oberoende IT-rådgivning",
     "teknisk granskning upphandling",
@@ -44,7 +44,7 @@ export default function ITRadgivningPage() {
         <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
           Innan ni skriver på ett IT-avtal behöver ni veta vad ni faktiskt
           köper, vad ni inte behöver och vad det egentligen kommer att kosta.
-          En oberoende granskning ger er svar — utan att sälja er något.
+          En oberoende granskning ger er svar utan att sälja er något.
         </p>
       </div>
 
@@ -66,7 +66,7 @@ export default function ITRadgivningPage() {
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
             <p className="text-base font-semibold text-[#EDEDED] mb-1">
-              Leverantören visar er vad de vill sälja — inte vad ni behöver
+              Leverantören visar er vad de vill sälja, inte vad ni behöver
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Varje leverantör presenterar sin lösning som den perfekta.

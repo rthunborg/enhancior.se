@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title:
     "Nordiskt Rederi: Från Excel-kaos till realtidsplattform för säsongsrekrytering | Enhancior",
   description:
-    "Hur Nordiskt Rederi gick från manuella Excel-flöden till en modern realtidsplattform med rollbaserad åtkomst, ändringslogg och GDPR-grund — levererat på 4 månader av en resurs.",
+    "Hur Nordiskt Rederi gick från manuella Excel-flöden till en modern realtidsplattform med rollbaserad åtkomst, ändringslogg och GDPR-grund. Levererat på 4 månader av en resurs.",
   openGraph: {
     url: "https://enhancior.se/case-study/nordiskt-rederi",
   },
@@ -59,7 +59,7 @@ export default function NordisktRederiCaseStudyPage() {
           <p className="mb-4">
             Nordiskt Rederis säsongsrekrytering hanterades genom ett nät av
             Excel-filer som skickades mellan HR, rekryterare och ett halvdussin
-            externa parter — cateringpartner, bemanningspartner, lönekontor,
+            externa parter: cateringpartner, bemanningspartner, lönekontor,
             logistikpartner och besättningsplanering. Varje part behövde sin egen
             delmängd av personaldata, men alla arbetade mot samma källfiler.
             Resultatet var versionskaos: ingen visste säkert vilken fil som var
@@ -69,7 +69,7 @@ export default function NordisktRederiCaseStudyPage() {
           </p>
           <p className="mb-4">
             Utöver det operativa slitaget fanns en växande GDPR-risk. Känslig
-            personaldata — personnummer, löneuppgifter, hälsointyg — spreds
+            personaldata (personnummer, löneuppgifter, hälsointyg) spreds
             okontrollerat via mejl och delade mappar utan åtkomstkontroll eller
             spårbarhet. Det saknades helt möjlighet att veta vem som hade sett
             eller ändrat vad. Vid en revision skulle organisationen inte kunna
@@ -80,7 +80,7 @@ export default function NordisktRederiCaseStudyPage() {
             lade oproportionerligt mycket tid på att manuellt sammanställa,
             filtrera och skicka ut datautdrag istället för att fokusera på sitt
             kärnuppdrag. Varje ny medarbetare som lades till innebar manuell
-            uppdatering i flera flikar och flera utskick — en process som varken
+            uppdatering i flera flikar och flera utskick, en process som varken
             skalade eller var hållbar.
           </p>
         </>
@@ -93,9 +93,9 @@ export default function NordisktRederiCaseStudyPage() {
               Realtidsplattform med rollbaserad åtkomst:
             </strong>{" "}
             En fullständig webbapplikation byggdes med Next.js 16, React 19,
-            TypeScript och Supabase (PostgreSQL). Sju distinkta roller —
-            HR-admin, rekryterare, cateringpartner, bemanningspartner,
-            lönekontor, logistikpartner och besättning — får var sin
+            TypeScript och Supabase (PostgreSQL). Sju distinkta roller
+            (HR-admin, rekryterare, cateringpartner, bemanningspartner,
+            lönekontor, logistikpartner och besättning) får var sin
             skräddarsydd vy av samma datakälla, styrd av Row Level Security
             direkt i databasen.
           </li>
@@ -105,7 +105,7 @@ export default function NordisktRederiCaseStudyPage() {
             </strong>{" "}
             Kärndatan lagras relationellt medan partspecifika fält hanteras via
             JSONB (<code>custom_data</code>). Det ger HR-admin full kontroll
-            över vilka kolumner varje extern part ser och kan redigera — utan
+            över vilka kolumner varje extern part ser och kan redigera, utan
             databasändringar eller ny deployment.
           </li>
           <li>
@@ -142,7 +142,7 @@ export default function NordisktRederiCaseStudyPage() {
             </strong>{" "}
             Digitalt stöd för hotellrumsallokering baserat på kön och
             befattning, kopplat till bemanningspartner-datum och
-            kapacitetsplanering — en process som tidigare sköttes helt på
+            kapacitetsplanering, en process som tidigare sköttes helt på
             papper.
           </li>
         </ul>
@@ -153,7 +153,7 @@ export default function NordisktRederiCaseStudyPage() {
           <p className="mb-4">
             Nordiskt Rederi gick från ett manuellt, felbenäget Excel-flöde till
             en modern realtidsplattform som sju externa parter kan logga in på
-            och se exakt den data de behöver — inget mer, inget mindre.
+            och se exakt den data de behöver, inget mer, inget mindre.
             HR-teamet sparar timmar per vecka genom att slippa sammanställa och
             skicka utdrag, och risken för felaktiga uppgifter hos mottagarna har
             i praktiken eliminerats. Den automatiserade deadlinebevakningen
@@ -166,7 +166,7 @@ export default function NordisktRederiCaseStudyPage() {
             ändringslogg och en arkitektur som enkelt kan utökas med nya roller
             eller datafält utan ombyggnad. Plattformen är redo för produktion på
             Vercel med automatiserade nattliga databasbackuper och
-            staging-miljö — en infrastruktur som ger Nordiskt Rederi trygghet
+            staging-miljö. En infrastruktur som ger Nordiskt Rederi trygghet
             att vidareutveckla systemet långt efter engagemangets slut.
           </p>
         </>

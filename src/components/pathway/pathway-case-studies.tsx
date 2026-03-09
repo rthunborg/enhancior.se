@@ -7,11 +7,11 @@ export function PathwayCaseStudies({ persona }: { persona: string }) {
 
   return (
     <section
-      aria-label="Fallstudier"
+      aria-label="Kundcase"
       className="mb-16 md:mb-24 lg:mb-32"
     >
       <p className="font-mono text-sm text-[#919191] uppercase tracking-widest mb-6">
-        FALLSTUDIER
+        Kundcase
       </p>
       <div className="space-y-4">
         {studies.map((study) => (

@@ -26,7 +26,7 @@ export function PageShell({ breadcrumbSegments, children }: PageShellProps) {
               href="/"
               className="text-[#666666] hover:text-[#A1A1A1] outline-none ring-offset-[#0A0A0A] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 transition-colors duration-200 ease-out motion-reduce:transition-none min-h-[44px] inline-flex items-center"
             >
-              triage
+              enhancior
             </Link>
             {breadcrumbSegments.map((segment, index) => {
               const isLast = index === breadcrumbSegments.length - 1;

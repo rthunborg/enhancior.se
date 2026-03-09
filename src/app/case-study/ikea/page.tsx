@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const metrics: CaseStudyMetric[] = [
   {
     label: "Design till MVP",
-    before: "—",
+    before: "",
     after: "8 veckor",
     delta: "Levererat",
     improvement: "positive",

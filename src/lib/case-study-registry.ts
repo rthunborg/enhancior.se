@@ -9,44 +9,6 @@ export interface CaseStudyCardMeta {
 
 export const caseStudyRegistry: CaseStudyCardMeta[] = [
   {
-    slug: "lindex",
-    title: "Från Legacy till Eventdriven Arkitektur",
-    client: "Lindex",
-    engagement: "Arkitekt som resurs",
-    metrics: [
-      { label: "Deploy-frekvens", value: "1/mån → 3/vecka" },
-      { label: "Incidenter", value: "↓ 88%" },
-      { label: "Lead time", value: "3v → 4d" },
-      { label: "Tillgänglighet", value: "97% → 99.8%" },
-    ],
-    personas: ["cto-crisis", "cto-proactive"],
-  },
-  {
-    slug: "polestar",
-    title: "Teknisk Ledning för Finansiella Integrationer",
-    client: "Polestar",
-    engagement: "Teknisk ledning",
-    metrics: [
-      { label: "Velocity", value: "↑ 45%" },
-      { label: "Uptime", value: "98.5% → 99.9%" },
-      { label: "Onboarding", value: "3 mån → 3v" },
-      { label: "Säkerhetsincidenter", value: "0" },
-    ],
-    personas: ["cto-proactive", "cto-crisis"],
-  },
-  {
-    slug: "ikea",
-    title: "Backend-Arkitektur för 3D-Modellering",
-    client: "IKEA",
-    engagement: "Arkitekt som resurs",  
-    metrics: [
-      { label: "Design till MVP", value: "8 veckor" },
-      { label: "API-endpoints", value: "24 st" },
-      { label: "AD-compliance", value: "100%" },
-    ],
-    personas: ["cto-crisis", "cto-proactive"],
-  },
-  {
     slug: "visma",
     title: "Automatiserad Credential-Rotation",
     client: "Visma",
@@ -69,8 +31,46 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
       { label: "Spårbarhet", value: "Noll → revisionsklar" },
       { label: "Koncept → produktion", value: "4 mån, 1 resurs" },
     ],
-    personas: ["cto-crisis", "cto-proactive"],
+    personas: ["founder-rescue", "cto-crisis", "cto-proactive"],
   },
+  {
+    slug: "ikea",
+    title: "Backend-Arkitektur för 3D-Modellering",
+    client: "IKEA",
+    engagement: "Arkitekt som resurs",  
+    metrics: [
+      { label: "Design till MVP", value: "8 veckor" },
+      { label: "API-endpoints", value: "24 st" },
+      { label: "AD-compliance", value: "100%" },
+    ],
+    personas: ["cto-proactive", "founder-rescue"],
+  },
+  {
+    slug: "lindex",
+    title: "Från Legacy till Eventdriven Arkitektur",
+    client: "Lindex",
+    engagement: "Arkitekt som resurs",
+    metrics: [
+      { label: "Deploy-frekvens", value: "1/mån → 3/vecka" },
+      { label: "Incidenter", value: "↓ 88%" },
+      { label: "Lead time", value: "3v → 4d" },
+      { label: "Tillgänglighet", value: "97% → 99.8%" },
+    ],
+    personas: ["cto-crisis"],
+  },
+  {
+    slug: "polestar",
+    title: "Teknisk Ledning för Finansiella Integrationer",
+    client: "Polestar",
+    engagement: "Teknisk ledning",
+    metrics: [
+      { label: "Velocity", value: "↑ 45%" },
+      { label: "Uptime", value: "98.5% → 99.9%" },
+      { label: "Onboarding", value: "3 mån → 3v" },
+      { label: "Säkerhetsincidenter", value: "0" },
+    ],
+    personas: ["cto-proactive", "cto-crisis"],
+  }
 ];
 
 export function getCardsByPersona(persona: string): CaseStudyCardMeta[] {

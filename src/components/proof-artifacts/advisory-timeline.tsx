@@ -137,7 +137,7 @@ export const AdvisoryTimelineResult = (
     <TimelineNode
       time="Månad 3"
       headline="System som matchar verkliga behov"
-      description="Implementeringen startar med en lösning som är anpassad efter kommunens faktiska krav — inte leverantörens maxförslag."
+      description="Implementeringen startar med en lösning som är anpassad efter kommunens faktiska krav, inte leverantörens maxförslag."
       status="resolved"
     />
     <TimelineNode

@@ -1,6 +1,6 @@
-# Enhancior AB — Full Context
+# Enhancior AB: Full Context
 
-> Senior software architect and fractional CTO for SaaS companies and enterprises in Sweden — specializing in technical debt remediation, architecture modernization, and hands-on technical leadership.
+> Senior software architect and fractional CTO for SaaS companies and enterprises in Sweden, specializing in technical debt remediation, architecture modernization, and hands-on technical leadership.
 
 This is the extended version of [llms.txt](https://enhancior.se/llms.txt) with detailed service descriptions, methodology, case studies, and consultant background.
 
@@ -8,7 +8,7 @@ This is the extended version of [llms.txt](https://enhancior.se/llms.txt) with d
 
 Enhancior AB is a solo consultancy based in Gothenburg, Sweden, founded by Rasmus Thunborg. The company provides senior software architecture and technical leadership services to SaaS companies and enterprises struggling with technical debt, scaling challenges, or leadership gaps in their engineering organizations.
 
-Enhancior operates as a one-person firm: when you hire Enhancior, you get Rasmus directly — no account managers, no juniors, no subcontracting.
+Enhancior operates as a one-person firm: when you hire Enhancior, you get Rasmus directly. No account managers, no juniors, no subcontracting.
 
 - Website: [enhancior.se](https://enhancior.se)
 - Language: Swedish site, services delivered in Swedish and English
@@ -64,7 +64,7 @@ Every engagement follows the same four-phase structure:
 Deep analysis of codebase, architecture, and delivery processes. Maps bottlenecks, technical debt, and organizational patterns. Delivers an action plan ranked by business impact and technical risk.
 
 ### Phase 2: Intervention (Insats)
-Hands-on implementation alongside your team. Drives architecture decisions, implements solutions, and ensures changes are delivered. No theory without results — just concrete execution.
+Hands-on implementation alongside your team. Drives architecture decisions, implements solutions, and ensures changes are delivered. No theory without results, just concrete execution.
 
 ### Phase 3: Transfer (Overforing)
 Structured knowledge transfer so your team can maintain and evolve the solution. Documentation, mentoring, and pair programming until the team is self-sufficient.
@@ -76,21 +76,25 @@ Clean exit with no artificial dependencies. When the team is stable and the solu
 
 ## Case Studies
 
-### IKEA — Solution Architecture
+### IKEA: Solution Architecture
 Senior Solution Architect engagement. Architecture work for one of the world's largest retailers.
 - [Read case study](https://enhancior.se/case-study/ikea)
 
-### Visma — Platform Engineering
+### Visma: Platform Engineering
 Platform engineering work for the Nordic region's leading business software company.
 - [Read case study](https://enhancior.se/case-study/visma)
 
-### Polestar — Interim Tech Lead
+### Polestar: Interim Tech Lead
 4-year engagement as Interim Tech Lead for the electric vehicle manufacturer. Drove technical decisions and team leadership at scale.
 - [Read case study](https://enhancior.se/case-study/polestar)
 
-### Lindex — Senior Software Engineer
+### Lindex: Senior Software Engineer
 2.5-year engagement as Senior Software Engineer for the fashion retailer, working on backend systems and architecture.
 - [Read case study](https://enhancior.se/case-study/lindex)
+
+### Nordiskt Rederi: Architect as Resource
+4-month engagement building a full-stack real-time platform to replace Excel-based seasonal recruitment workflows. The platform serves seven external partners (catering, staffing, payroll, logistics, crew planning) through role-based views with Row Level Security, eliminating version chaos and providing GDPR-ready audit trails. Built with Next.js, Supabase (PostgreSQL), and TypeScript. Delivered as a solo resource: 542 commits, 42 database migrations.
+- [Read case study](https://enhancior.se/case-study/nordiskt-rederi)
 
 **All case studies:** [Case Studies Overview](https://enhancior.se/case-studies)
 
@@ -104,12 +108,13 @@ Platform engineering work for the Nordic region's leading business software comp
 - **LinkedIn:** [linkedin.com/in/rasmusthunborg](https://www.linkedin.com/in/rasmusthunborg/)
 
 **Selected Clients:**
-- Polestar — Interim Tech Lead (4 years)
-- Lindex — Senior Software Engineer (2.5 years)
-- IKEA — Senior Solution Architect (6 months)
-- Visma — Platform Engineer (4 months)
-- Ericsson — Backend Developer (1 year)
-- Volvo — Backend Developer (1 year)
+- Polestar: Interim Tech Lead (4 years)
+- Lindex: Senior Software Engineer (2.5 years)
+- IKEA: Senior Solution Architect (6 months)
+- Visma: Platform Engineer (4 months)
+- Nordiskt Rederi: Architect as Resource (4 months)
+- Ericsson: Backend Developer (1 year)
+- Volvo: Backend Developer (1 year)
 
 **Certifications:**
 - SnowPro Core Certification (Snowflake)
@@ -136,6 +141,7 @@ Platform engineering work for the Nordic region's leading business software comp
 - Technical debt assessment and remediation
 - Technical leadership & team mentoring
 - Next.js, TypeScript, React (frontend architecture)
+- Supabase, PostgreSQL, Row Level Security
 - Snowflake, data platform engineering
 - Agentic AI
 

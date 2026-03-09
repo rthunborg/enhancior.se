@@ -1,12 +1,12 @@
 # Enhancior AB
 
-> Senior software architect and fractional CTO for SaaS companies and enterprises in Sweden — specializing in technical debt remediation, architecture modernization, and hands-on technical leadership.
+> Senior software architect and fractional CTO for SaaS companies and enterprises in Sweden, specializing in technical debt remediation, architecture modernization, and hands-on technical leadership.
 
 ## Company Overview
 
 Enhancior AB is a solo consultancy based in Gothenburg, Sweden, founded by Rasmus Thunborg. The company provides senior software architecture and technical leadership services to SaaS companies and enterprises struggling with technical debt, scaling challenges, or leadership gaps in their engineering organizations.
 
-Enhancior operates as a one-person firm: when you hire Enhancior, you get Rasmus directly — no account managers, no juniors, no subcontracting.
+Enhancior operates as a one-person firm: when you hire Enhancior, you get Rasmus directly. No account managers, no juniors, no subcontracting.
 
 - Website: [enhancior.se](https://enhancior.se)
 - Language: Swedish site, services delivered in Swedish and English
@@ -53,6 +53,16 @@ Independent IT advisory for non-technical founders and leaders: quick reviews of
 
 To discuss your project, use the contact form on the website:
 - [Contact Enhancior](https://enhancior.se) (contact form available on all pages)
+
+## Case Studies
+
+- **IKEA:** Solution Architecture for 3D modeling backend ([case study](https://enhancior.se/case-study/ikea))
+- **Visma:** Automated credential rotation pipeline ([case study](https://enhancior.se/case-study/visma))
+- **Polestar:** Interim Tech Lead, 4-year engagement ([case study](https://enhancior.se/case-study/polestar))
+- **Lindex:** Legacy-to-event-driven architecture modernization ([case study](https://enhancior.se/case-study/lindex))
+- **Nordiskt Rederi:** Full-stack real-time platform replacing Excel-based HR operations ([case study](https://enhancior.se/case-study/nordiskt-rederi))
+
+All case studies: [Case Studies Overview](https://enhancior.se/case-studies)
 
 ## Legal
 

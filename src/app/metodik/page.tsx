@@ -4,7 +4,7 @@ import { PageShell } from "@/components/page-shell";
 export const metadata: Metadata = {
   title: "Metodik | Enhancior",
   description:
-    "Så arbetar Enhancior: en strukturerad metodik i fyra faser — Diagnos, Insats, Överföring och Avslut. Ingen vag rådgivning, bara konkret förändring.",
+    "Så arbetar Enhancior: en strukturerad metodik i fyra faser: Diagnos, Insats, Överföring och Avslut. Ingen vag rådgivning, bara konkret förändring.",
   openGraph: {
     url: "https://enhancior.se/metodik",
   },

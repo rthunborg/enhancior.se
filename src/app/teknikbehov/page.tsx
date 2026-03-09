@@ -3,7 +3,7 @@ import { PathwayShell } from "@/components/pathway/pathway-shell";
 import { TeknikbehovSelector } from "@/components/triage/teknikbehov-selector";
 
 export const metadata: Metadata = {
-  title: "Teknikbehov — Bygg eller Köp? | Enhancior",
+  title: "Teknikbehov: Bygg eller Köp? | Enhancior",
   description:
     "Ni vet att ni behöver teknisk hjälp. Bygger ni egen teknik eller köper ni in IT-system? Vi hjälper er oavsett väg.",
   openGraph: {

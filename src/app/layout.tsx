@@ -6,6 +6,7 @@ import { StructuredData } from "@/components/seo/structured-data";
 import { EnterpriseFooter } from "@/components/layout/enterprise-footer";
 import { ContactModalProvider } from "@/components/contact";
 import { FloatingCta } from "@/components/contact/floating-cta";
+import { ScrollToTop } from "@/components/contact/scroll-to-top";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Enhancior — Senior Mjukvaruarkitekt & Teknisk Ledning",
+        alt: "Enhancior: Senior Mjukvaruarkitekt & Teknisk Ledning",
       },
     ],
   },
@@ -70,6 +71,7 @@ export default function RootLayout({
           <div id="footer-sentinel" className="pointer-events-none h-0 w-0" aria-hidden="true" />
           <EnterpriseFooter />
           <FloatingCta />
+          <ScrollToTop />
         </ContactModalProvider>
         <Analytics />
       </body>

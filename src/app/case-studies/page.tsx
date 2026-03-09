@@ -16,14 +16,24 @@ export const metadata: Metadata = {
 
 const caseStudies = [
   {
-    slug: "polestar",
-    company: "Polestar",
-    title: "Teknisk Ledning för Finansiella Integrationer",
+    slug: "nordiskt-rederi",
+    company: "Nordiskt Rederi",
+    title: "Från Excel-kaos till realtidsplattform för säsongsrekrytering",
     summary:
-      "Senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
-    metric: { label: "Team velocity", delta: "+45%" },
-    industry: "Fordon / FinTech",
-    timeline: "4 år (2021–2025)",
+      "Ersatte manuella Excel-flöden med en modern realtidsplattform med rollbaserad åtkomst för sju externa parter, ändringslogg och GDPR-grund.",
+    metric: { label: "Datadelning", delta: "↓ ~95%" },
+    industry: "Maritim / HR-operations",
+    timeline: "4 månader (2025–2026)",
+  },
+  {
+    slug: "visma",
+    company: "Visma",
+    title: "Automatiserad Credential-Rotation",
+    summary:
+      "Från manuellt hanterade credentials till automatiserad rotation var 30:e dag med AWS Lambda och GitHub Actions.",
+    metric: { label: "Säkerhetsrisk", delta: "Hög → Minimal" },
+    industry: "HR-Tech / Enterprise SaaS",
+    timeline: "4 månader (2026)",
   },
   {
     slug: "lindex",
@@ -46,25 +56,16 @@ const caseStudies = [
     timeline: "6 månader (2021)",
   },
   {
-    slug: "visma",
-    company: "Visma",
-    title: "Automatiserad Credential-Rotation",
+    slug: "polestar",
+    company: "Polestar",
+    title: "Teknisk Ledning för Finansiella Integrationer",
     summary:
-      "Från manuellt hanterade credentials till automatiserad rotation var 30:e dag med AWS Lambda och GitHub Actions.",
-    metric: { label: "Säkerhetsrisk", delta: "Hög → Minimal" },
-    industry: "HR-Tech / Enterprise SaaS",
-    timeline: "4 månader (2026)",
-  },
-  {
-    slug: "nordiskt-rederi",
-    company: "Nordiskt Rederi",
-    title: "Från Excel-kaos till realtidsplattform för säsongsrekrytering",
-    summary:
-      "Ersatte manuella Excel-flöden med en modern realtidsplattform med rollbaserad åtkomst för sju externa parter, ändringslogg och GDPR-grund.",
-    metric: { label: "Datadelning", delta: "↓ ~95%" },
-    industry: "Maritim / HR-operations",
-    timeline: "4 månader (2025–2026)",
-  },
+      "Senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
+    metric: { label: "Team velocity", delta: "+45%" },
+    industry: "Fordon / FinTech",
+    timeline: "4 år (2021–2025)",
+  }
+
 ] as const;
 
 const cardClasses =

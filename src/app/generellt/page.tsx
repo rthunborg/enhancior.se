@@ -6,7 +6,7 @@ import { ContactCTA } from "./contact-cta";
 export const metadata: Metadata = {
   title: "IT-konsulting & Teknisk Rådgivning | Enhancior",
   description:
-    "Osäker på vad ni behöver? Vi hjälper er identifiera rätt teknisk insats — oavsett om det gäller arkitektur, teamförstärkning eller teknisk rådgivning.",
+    "Osäker på vad ni behöver? Vi hjälper er identifiera rätt teknisk insats, oavsett om det gäller arkitektur, teamförstärkning eller teknisk rådgivning.",
   keywords: [
     "IT-konsulting",
     "teknisk rådgivning",
@@ -31,7 +31,7 @@ export default function GenerelltPage() {
           Inte alla problem passar i en färdig låda
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
-          Ibland vet man att något inte fungerar — utan att kunna peka på exakt
+          Ibland vet man att något inte fungerar, utan att kunna peka på exakt
           vad. Det är helt okej. Vi hjälper er ta reda på det.
         </p>
       </div>
@@ -48,7 +48,7 @@ export default function GenerelltPage() {
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Vi lyssnar på er situation och ställer de rätta frågorna. Inget
-              säljsnack — bara ett ärligt samtal om vad som kan göra skillnad.
+              säljsnack, bara ett ärligt samtal om vad som kan göra skillnad.
             </p>
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
@@ -65,7 +65,7 @@ export default function GenerelltPage() {
               Konkret rekommendation
             </p>
             <p className="text-sm text-[#A1A1A1]">
-              Ni får en rak bedömning — oavsett om lösningen är något vi kan
+              Ni får en rak bedömning, oavsett om lösningen är något vi kan
               hjälpa med eller inte.
             </p>
           </div>

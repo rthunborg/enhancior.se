@@ -19,7 +19,7 @@ const bevisLinks = [
 ] as const;
 
 const linkClasses =
-  "text-muted-foreground hover:text-amber-500 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm min-h-11 min-w-11 inline-flex items-center md:min-h-0 md:min-w-0 md:py-1 md:inline-block";
+  "text-muted-foreground hover:text-amber-500 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm min-h-11 min-w-11 inline-flex items-center justify-center md:min-h-0 md:min-w-0 md:py-1 md:inline-block";
 
 const headingClasses =
   "font-sans text-sm font-semibold text-foreground tracking-wide uppercase mb-4";

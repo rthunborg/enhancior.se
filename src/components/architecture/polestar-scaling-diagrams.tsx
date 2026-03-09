@@ -52,7 +52,7 @@ export const PolestarScalingBefore = (
     <MetricBadge x={510} y={30} label="veckor lead time" color="red" />
 
     {/* Labels */}
-    <DiagramLabel x={300} y={305} text="delad DB — oklara ägare" color="#FCA5A5" size={9} />
+    <DiagramLabel x={300} y={305} text="delad DB, oklara ägare" color="#FCA5A5" size={9} />
     <DiagramLabel x={80} y={50} text="manuell koordinering" color="#FCA5A5" size={9} />
   </motion.svg>
 );
