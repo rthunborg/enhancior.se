@@ -58,12 +58,12 @@ export async function POST(request: Request) {
       }
     }
 
-    // 3. Turnstile verification
-    if (body.turnstileToken) {
+    // 3. Turnstile verification (required when secret key is configured)
+    const turnstileSecret = process.env.TURNSTILE_SECRET_KEY;
+    if (turnstileSecret) {
+      if (!body.turnstileToken) return FAKE_OK;
       const valid = await verifyTurnstile(body.turnstileToken);
-      if (!valid) {
-        return FAKE_OK;
-      }
+      if (!valid) return FAKE_OK;
     }
 
     // 4. Validate required fields
