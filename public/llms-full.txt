@@ -76,21 +76,21 @@ Clean exit with no artificial dependencies. When the team is stable and the solu
 
 ## Case Studies
 
-### IKEA: Solution Architecture
+### Världsledande Möbelkoncern: Solution Architecture
 Senior Solution Architect engagement. Architecture work for one of the world's largest retailers.
-- [Read case study](https://enhancior.se/case-study/ikea)
+- [Read case study](https://enhancior.se/case-study/varlsledande-mobelkoncern)
 
-### Visma: Platform Engineering
+### Nordeuropeisk HR-Koncern: Platform Engineering
 Platform engineering work for the Nordic region's leading business software company.
-- [Read case study](https://enhancior.se/case-study/visma)
+- [Read case study](https://enhancior.se/case-study/nordeuropeisk-hr-koncern)
 
-### Polestar: Interim Tech Lead
+### Världsledande Elbilstillverkare: Interim Tech Lead
 4-year engagement as Interim Tech Lead for the electric vehicle manufacturer. Drove technical decisions and team leadership at scale.
-- [Read case study](https://enhancior.se/case-study/polestar)
+- [Read case study](https://enhancior.se/case-study/varlsledande-elbilstillverkare)
 
-### Lindex: Senior Software Engineer
+### Ledande Nordisk Modekedja: Senior Software Engineer
 2.5-year engagement as Senior Software Engineer for the fashion retailer, working on backend systems and architecture.
-- [Read case study](https://enhancior.se/case-study/lindex)
+- [Read case study](https://enhancior.se/case-study/ledande-nordisk-modekedja)
 
 ### Nordiskt Rederi: Architect as Resource
 4-month engagement building a full-stack real-time platform to replace Excel-based seasonal recruitment workflows. The platform serves seven external partners (catering, staffing, payroll, logistics, crew planning) through role-based views with Row Level Security, eliminating version chaos and providing GDPR-ready audit trails. Built with Next.js, Supabase (PostgreSQL), and TypeScript. Delivered as a solo resource: 542 commits, 42 database migrations.
@@ -108,10 +108,10 @@ Platform engineering work for the Nordic region's leading business software comp
 - **LinkedIn:** [linkedin.com/in/rasmusthunborg](https://www.linkedin.com/in/rasmusthunborg/)
 
 **Selected Clients:**
-- Polestar: Interim Tech Lead (4 years)
-- Lindex: Senior Software Engineer (2.5 years)
-- IKEA: Senior Solution Architect (6 months)
-- Visma: Platform Engineer (4 months)
+- Världsledande Elbilstillverkare: Interim Tech Lead (4 years)
+- Ledande Nordisk Modekedja: Senior Software Engineer (2.5 years)
+- Världsledande Möbelkoncern: Senior Solution Architect (6 months)
+- Nordeuropeisk HR-Koncern: Platform Engineer (4 months)
 - Nordiskt Rederi: Architect as Resource (4 months)
 - Ericsson: Backend Developer (1 year)
 - Volvo: Backend Developer (1 year)

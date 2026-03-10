@@ -4,9 +4,9 @@ import { PathwayCaseStudies } from "@/components/pathway/pathway-case-studies";
 import { EngagementTiers } from "@/components/engagement-tiers";
 import {
   ArchitectureViewer,
-  PolestarScalingBefore,
-  PolestarScalingIntervention,
-  PolestarScalingAfter,
+  ElbilstillverkareScalingBefore,
+  ElbilstillverkareScalingIntervention,
+  ElbilstillverkareScalingAfter,
 } from "@/components/architecture";
 
 export const metadata: Metadata = {
@@ -87,7 +87,7 @@ export default function CtoProactivePage() {
       >
         <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-8">
           <p className="font-mono text-sm text-[#919191] mb-6">
-            Case Study: Polestar
+            Case Study: Världsledande Elbilstillverkare
           </p>
           <div className="flex flex-wrap gap-6 mb-8">
             <div>
@@ -119,9 +119,9 @@ export default function CtoProactivePage() {
             </div>
           </div>
           <ArchitectureViewer
-            beforeContent={PolestarScalingBefore}
-            interventionContent={PolestarScalingIntervention}
-            afterContent={PolestarScalingAfter}
+            beforeContent={ElbilstillverkareScalingBefore}
+            interventionContent={ElbilstillverkareScalingIntervention}
+            afterContent={ElbilstillverkareScalingAfter}
           />
         </div>
       </section>

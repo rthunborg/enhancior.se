@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { VismaDiagram } from "@/components/case-study/diagrams/visma-diagram";
+import { HrKoncernDiagram } from "@/components/case-study/diagrams/hr-koncern-diagram";
 
 export const metadata: Metadata = {
-  title: "Visma: Automatiserad Credential-Rotation | Enhancior",
+  title: "Nordeuropeisk HR-Koncern: Automatiserad Credential-Rotation | Enhancior",
   description:
-    "Hur Visma Enterprise gick från manuellt hanterade credentials till automatiserad rotation var 30:e dag med AWS Lambda och GitHub Actions.",
+    "Hur en nordeuropeisk HR-koncern gick från manuellt hanterade credentials till automatiserad rotation var 30:e dag med AWS Lambda och GitHub Actions.",
   openGraph: {
-    url: "https://enhancior.se/case-study/visma",
+    url: "https://enhancior.se/case-study/nordeuropeisk-hr-koncern",
   },
   alternates: {
-    canonical: "https://enhancior.se/case-study/visma",
+    canonical: "https://enhancior.se/case-study/nordeuropeisk-hr-koncern",
   },
 };
 
@@ -46,17 +46,17 @@ const metrics: CaseStudyMetric[] = [
   },
 ];
 
-export default function VismaCaseStudyPage() {
+export default function NordeuropeiskHrKoncernCaseStudyPage() {
   return (
       <CaseStudyLayout
-        slug="visma"
+        slug="nordeuropeisk-hr-koncern"
         title="Automatiserad Credential-Rotation"
         industry="HR-Tech / Enterprise SaaS"
         timeline="4 månader (2026)"
         problemNarrative={
           <>
             <p className="mb-4">
-              Vismas HR-plus-plattform hanterar känslig HR- och lönedata åt
+              Kundens HR-plattform hanterar känslig HR- och lönedata åt
               deras kunder. Tjänstekonton mot MSSQL-databaser och
               RabbitMQ-köer hade historiskt hanterats manuellt, med lösenord
               som sällan eller aldrig byttes ut.
@@ -67,14 +67,14 @@ export default function VismaCaseStudyPage() {
               situationen inte acceptabel.
             </p>
             <p>
-              Visma behövde en automatiserad lösning som roterar credentials
+              Kunden behövde en automatiserad lösning som roterar credentials
               via AWS Secrets Manager, utan driftstörningar för
               slutanvändarna, och en miljöstrategi som möjliggör trygg
               testning innan produktionsdeploy.
             </p>
           </>
         }
-        architectureViewer={<VismaDiagram />}
+        architectureViewer={<HrKoncernDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>

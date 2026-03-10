@@ -1,4 +1,4 @@
-export function PolestarDiagram() {
+export function ElbilstillverkareDiagram() {
   // Layout constants
   const svgW = 520;
   const svgH = 460;

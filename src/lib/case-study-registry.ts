@@ -9,9 +9,9 @@ export interface CaseStudyCardMeta {
 
 export const caseStudyRegistry: CaseStudyCardMeta[] = [
   {
-    slug: "visma",
+    slug: "nordeuropeisk-hr-koncern",
     title: "Automatiserad Credential-Rotation",
-    client: "Visma",
+    client: "Nordeuropeisk HR-Koncern",
     engagement: "Teknisk Revision",
     metrics: [
       { label: "Rotation", value: "manuell → var 30:e dag" },
@@ -34,10 +34,10 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     personas: ["founder-rescue", "cto-crisis", "cto-proactive"],
   },
   {
-    slug: "ikea",
+    slug: "varlsledande-mobelkoncern",
     title: "Backend-Arkitektur för 3D-Modellering",
-    client: "IKEA",
-    engagement: "Arkitekt som resurs",  
+    client: "Världsledande Möbelkoncern",
+    engagement: "Arkitekt som resurs",
     metrics: [
       { label: "Design till MVP", value: "8 veckor" },
       { label: "API-endpoints", value: "24 st" },
@@ -46,9 +46,9 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     personas: ["cto-proactive", "founder-rescue"],
   },
   {
-    slug: "lindex",
+    slug: "ledande-nordisk-modekedja",
     title: "Från Legacy till Eventdriven Arkitektur",
-    client: "Lindex",
+    client: "Ledande Nordisk Modekedja",
     engagement: "Arkitekt som resurs",
     metrics: [
       { label: "Deploy-frekvens", value: "1/mån → 3/vecka" },
@@ -59,9 +59,9 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     personas: ["cto-crisis"],
   },
   {
-    slug: "polestar",
+    slug: "varlsledande-elbilstillverkare",
     title: "Teknisk Ledning för Finansiella Integrationer",
-    client: "Polestar",
+    client: "Världsledande Elbilstillverkare",
     engagement: "Teknisk ledning",
     metrics: [
       { label: "Velocity", value: "↑ 45%" },

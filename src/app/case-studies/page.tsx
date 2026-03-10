@@ -5,7 +5,7 @@ import { PageShell } from "@/components/page-shell";
 export const metadata: Metadata = {
   title: "Case Studies | Enhancior",
   description:
-    "Verkliga uppdrag med mätbara resultat. Se hur Enhancior har hjälpt IKEA, Polestar, Lindex, Visma och Nordiskt Rederi med arkitektur, teknisk ledning och modernisering.",
+    "Verkliga uppdrag med mätbara resultat. Se hur Enhancior har hjälpt ledande nordiska och globala företag med arkitektur, teknisk ledning och modernisering.",
   openGraph: {
     url: "https://enhancior.se/case-studies",
   },
@@ -26,8 +26,8 @@ const caseStudies = [
     timeline: "4 månader (2025–2026)",
   },
   {
-    slug: "visma",
-    company: "Visma",
+    slug: "nordeuropeisk-hr-koncern",
+    company: "Nordeuropeisk HR-Koncern",
     title: "Automatiserad Credential-Rotation",
     summary:
       "Från manuellt hanterade credentials till automatiserad rotation var 30:e dag med AWS Lambda och GitHub Actions.",
@@ -36,8 +36,8 @@ const caseStudies = [
     timeline: "4 månader (2026)",
   },
   {
-    slug: "lindex",
-    company: "Lindex",
+    slug: "ledande-nordisk-modekedja",
+    company: "Ledande Nordisk Modekedja",
     title: "Från Legacy till Eventdriven Arkitektur",
     summary:
       "Moderniserade legacy-system för order, lager och WMS med .NET microservices, event sourcing och Azure/Kubernetes.",
@@ -46,8 +46,8 @@ const caseStudies = [
     timeline: "2.5 år (on demand)",
   },
   {
-    slug: "ikea",
-    company: "IKEA",
+    slug: "varlsledande-mobelkoncern",
+    company: "Världsledande Möbelkoncern",
     title: "Backend-Arkitektur för 3D-Modellering",
     summary:
       "Komplett .NET backend-arkitektur för intern 3D-modelleringsapp, inklusive IAM, CI/CD och legacy-migration.",
@@ -56,8 +56,8 @@ const caseStudies = [
     timeline: "6 månader (2021)",
   },
   {
-    slug: "polestar",
-    company: "Polestar",
+    slug: "varlsledande-elbilstillverkare",
+    company: "Världsledande Elbilstillverkare",
     title: "Teknisk Ledning för Finansiella Integrationer",
     summary:
       "Senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",

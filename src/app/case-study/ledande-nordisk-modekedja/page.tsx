@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { LindexDiagram } from "@/components/case-study/diagrams/lindex-diagram";
+import { ModekedjaDiagram } from "@/components/case-study/diagrams/modekedja-diagram";
 
 export const metadata: Metadata = {
-  title: "Lindex: Från Legacy till Eventdriven Arkitektur | Enhancior",
+  title: "Ledande Nordisk Modekedja: Från Legacy till Eventdriven Arkitektur | Enhancior",
   description:
-    "Hur Lindex moderniserade legacy-system för order, lager och WMS med .NET microservices, event sourcing och Azure/Kubernetes.",
+    "Hur en ledande nordisk modekedja moderniserade legacy-system för order, lager och WMS med .NET microservices, event sourcing och Azure/Kubernetes.",
   openGraph: {
-    url: "https://enhancior.se/case-study/lindex",
+    url: "https://enhancior.se/case-study/ledande-nordisk-modekedja",
   },
   alternates: {
-    canonical: "https://enhancior.se/case-study/lindex",
+    canonical: "https://enhancior.se/case-study/ledande-nordisk-modekedja",
   },
 };
 
@@ -46,17 +46,17 @@ const metrics: CaseStudyMetric[] = [
   },
 ];
 
-export default function LindexCaseStudyPage() {
+export default function LedandeNordiskModekedjaCaseStudyPage() {
   return (
       <CaseStudyLayout
-        slug="lindex"
+        slug="ledande-nordisk-modekedja"
         title="Från Legacy till Eventdriven Arkitektur"
         industry="Retail / Global E-handel"
         timeline="2.5 år (on demand, 8–24h/vecka)"
         problemNarrative={
           <>
             <p className="mb-4">
-              Lindex orderhantering, lagerflöden och WMS-system var tätt
+              Kundens orderhantering, lagerflöden och WMS-system var tätt
               kopplade till Oracle-databaser och PostNord-integrationer.
               Varje förändring innebar kaskadrisker: en uppdatering i ett
               system kunde slå ut flöden i tre andra.
@@ -69,12 +69,12 @@ export default function LindexCaseStudyPage() {
             </p>
             <p>
               Situationen bromsade både e-handeln och butiksverksamheten.
-              Lindex behövde en modernisering som kunde genomföras stegvis,
+              Kunden behövde en modernisering som kunde genomföras stegvis,
               utan att stänga ner pågående verksamhet.
             </p>
           </>
         }
-        architectureViewer={<LindexDiagram />}
+        architectureViewer={<ModekedjaDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>
@@ -121,7 +121,7 @@ export default function LindexCaseStudyPage() {
             </p>
             <p>
               Den nya eventdrivna arkitekturen eliminerade kaskadrisker och
-              gav Lindex möjlighet att reagera snabbare på säsongstoppar och
+              gav kunden möjlighet att reagera snabbare på säsongstoppar och
               marknadsförändringar. Teamet kunde fokusera på nya leveranser
               istället för att hantera systemfel.
             </p>

@@ -56,10 +56,10 @@ To discuss your project, use the contact form on the website:
 
 ## Case Studies
 
-- **IKEA:** Solution Architecture for 3D modeling backend ([case study](https://enhancior.se/case-study/ikea))
-- **Visma:** Automated credential rotation pipeline ([case study](https://enhancior.se/case-study/visma))
-- **Polestar:** Interim Tech Lead, 4-year engagement ([case study](https://enhancior.se/case-study/polestar))
-- **Lindex:** Legacy-to-event-driven architecture modernization ([case study](https://enhancior.se/case-study/lindex))
+- **Världsledande Möbelkoncern:** Solution Architecture for 3D modeling backend ([case study](https://enhancior.se/case-study/varlsledande-mobelkoncern))
+- **Nordeuropeisk HR-Koncern:** Automated credential rotation pipeline ([case study](https://enhancior.se/case-study/nordeuropeisk-hr-koncern))
+- **Världsledande Elbilstillverkare:** Interim Tech Lead, 4-year engagement ([case study](https://enhancior.se/case-study/varlsledande-elbilstillverkare))
+- **Ledande Nordisk Modekedja:** Legacy-to-event-driven architecture modernization ([case study](https://enhancior.se/case-study/ledande-nordisk-modekedja))
 - **Nordiskt Rederi:** Full-stack real-time platform replacing Excel-based HR operations ([case study](https://enhancior.se/case-study/nordiskt-rederi))
 
 All case studies: [Case Studies Overview](https://enhancior.se/case-studies)

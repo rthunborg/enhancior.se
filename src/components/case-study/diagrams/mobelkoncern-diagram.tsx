@@ -1,4 +1,4 @@
-export function IkeaDiagram() {
+export function MobelkoncernDiagram() {
   // Layout constants
   const padX = 20;
   const svgW = 520;
@@ -51,7 +51,7 @@ export function IkeaDiagram() {
     <div className="w-full">
       <svg
         role="img"
-        aria-label="Arkitekturdiagram: IKEA Inreda backend-arkitektur med .NET API, Active Directory-integration, MongoDB och legacy Python-migration"
+        aria-label="Arkitekturdiagram: Backend-arkitektur med .NET API, Active Directory-integration, MongoDB och legacy Python-migration"
         viewBox={`0 0 ${svgW} ${svgH}`}
         className="w-full h-auto"
         xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ export function IkeaDiagram() {
           fill="#919191"
           fontSize="8"
         >
-          3D-modellering (Inreda)
+          3D-modellering (intern app)
         </text>
 
         {/* === Auth — Active Directory === */}

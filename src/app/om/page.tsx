@@ -6,7 +6,7 @@ import { ContactButton } from "./contact-button";
 export const metadata: Metadata = {
   title: "Om Rasmus Thunborg | Enhancior",
   description:
-    "Senior mjukvaruarkitekt med 10+ års erfarenhet från IKEA, Polestar, Lindex och Visma. Specialiserad på arkitektur, backend-utveckling och teknisk ledning.",
+    "Senior mjukvaruarkitekt med 10+ års erfarenhet från ledande globala och nordiska företag. Specialiserad på arkitektur, backend-utveckling och teknisk ledning.",
   openGraph: {
     url: "https://enhancior.se/om",
   },
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
 };
 
 const clients = [
-  { name: "Polestar", years: "4 år", role: "Interim Tech Lead" },
-  { name: "Lindex", years: "2.5 år", role: "Senior Software Engineer" },
-  { name: "IKEA", years: "6 mån", role: "Senior Solution Architect" },
-  { name: "Visma", years: "4 mån", role: "Platform Engineer" },
+  { name: "Världsledande Elbilstillverkare", years: "4 år", role: "Interim Tech Lead" },
+  { name: "Ledande Nordisk Modekedja", years: "2.5 år", role: "Senior Software Engineer" },
+  { name: "Världsledande Möbelkoncern", years: "6 mån", role: "Senior Solution Architect" },
+  { name: "Nordeuropeisk HR-Koncern", years: "4 mån", role: "Platform Engineer" },
   { name: "Ericsson", years: "1 år", role: "Backend Developer" },
   { name: "Volvo", years: "1 år", role: "Backend Developer" },
 ] as const;
@@ -60,7 +60,7 @@ export default function OmPage() {
                 Erfarenhet som gör skillnad
               </h2>
               <p>
-                Jag tar med mig över tio års erfarenhet av tunga enterprise-backends från IKEA, Polestar, Volvo och Ericsson in i bolag som behöver skala upp utan att gå sönder på vägen. Mina verktyg är modernisering av legacy-system, microservices och molnarkitektur i AWS och Azure.
+                Jag tar med mig över tio års erfarenhet av tunga enterprise-backends från ledande globala och nordiska bolag in i företag som behöver skala upp utan att gå sönder på vägen. Mina verktyg är modernisering av legacy-system, microservices och molnarkitektur i AWS och Azure.
               </p>
             </div>
 

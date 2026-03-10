@@ -1,4 +1,4 @@
-export function LindexDiagram() {
+export function ModekedjaDiagram() {
   // Layout constants
   const pad = 20;
   const serviceBoxW = 130;

@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { IkeaDiagram } from "@/components/case-study/diagrams/ikea-diagram";
+import { MobelkoncernDiagram } from "@/components/case-study/diagrams/mobelkoncern-diagram";
 
 export const metadata: Metadata = {
   title:
-    "IKEA Inreda: Backend-Arkitektur för 3D-Modellering | Enhancior",
+    "Världsledande Möbelkoncern: Backend-Arkitektur för 3D-Modellering | Enhancior",
   description:
-    "Hur IKEA fick en komplett .NET backend-arkitektur för sin interna 3D-modelleringsapp, inklusive IAM, CI/CD och legacy-migration.",
+    "Hur en världsledande möbelkoncern fick en komplett .NET backend-arkitektur för sin interna 3D-modelleringsapp, inklusive IAM, CI/CD och legacy-migration.",
   openGraph: {
-    url: "https://enhancior.se/case-study/ikea",
+    url: "https://enhancior.se/case-study/varlsledande-mobelkoncern",
   },
   alternates: {
-    canonical: "https://enhancior.se/case-study/ikea",
+    canonical: "https://enhancior.se/case-study/varlsledande-mobelkoncern",
   },
 };
 
@@ -47,17 +47,17 @@ const metrics: CaseStudyMetric[] = [
   },
 ];
 
-export default function IkeaCaseStudyPage() {
+export default function VarlsledandeMobelkoncernCaseStudyPage() {
   return (
       <CaseStudyLayout
-        slug="ikea"
+        slug="varlsledande-mobelkoncern"
         title="Backend-Arkitektur för 3D-Modellering"
         industry="Detaljhandel / Enterprise"
         timeline="6 månader (2021)"
         problemNarrative={
           <>
             <p className="mb-4">
-              IKEA utvecklade Inreda, en ny intern applikation för
+              Kunden utvecklade en ny intern applikation för
               3D-modellering. Projektet behövde en komplett .NET
               backend-arkitektur från grunden: autentisering,
               auktorisering, API-design och datamodell.
@@ -70,13 +70,13 @@ export default function IkeaCaseStudyPage() {
               planeras.
             </p>
             <p>
-              IKEA behövde en senior arkitekt som kunde designa hela
+              Kunden behövde en senior arkitekt som kunde designa hela
               backend-lagret, integrera med Active Directory och samtidigt
               kartlägga legacy-systemet för en ordnad övergång.
             </p>
           </>
         }
-        architectureViewer={<IkeaDiagram />}
+        architectureViewer={<MobelkoncernDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>
@@ -90,7 +90,7 @@ export default function IkeaCaseStudyPage() {
               <strong className="text-[#EDEDED]">
                 IAM med Active Directory och Microsoft Graph:
               </strong>{" "}
-              Identitets- och åtkomsthantering baserad på IKEAs befintliga
+              Identitets- och åtkomsthantering baserad på kundens befintliga
               Active Directory. Integration med Microsoft Graph och Azure
               AD för robust autentisering och auktorisering.
             </li>
@@ -120,7 +120,7 @@ export default function IkeaCaseStudyPage() {
               Teamet hade en produktionsklar backend att bygga vidare på.
             </p>
             <p>
-              Legacy-kartläggningen gav IKEA en tydlig bild av vad som
+              Legacy-kartläggningen gav kunden en tydlig bild av vad som
               behövde migreras och i vilken ordning. Migrationsplanen
               minimerade risken för avbrott och gav projektet en trygg väg
               framåt.

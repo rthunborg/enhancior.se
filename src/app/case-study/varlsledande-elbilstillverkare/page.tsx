@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { PolestarDiagram } from "@/components/case-study/diagrams/polestar-diagram";
+import { ElbilstillverkareDiagram } from "@/components/case-study/diagrams/elbilstillverkare-diagram";
 
 export const metadata: Metadata = {
-  title: "Polestar: Teknisk Ledning för Finansiella Integrationer | Enhancior",
+  title: "Världsledande Elbilstillverkare: Teknisk Ledning för Finansiella Integrationer | Enhancior",
   description:
-    "Hur Polestar fick senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
+    "Hur en världsledande elbilstillverkare fick senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
   openGraph: {
-    url: "https://enhancior.se/case-study/polestar",
+    url: "https://enhancior.se/case-study/varlsledande-elbilstillverkare",
   },
   alternates: {
-    canonical: "https://enhancior.se/case-study/polestar",
+    canonical: "https://enhancior.se/case-study/varlsledande-elbilstillverkare",
   },
 };
 
@@ -46,17 +46,17 @@ const metrics: CaseStudyMetric[] = [
   },
 ];
 
-export default function PolestarCaseStudyPage() {
+export default function VarlsledandeElbilstillverkareCaseStudyPage() {
   return (
       <CaseStudyLayout
-        slug="polestar"
+        slug="varlsledande-elbilstillverkare"
         title="Teknisk Ledning för Finansiella Integrationer"
         industry="Fordon / FinTech"
         timeline="4 år (2021–2025)"
         problemNarrative={
           <>
             <p className="mb-4">
-              Polestars kundfinansieringsflöde krävde integrationer mot
+              Kundens kundfinansieringsflöde krävde integrationer mot
               flera externa finansiella leverantörer. Systemet kördes på AWS
               serverless men saknade senior teknisk ledning.
               Arkitekturbeslut fattades ad hoc och onboarding av nya
@@ -70,7 +70,7 @@ export default function PolestarCaseStudyPage() {
             </p>
           </>
         }
-        architectureViewer={<PolestarDiagram />}
+        architectureViewer={<ElbilstillverkareDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>
@@ -110,12 +110,12 @@ export default function PolestarCaseStudyPage() {
         outcomeNarrative={
           <>
             <p className="mb-4">
-              Under de fyra år jag samarbetade med Polestar ökade teamets velocity med
+              Under de fyra år jag samarbetade med kunden ökade teamets velocity med
               45%. Uptime förbättrades från 98.5% till 99.9% och
               onboarding-tiden minskade från tre månader till tre veckor.
             </p>
             <p>
-              Den strukturerade tekniska ledningen gav Polestar en stabil
+              Den strukturerade tekniska ledningen gav kunden en stabil
               grund för sina finansiella integrationer. Teamet kunde hantera
               nya leverantörer med förtroende och noll säkerhetsincidenter
               under hela uppdragsperioden.

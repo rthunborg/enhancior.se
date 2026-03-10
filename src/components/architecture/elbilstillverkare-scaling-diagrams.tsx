@@ -10,7 +10,7 @@ import {
 } from "./diagram-primitives";
 
 // ── Before: Tangled integration landscape ──────────────────────────────
-export const PolestarScalingBefore = (
+export const ElbilstillverkareScalingBefore = (
   <motion.svg
     viewBox="0 0 600 320"
     width="100%"
@@ -58,7 +58,7 @@ export const PolestarScalingBefore = (
 );
 
 // ── Intervention: Domain boundaries emerging ───────────────────────────
-export const PolestarScalingIntervention = (
+export const ElbilstillverkareScalingIntervention = (
   <motion.svg
     viewBox="0 0 600 320"
     width="100%"
@@ -156,7 +156,7 @@ export const PolestarScalingIntervention = (
 );
 
 // ── After: Governed domain platform ────────────────────────────────────
-export const PolestarScalingAfter = (
+export const ElbilstillverkareScalingAfter = (
   <motion.svg
     viewBox="0 0 600 320"
     width="100%"
