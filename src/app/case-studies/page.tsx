@@ -29,7 +29,7 @@ const caseStudies = [
     summary:
       "Ersatte manuella Excel-flöden med en modern realtidsplattform med rollbaserad åtkomst för sju externa parter, ändringslogg och GDPR-grund.",
     metric: { label: "Datadelning", delta: "↓ ~95%" },
-    industry: "Maritim / HR-operations",
+    industry: "Maritim / HR",
     timeline: "4 månader (2025–2026)",
   },
   {
@@ -39,7 +39,7 @@ const caseStudies = [
     summary:
       "Från manuellt hanterade credentials till automatiserad rotation var 30:e dag med AWS Lambda och GitHub Actions.",
     metric: { label: "Säkerhetsrisk", delta: "Hög → Minimal" },
-    industry: "HR-Tech / Enterprise SaaS",
+    industry: "HR / Enterprise SAAS",
     timeline: "4 månader (2026)",
   },
   {
@@ -49,7 +49,7 @@ const caseStudies = [
     summary:
       "Moderniserade legacy-system för order, lager och WMS med .NET microservices, event sourcing och Azure/Kubernetes.",
     metric: { label: "Incidenter", delta: "↓ 88%" },
-    industry: "Retail / Global E-handel",
+    industry: "Fashion / E-handel",
     timeline: "2.5 år (on demand)",
   },
   {
@@ -69,7 +69,7 @@ const caseStudies = [
     summary:
       "Senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
     metric: { label: "Team velocity", delta: "+45%" },
-    industry: "Fordon / FinTech",
+    industry: "Automotive / FinTech",
     timeline: "4 år (2021–2025)",
   }
 

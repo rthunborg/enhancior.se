@@ -51,7 +51,7 @@ export default function NordeuropeiskHrKoncernCaseStudyPage() {
       <CaseStudyLayout
         slug="nordeuropeisk-hr-koncern"
         title="Automatiserad Credential-Rotation"
-        industry="HR-Tech / Enterprise SaaS"
+        industry="HR / Enterprise SAAS"
         timeline="4 månader (2026)"
         problemNarrative={
           <>

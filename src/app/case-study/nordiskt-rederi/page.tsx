@@ -52,7 +52,7 @@ export default function NordisktRederiCaseStudyPage() {
     <CaseStudyLayout
       slug="nordiskt-rederi"
       title="Från Excel-kaos till realtidsplattform för säsongsrekrytering"
-      industry="Maritim / HR-operations"
+      industry="Maritim / HR"
       timeline="4 månader (okt 2025 – feb 2026)"
       problemNarrative={
         <>

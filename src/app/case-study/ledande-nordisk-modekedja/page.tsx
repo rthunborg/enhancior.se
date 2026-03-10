@@ -51,7 +51,7 @@ export default function LedandeNordiskModekedjaCaseStudyPage() {
       <CaseStudyLayout
         slug="ledande-nordisk-modekedja"
         title="Från Legacy till Eventdriven Arkitektur"
-        industry="Retail / Global E-handel"
+        industry="Fashion / E-handel"
         timeline="2.5 år (on demand, 8–24h/vecka)"
         problemNarrative={
           <>

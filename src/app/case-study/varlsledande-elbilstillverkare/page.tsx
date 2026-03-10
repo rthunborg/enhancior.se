@@ -51,7 +51,7 @@ export default function VarlsledandeElbilstillverkareCaseStudyPage() {
       <CaseStudyLayout
         slug="varlsledande-elbilstillverkare"
         title="Teknisk Ledning för Finansiella Integrationer"
-        industry="Fordon / FinTech"
+        industry="Automotive / FinTech"
         timeline="4 år (2021–2025)"
         problemNarrative={
           <>
