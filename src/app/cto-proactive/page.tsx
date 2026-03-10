@@ -10,9 +10,18 @@ import {
 } from "@/components/architecture";
 
 export const metadata: Metadata = {
-  title: "Skalbar Arkitektur | Enhancior",
+  title: "Inbäddad Arkitekt & Fraktionell Teknisk Ledning | Enhancior",
   description:
-    "Teamet växer snabbare än arkitekturen. En inbäddad arkitekt som integreras i ert team, driver besluten och hjälper er skala utan att tappa fart.",
+    "Teamet växer snabbare än arkitekturen. En inbäddad IT-konsult och mjukvaruarkitekt som integreras i ert team, driver arkitekturbesluten och hjälper er skala utan att tappa fart.",
+  keywords: [
+    "inbäddad arkitekt",
+    "fractional CTO",
+    "fraktionell CTO",
+    "teknisk ledning",
+    "arkitekturkonsult Göteborg",
+    "mjukvaruarkitekt konsult",
+    "IT-konsult Sverige",
+  ],
   openGraph: {
     url: "https://enhancior.se/cto-proactive",
   },

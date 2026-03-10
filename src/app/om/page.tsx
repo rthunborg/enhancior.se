@@ -4,9 +4,16 @@ import { PageShell } from "@/components/page-shell";
 import { ContactButton } from "./contact-button";
 
 export const metadata: Metadata = {
-  title: "Om Rasmus Thunborg | Enhancior",
+  title: "Rasmus Thunborg | Senior Mjukvaruarkitekt & IT-konsult Göteborg",
   description:
-    "Senior mjukvaruarkitekt med 10+ års erfarenhet från ledande globala och nordiska företag. Specialiserad på arkitektur, backend-utveckling och teknisk ledning.",
+    "Senior mjukvaruarkitekt och IT-konsult i Göteborg med 10+ års erfarenhet från ledande globala och nordiska bolag. Specialiserad på arkitektur, backend-utveckling och teknisk ledning.",
+  keywords: [
+    "Rasmus Thunborg",
+    "mjukvaruarkitekt Göteborg",
+    "senior IT-konsult Göteborg",
+    "arkitekturkonsult Sverige",
+    "teknisk ledning konsult",
+  ],
   openGraph: {
     url: "https://enhancior.se/om",
   },

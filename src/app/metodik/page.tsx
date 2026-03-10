@@ -2,9 +2,15 @@ import type { Metadata } from "next";
 import { PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
-  title: "Metodik | Enhancior",
+  title: "Arbetsmetodik | Hur en IT-konsult driver förändring – Enhancior",
   description:
-    "Så arbetar Enhancior: en strukturerad metodik i fyra faser: Diagnos, Insats, Överföring och Avslut. Ingen vag rådgivning, bara konkret förändring.",
+    "Fyra faser: Diagnos, Insats, Överföring och Avslut. Ingen vag rådgivning — en senior IT-konsult och mjukvaruarkitekt som driver konkret förändring från dag ett.",
+  keywords: [
+    "IT-konsult metodik",
+    "teknisk revision process",
+    "mjukvaruarkitekt arbetssätt",
+    "legacy modernisering metod",
+  ],
   openGraph: {
     url: "https://enhancior.se/metodik",
   },

@@ -10,9 +10,18 @@ import { PathwayCaseStudies } from "@/components/pathway/pathway-case-studies";
 import { EngagementTiers } from "@/components/engagement-tiers";
 
 export const metadata: Metadata = {
-  title: "Leveranskris | Enhancior",
+  title: "Teknisk Revision & Legacy-Modernisering | IT-konsult – Enhancior",
   description:
-    "Er tekniska skuld bromsar leveransen. En 30-dagars teknisk revision som identifierar exakt var problemen sitter och ger er en konkret åtgärdsplan.",
+    "Teknisk skuld bromsar leveransen. En 30-dagars teknisk revision identifierar exakt var problemen sitter och ger er en konkret åtgärdsplan att implementera dag 31.",
+  keywords: [
+    "teknisk revision",
+    "teknisk skuld",
+    "legacy modernisering",
+    "IT-konsult",
+    "arkitekturkonsult",
+    "leveransproblem",
+    "mjukvaruarkitekt",
+  ],
   openGraph: {
     url: "https://enhancior.se/cto-crisis",
   },

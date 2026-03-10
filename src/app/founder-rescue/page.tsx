@@ -10,9 +10,17 @@ import {
 } from "@/components/proof-artifacts/founder-timeline";
 
 export const metadata: Metadata = {
-  title: "Teknisk Ledning för Grundare | Enhancior",
+  title: "Interim CTO & Teknisk Ledning för Startups | IT-konsult – Enhancior",
   description:
-    "Ni saknar rätt senior tech-kompetens. En erfaren arkitekt som håller skeppet stadigt medan ni hittar rätt CTO.",
+    "Saknar ni teknisk ledare? En erfaren IT-konsult och mjukvaruarkitekt som stabiliserar verksamheten, skapar en roadmap styrelsen litar på och hjälper er hitta rätt CTO.",
+  keywords: [
+    "interim CTO",
+    "teknisk ledning startup",
+    "IT-konsult grundare",
+    "mjukvaruarkitekt startup",
+    "teknisk ledare konsult",
+    "fractional CTO Sverige",
+  ],
   openGraph: {
     url: "https://enhancior.se/founder-rescue",
   },

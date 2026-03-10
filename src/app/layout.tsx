@@ -20,8 +20,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://enhancior.se"),
-  title: "Enhancior | Senior Mjukvaruarkitekt & Teknisk Ledning",
-  description: "Identifiera och åtgärda teknisk skuld. Enhancior erbjuder teknisk revision, inbäddad arkitektkompetens och enterprise-modernisering för SaaS och enterprise.",
+  title: "IT-konsult Göteborg | Senior Mjukvaruarkitekt – Enhancior",
+  description: "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, inbäddad arkitektkompetens och legacy-modernisering för SaaS och enterprise i Sverige.",
+  keywords: [
+    "IT-konsult Göteborg",
+    "mjukvaruarkitekt konsult",
+    "senior mjukvaruarkitekt",
+    "teknisk ledning",
+    "IT-konsult Sverige",
+    "arkitekturkonsult",
+    "fractional CTO",
+    "interim tech lead",
+    "legacy modernisering",
+    "teknisk revision",
+  ],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

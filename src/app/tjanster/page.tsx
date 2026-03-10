@@ -3,9 +3,17 @@ import { EngagementTiers } from "@/components/engagement-tiers";
 import { PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
-  title: "Tjänster | Enhancior",
+  title: "IT-konsulttjänster | Teknisk Revision, Arkitektur & Ledning – Enhancior",
   description:
-    "Uppdragsformer med tydlig omfattning, tidslinje och leveranser.",
+    "IT-konsulttjänster inom teknisk revision, inbäddad arkitektkompetens och enterprise-modernisering. Senior mjukvaruarkitekt i Göteborg – tydlig omfattning, tidslinje och leveranser.",
+  keywords: [
+    "IT-konsulttjänster",
+    "teknisk revision",
+    "mjukvaruarkitekt uppdrag",
+    "inbäddad arkitekt",
+    "enterprise modernisering",
+    "IT-konsult Göteborg",
+  ],
   openGraph: {
     url: "https://enhancior.se/tjanster",
   },

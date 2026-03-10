@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "IT-konsulting",
     "teknisk rådgivning",
     "IT-hjälp företag",
-    "teknisk konsult Stockholm",
+    "teknisk konsult Göteborg",
     "IT-rådgivare",
   ],
   openGraph: {

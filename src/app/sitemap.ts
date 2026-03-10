@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/case-study/nordeuropeisk-hr-koncern",
     "/case-study/varlsledande-elbilstillverkare",
     "/case-study/ledande-nordisk-modekedja",
+    "/case-study/nordiskt-rederi",
     "/cto-crisis",
     "/cto-proactive",
     "/founder-rescue",

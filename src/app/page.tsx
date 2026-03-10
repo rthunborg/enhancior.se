@@ -4,6 +4,8 @@ import { TeaserCard } from "@/components/homepage/teaser-card";
 import { HomepageCTAs } from "./homepage-ctas";
 
 export const metadata: Metadata = {
+  title: "IT-konsult Göteborg | Senior Mjukvaruarkitekt – Enhancior",
+  description: "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, inbäddad arkitektkompetens och legacy-modernisering för SaaS och enterprise i Sverige.",
   openGraph: {
     url: "https://enhancior.se",
   },

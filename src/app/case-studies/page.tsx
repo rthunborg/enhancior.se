@@ -3,9 +3,16 @@ import Link from "next/link";
 import { PageShell } from "@/components/page-shell";
 
 export const metadata: Metadata = {
-  title: "Case Studies | Enhancior",
+  title: "Kundcase | IT-konsult & Mjukvaruarkitekt – Enhancior",
   description:
     "Verkliga uppdrag med mätbara resultat. Se hur Enhancior har hjälpt ledande nordiska och globala företag med arkitektur, teknisk ledning och modernisering.",
+  keywords: [
+    "IT-konsult kundcase",
+    "mjukvaruarkitekt uppdrag",
+    "legacy modernisering case study",
+    "teknisk revision resultat",
+    "enterprise arkitektur",
+  ],
   openGraph: {
     url: "https://enhancior.se/case-studies",
   },
