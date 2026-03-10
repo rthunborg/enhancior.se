@@ -6,22 +6,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const pages = [
     "",
-    "/om",
-    "/tjanster",
-    "/metodik",
+    "/about",
+    "/services",
+    "/methodology",
     "/case-studies",
-    "/case-study/varlsledande-mobelkoncern",
-    "/case-study/nordeuropeisk-hr-koncern",
-    "/case-study/varlsledande-elbilstillverkare",
-    "/case-study/ledande-nordisk-modekedja",
-    "/case-study/nordiskt-rederi",
+    "/case-study/global-furniture-group",
+    "/case-study/nordic-hr-group",
+    "/case-study/global-ev-manufacturer",
+    "/case-study/nordic-fashion-chain",
+    "/case-study/nordic-shipping",
     "/cto-crisis",
     "/cto-proactive",
     "/founder-rescue",
-    "/it-radgivning",
-    "/teknikbehov",
+    "/it-advisory",
+    "/tech-needs",
     "/vendor-packet",
-    "/generellt",
+    "/general",
   ];
 
   return pages.map((path) => ({

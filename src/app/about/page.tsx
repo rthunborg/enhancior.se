@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "teknisk ledning konsult",
   ],
   openGraph: {
-    url: "https://enhancior.se/om",
+    url: "https://enhancior.se/about",
   },
   alternates: {
-    canonical: "https://enhancior.se/om",
+    canonical: "https://enhancior.se/about",
   },
 };
 
@@ -39,7 +39,7 @@ const certifications = [
 
 export default function OmPage() {
   return (
-    <PageShell breadcrumbSegments={[{ label: "om" }]}>
+    <PageShell breadcrumbSegments={[{ label: "about" }]}>
         <div className="mb-12 md:mb-16">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-4">
             Rasmus Thunborg

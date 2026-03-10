@@ -6,7 +6,7 @@ import { ContactCTA } from "./contact-cta";
 export const metadata: Metadata = {
   title: "IT-konsulting & Teknisk Rådgivning | Enhancior",
   description:
-    "Osäker på vad ni behöver? Vi hjälper er identifiera rätt teknisk insats, oavsett om det gäller arkitektur, teamförstärkning eller teknisk rådgivning.",
+    "Osäker på vad ni behöver? Enhancior hjälper er identifiera rätt teknisk insats, oavsett om det gäller arkitektur, teamförstärkning eller teknisk rådgivning.",
   keywords: [
     "IT-konsulting",
     "teknisk rådgivning",
@@ -15,16 +15,16 @@ export const metadata: Metadata = {
     "IT-rådgivare",
   ],
   openGraph: {
-    url: "https://enhancior.se/generellt",
+    url: "https://enhancior.se/general",
   },
   alternates: {
-    canonical: "https://enhancior.se/generellt",
+    canonical: "https://enhancior.se/general",
   },
 };
 
 export default function GenerelltPage() {
   return (
-    <PathwayShell breadcrumbSegments={[{ label: "generellt" }]}>
+    <PathwayShell breadcrumbSegments={[{ label: "general" }]}>
       {/* Hero Section */}
       <div className="mb-16 md:mb-24 lg:mb-32">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
@@ -32,7 +32,7 @@ export default function GenerelltPage() {
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
           Ibland vet man att något inte fungerar, utan att kunna peka på exakt
-          vad. Det är helt okej. Vi hjälper er ta reda på det.
+          vad. Det är helt okej. Jag hjälper er ta reda på det.
         </p>
       </div>
 
@@ -47,16 +47,16 @@ export default function GenerelltPage() {
               Informellt samtal, inga förpliktelser
             </p>
             <p className="text-sm text-[#A1A1A1]">
-              Vi lyssnar på er situation och ställer de rätta frågorna. Inget
+              Jag lyssnar på er situation och ställer de rätta frågorna. Inget
               säljsnack, bara ett ärligt samtal om vad som kan göra skillnad.
             </p>
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
             <p className="text-base font-semibold text-[#EDEDED] mb-1">
-              Vi identifierar kärnan
+              Jag identifierar kärnan
             </p>
             <p className="text-sm text-[#A1A1A1]">
-              Ofta visar sig problemet vara tydligare än man tror. Vi hjälper er
+              Ofta visar sig problemet vara tydligare än man tror. Jag hjälper er
               formulera det så att ni kan fatta informerade beslut.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function GenerelltPage() {
               Konkret rekommendation
             </p>
             <p className="text-sm text-[#A1A1A1]">
-              Ni får en rak bedömning, oavsett om lösningen är något vi kan
+              Ni får en rak bedömning, oavsett om lösningen är något jag kan
               hjälpa med eller inte.
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function GenerelltPage() {
       {/* CTA Section */}
       <section aria-label="Kontakt" className="mb-16 md:mb-24 lg:mb-32 text-center">
         <p className="text-lg text-[#A1A1A1] mb-8">
-          Redo att ta ett första steg? Hör av er så pratar vi.
+          Redo att ta ett första steg? Hör av er så tar vi ett snack!
         </p>
         <ContactCTA />
       </section>

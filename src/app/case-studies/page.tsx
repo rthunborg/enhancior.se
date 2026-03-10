@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const caseStudies = [
   {
-    slug: "nordiskt-rederi",
+    slug: "nordic-shipping",
     company: "Nordiskt Rederi",
     title: "Från Excel-kaos till realtidsplattform för säsongsrekrytering",
     summary:
@@ -33,7 +33,7 @@ const caseStudies = [
     timeline: "4 månader (2025–2026)",
   },
   {
-    slug: "nordeuropeisk-hr-koncern",
+    slug: "nordic-hr-group",
     company: "Nordeuropeisk HR-Koncern",
     title: "Automatiserad Credential-Rotation",
     summary:
@@ -43,7 +43,7 @@ const caseStudies = [
     timeline: "4 månader (2026)",
   },
   {
-    slug: "ledande-nordisk-modekedja",
+    slug: "nordic-fashion-chain",
     company: "Ledande Nordisk Modekedja",
     title: "Från Legacy till Eventdriven Arkitektur",
     summary:
@@ -53,7 +53,7 @@ const caseStudies = [
     timeline: "2.5 år (on demand)",
   },
   {
-    slug: "varlsledande-mobelkoncern",
+    slug: "global-furniture-group",
     company: "Världsledande Möbelkoncern",
     title: "Backend-Arkitektur för 3D-Modellering",
     summary:
@@ -63,7 +63,7 @@ const caseStudies = [
     timeline: "6 månader (2021)",
   },
   {
-    slug: "varlsledande-elbilstillverkare",
+    slug: "global-ev-manufacturer",
     company: "Världsledande Elbilstillverkare",
     title: "Teknisk Ledning för Finansiella Integrationer",
     summary:

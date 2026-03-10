@@ -15,5 +15,5 @@ export interface BookingConfig {
 
 export const booking: BookingConfig = {
   baseUrl: "", // Deprecated — contact modal replaces external booking
-  ctaLabel: "Kontakta oss",
+  ctaLabel: "Ta kontakt",
 };

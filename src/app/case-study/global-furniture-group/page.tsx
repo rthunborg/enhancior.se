@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   description:
     "Hur en världsledande möbelkoncern fick en komplett .NET backend-arkitektur för sin interna 3D-modelleringsapp, inklusive IAM, CI/CD och legacy-migration.",
   openGraph: {
-    url: "https://enhancior.se/case-study/varlsledande-mobelkoncern",
+    url: "https://enhancior.se/case-study/global-furniture-group",
   },
   alternates: {
-    canonical: "https://enhancior.se/case-study/varlsledande-mobelkoncern",
+    canonical: "https://enhancior.se/case-study/global-furniture-group",
   },
 };
 
@@ -50,7 +50,7 @@ const metrics: CaseStudyMetric[] = [
 export default function VarlsledandeMobelkoncernCaseStudyPage() {
   return (
       <CaseStudyLayout
-        slug="varlsledande-mobelkoncern"
+        slug="global-furniture-group"
         title="Backend-Arkitektur för 3D-Modellering"
         industry="Detaljhandel / Enterprise"
         timeline="6 månader (2021)"

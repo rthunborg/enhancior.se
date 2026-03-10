@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   description:
     "Hur Nordiskt Rederi gick från manuella Excel-flöden till en modern realtidsplattform med rollbaserad åtkomst, ändringslogg och GDPR-grund. Levererat på 4 månader av en resurs.",
   openGraph: {
-    url: "https://enhancior.se/case-study/nordiskt-rederi",
+    url: "https://enhancior.se/case-study/nordic-shipping",
   },
   alternates: {
-    canonical: "https://enhancior.se/case-study/nordiskt-rederi",
+    canonical: "https://enhancior.se/case-study/nordic-shipping",
   },
 };
 
@@ -50,7 +50,7 @@ const metrics: CaseStudyMetric[] = [
 export default function NordisktRederiCaseStudyPage() {
   return (
     <CaseStudyLayout
-      slug="nordiskt-rederi"
+      slug="nordic-shipping"
       title="Från Excel-kaos till realtidsplattform för säsongsrekrytering"
       industry="Maritim / HR"
       timeline="4 månader (okt 2025 – feb 2026)"

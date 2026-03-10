@@ -5,21 +5,21 @@ import { TeknikbehovSelector } from "@/components/triage/teknikbehov-selector";
 export const metadata: Metadata = {
   title: "Teknikbehov: Bygg eller Köp? | Enhancior",
   description:
-    "Ni vet att ni behöver teknisk hjälp. Bygger ni egen teknik eller köper ni in IT-system? Vi hjälper er oavsett väg.",
+    "Ni vet att ni behöver teknisk hjälp. Bygger ni egen teknik eller köper ni in IT-system? Enhancior hjälper er oavsett väg.",
   openGraph: {
-    url: "https://enhancior.se/teknikbehov",
+    url: "https://enhancior.se/tech-needs",
   },
   alternates: {
-    canonical: "https://enhancior.se/teknikbehov",
+    canonical: "https://enhancior.se/tech-needs",
   },
 };
 
 export default function TeknikbehovPage() {
   return (
-    <PathwayShell breadcrumbSegments={[{ label: "teknikbehov" }]}>
+    <PathwayShell breadcrumbSegments={[{ label: "tech-needs" }]}>
       <div className="mb-16 md:mb-24 lg:mb-32">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
-        Ni vet att ni behöver förstärkning. Låt oss reda ut exakt vilken typ.
+        Ni vet att ni behöver förstärkning. Låt mig reda ut exakt vilken typ.
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed mb-12">
           Er situation avgör vilken typ av stöd som gör mest nytta. Välj det som

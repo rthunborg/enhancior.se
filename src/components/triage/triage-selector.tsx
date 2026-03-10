@@ -24,7 +24,7 @@ const TRIAGE_OPTIONS = [
     id: "founder-rescue",
     label:
       "Vi saknar rätt senior tech-kompetens och behöver en erfaren arkitekt som håller oss på rätt kurs.",
-    href: "/teknikbehov",
+    href: "/tech-needs",
     ariaLabel:
       "Vi saknar rätt senior tech-kompetens och behöver en erfaren arkitekt som håller oss på rätt kurs. Välj för att se lösningar.",
   },
@@ -102,10 +102,10 @@ export function TriageSelector() {
 
       <div className="mt-8 text-center">
         <Link
-          href="/generellt"
+          href="/general"
           className="min-h-11 inline-flex items-center text-sm text-[#A1A1A1] no-underline outline-none ring-offset-[#0A0A0A] transition-colors duration-200 ease-out hover:text-[#EDEDED] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 motion-reduce:transition-none"
         >
-          Vet ni inte riktigt? Vi hjälper er ta reda på det →
+          Vet ni inte riktigt? Jag hjälper er ta reda på det →
         </Link>
       </div>
     </div>

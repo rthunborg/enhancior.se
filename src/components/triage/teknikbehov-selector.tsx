@@ -19,7 +19,7 @@ const FORK_OPTIONS = [
     label: "Vi köper in IT-system",
     description:
       "Ni ska upphandla eller har upphandlat ett IT-system och behöver oberoende rådgivning innan ni skriver på.",
-    href: "/it-radgivning",
+    href: "/it-advisory",
     ariaLabel:
       "Vi köper in IT-system. Välj för att se oberoende IT-rådgivning.",
   },

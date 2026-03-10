@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     "IT-upphandling stöd",
   ],
   openGraph: {
-    url: "https://enhancior.se/it-radgivning",
+    url: "https://enhancior.se/it-advisory",
   },
   alternates: {
-    canonical: "https://enhancior.se/it-radgivning",
+    canonical: "https://enhancior.se/it-advisory",
   },
 };
 
@@ -31,8 +31,8 @@ export default function ITRadgivningPage() {
   return (
     <PathwayShell
       breadcrumbSegments={[
-        { label: "teknikbehov", href: "/teknikbehov" },
-        { label: "it-rådgivning" },
+        { label: "tech-needs", href: "/tech-needs" },
+        { label: "it-advisory" },
       ]}
     >
       {/* Hero Section */}

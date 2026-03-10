@@ -14,7 +14,7 @@ export function BreadcrumbJsonLd({ segments }: BreadcrumbJsonLdProps) {
     {
       "@type": "ListItem",
       position: 1,
-      name: "Hem",
+      name: "Home",
       item: baseUrl,
     },
     ...segments.map((segment, index) => ({

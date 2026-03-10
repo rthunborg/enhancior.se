@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function CtooCrisisPage() {
   return (
-    <PathwayShell breadcrumbLabel="krishantering">
+    <PathwayShell breadcrumbLabel="crisis-management">
       {/* Hero Section */}
       <div className="mb-16 md:mb-24 lg:mb-32">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">

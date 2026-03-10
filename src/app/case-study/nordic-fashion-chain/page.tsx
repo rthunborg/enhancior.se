@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Hur en ledande nordisk modekedja moderniserade legacy-system för order, lager och WMS med .NET microservices, event sourcing och Azure/Kubernetes.",
   openGraph: {
-    url: "https://enhancior.se/case-study/ledande-nordisk-modekedja",
+    url: "https://enhancior.se/case-study/nordic-fashion-chain",
   },
   alternates: {
-    canonical: "https://enhancior.se/case-study/ledande-nordisk-modekedja",
+    canonical: "https://enhancior.se/case-study/nordic-fashion-chain",
   },
 };
 
@@ -49,7 +49,7 @@ const metrics: CaseStudyMetric[] = [
 export default function LedandeNordiskModekedjaCaseStudyPage() {
   return (
       <CaseStudyLayout
-        slug="ledande-nordisk-modekedja"
+        slug="nordic-fashion-chain"
         title="Från Legacy till Eventdriven Arkitektur"
         industry="Fashion / E-handel"
         timeline="2.5 år (on demand, 8–24h/vecka)"

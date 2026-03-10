@@ -8,13 +8,13 @@ const tjänsterLinks = [
   { label: "30-dagars Audit", href: "/cto-crisis" },
   { label: "Teknisk ledning", href: "/cto-proactive" },
   { label: "Arkitekt som resurs", href: "/founder-rescue" },
-  { label: "IT-rådgivning", href: "/it-radgivning" },
+  { label: "IT-rådgivning", href: "/it-advisory" },
 ] as const;
 
 const bevisLinks = [
   { label: "Case Studies", href: "/case-studies" },
-  { label: "Metodik", href: "/metodik" },
-  { label: "Om", href: "/om" },
+  { label: "Metodik", href: "/methodology" },
+  { label: "Om", href: "/about" },
   { label: "LOU & Compliance", href: "/vendor-packet" },
 ] as const;
 

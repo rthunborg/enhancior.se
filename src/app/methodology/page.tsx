@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     "legacy modernisering metod",
   ],
   openGraph: {
-    url: "https://enhancior.se/metodik",
+    url: "https://enhancior.se/methodology",
   },
   alternates: {
-    canonical: "https://enhancior.se/metodik",
+    canonical: "https://enhancior.se/methodology",
   },
 };
 
@@ -56,7 +56,7 @@ const phases = [
 
 export default function MetodikPage() {
   return (
-    <PageShell breadcrumbSegments={[{ label: "metodik" }]}>
+    <PageShell breadcrumbSegments={[{ label: "methodology" }]}>
         <div className="mb-12 md:mb-16">
           <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
             Varje uppdrag följer samma struktur: identifiera problemet, lös det,

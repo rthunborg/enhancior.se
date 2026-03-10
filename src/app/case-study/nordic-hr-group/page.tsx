@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Hur en nordeuropeisk HR-koncern gick från manuellt hanterade credentials till automatiserad rotation var 30:e dag med AWS Lambda och GitHub Actions.",
   openGraph: {
-    url: "https://enhancior.se/case-study/nordeuropeisk-hr-koncern",
+    url: "https://enhancior.se/case-study/nordic-hr-group",
   },
   alternates: {
-    canonical: "https://enhancior.se/case-study/nordeuropeisk-hr-koncern",
+    canonical: "https://enhancior.se/case-study/nordic-hr-group",
   },
 };
 
@@ -49,7 +49,7 @@ const metrics: CaseStudyMetric[] = [
 export default function NordeuropeiskHrKoncernCaseStudyPage() {
   return (
       <CaseStudyLayout
-        slug="nordeuropeisk-hr-koncern"
+        slug="nordic-hr-group"
         title="Automatiserad Credential-Rotation"
         industry="HR / Enterprise SAAS"
         timeline="4 månader (2026)"

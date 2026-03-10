@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Hur en världsledande elbilstillverkare fick senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
   openGraph: {
-    url: "https://enhancior.se/case-study/varlsledande-elbilstillverkare",
+    url: "https://enhancior.se/case-study/global-ev-manufacturer",
   },
   alternates: {
-    canonical: "https://enhancior.se/case-study/varlsledande-elbilstillverkare",
+    canonical: "https://enhancior.se/case-study/global-ev-manufacturer",
   },
 };
 
@@ -49,7 +49,7 @@ const metrics: CaseStudyMetric[] = [
 export default function VarlsledandeElbilstillverkareCaseStudyPage() {
   return (
       <CaseStudyLayout
-        slug="varlsledande-elbilstillverkare"
+        slug="global-ev-manufacturer"
         title="Teknisk Ledning för Finansiella Integrationer"
         industry="Automotive / FinTech"
         timeline="4 år (2021–2025)"

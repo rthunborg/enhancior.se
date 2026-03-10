@@ -114,7 +114,7 @@ export function ContactModal({
     } catch {
       setFormState("error");
       setErrorMessage(
-        "Något gick fel. Försök igen eller mejla oss direkt på rasmus.thunborg@enhancior.se",
+        "Något gick fel. Försök igen eller mejla mig direkt på rasmus.thunborg@enhancior.se",
       );
     }
   }
@@ -146,7 +146,7 @@ export function ContactModal({
               >
                 <div className="flex items-center justify-between mb-6">
                   <Dialog.Title className="text-xl font-bold text-[#EDEDED]">
-                    Kontakta oss
+                    Ta kontakt
                   </Dialog.Title>
                   <Dialog.Close asChild>
                     <button
@@ -159,7 +159,7 @@ export function ContactModal({
                 </div>
 
                 <Dialog.Description className="text-sm text-[#A1A1A1] mb-6">
-                  Berätta om er situation så hör vi av oss inom 24 timmar.
+                  Berätta om er situation så hör jag av mig inom 24 timmar.
                 </Dialog.Description>
 
                 <AnimatePresence mode="wait">
@@ -188,7 +188,7 @@ export function ContactModal({
                         Tack!
                       </p>
                       <p className="text-sm text-[#A1A1A1]">
-                        Vi hör av oss så fort vi kan!
+                        Jag hör av mig så fort som möjligt!
                       </p>
                     </motion.div>
                   ) : (
@@ -341,7 +341,7 @@ export function ContactModal({
 
                       {turnstileError && (
                         <p className="text-sm text-[#A1A1A1] text-center">
-                          Verifieringen kunde inte laddas. Kontakta oss direkt
+                          Verifieringen kunde inte laddas. Ta kontakt direkt
                           via{" "}
                           <a
                             href={`mailto:${obfuscateEmail("rasmus.thunborg", "enhancior.se")}`}

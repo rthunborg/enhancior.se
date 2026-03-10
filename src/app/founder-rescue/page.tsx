@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function FounderRescuePage() {
   return (
-    <PathwayShell breadcrumbSegments={[{ label: "teknikbehov", href: "/teknikbehov" }, { label: "grundare" }]}>
+    <PathwayShell breadcrumbSegments={[{ label: "tech-needs", href: "/tech-needs" }, { label: "founder" }]}>
       {/* Hero Section */}
       <div className="mb-16 md:mb-24 lg:mb-32">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">

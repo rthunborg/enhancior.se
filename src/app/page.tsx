@@ -18,12 +18,12 @@ const teasers = [
   {
     heading: "Arbetsmetodik",
     hook: "En strukturerad metodik i fyra faser - från diagnos till leverans.",
-    href: "/metodik",
+    href: "/methodology",
   },
   {
     heading: "Tjänster",
     hook: "Olika uppdragsformer med tydlig omfattningar och tidslinjer.",
-    href: "/tjanster",
+    href: "/services",
   },
   {
     heading: "Kundcase",

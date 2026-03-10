@@ -11,7 +11,7 @@ export function HomepageCTAs() {
 
   return (
     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-      <Link href="/om" className={linkStyles}>
+      <Link href="/about" className={linkStyles}>
         Mer om mig
       </Link>
       <button
@@ -19,7 +19,7 @@ export function HomepageCTAs() {
         onClick={() => openContactModal()}
         className="inline-flex items-center justify-center min-h-[44px] px-6 py-3 bg-[#F59E0B] hover:bg-[#D97706] text-[#0A0A0A] font-semibold rounded-lg text-sm outline-none ring-offset-[#0A0A0A] focus-visible:ring-2 focus-visible:ring-[#F59E0B] focus-visible:ring-offset-2 transition-colors duration-200 ease-out motion-reduce:transition-none"
       >
-        Kontakta oss
+        Ta kontakt  
       </button>
       <a
         href="/cv/rasmus-thunborg-cv.pdf"

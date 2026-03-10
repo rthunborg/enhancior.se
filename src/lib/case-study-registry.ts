@@ -9,7 +9,7 @@ export interface CaseStudyCardMeta {
 
 export const caseStudyRegistry: CaseStudyCardMeta[] = [
   {
-    slug: "nordeuropeisk-hr-koncern",
+    slug: "nordic-hr-group",
     title: "Automatiserad Credential-Rotation",
     client: "Nordeuropeisk HR-Koncern",
     engagement: "Teknisk Revision",
@@ -21,7 +21,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     personas: ["cto-crisis"],
   },
   {
-    slug: "nordiskt-rederi",
+    slug: "nordic-shipping",
     title: "Från Excel-kaos till realtidsplattform för säsongsrekrytering",
     client: "Nordiskt Rederi",
     engagement: "Arkitekt som resurs",
@@ -34,7 +34,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     personas: ["founder-rescue", "cto-crisis", "cto-proactive"],
   },
   {
-    slug: "varlsledande-mobelkoncern",
+    slug: "global-furniture-group",
     title: "Backend-Arkitektur för 3D-Modellering",
     client: "Världsledande Möbelkoncern",
     engagement: "Arkitekt som resurs",
@@ -46,7 +46,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     personas: ["cto-proactive", "founder-rescue"],
   },
   {
-    slug: "ledande-nordisk-modekedja",
+    slug: "nordic-fashion-chain",
     title: "Från Legacy till Eventdriven Arkitektur",
     client: "Ledande Nordisk Modekedja",
     engagement: "Arkitekt som resurs",
@@ -59,7 +59,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     personas: ["cto-crisis"],
   },
   {
-    slug: "varlsledande-elbilstillverkare",
+    slug: "global-ev-manufacturer",
     title: "Teknisk Ledning för Finansiella Integrationer",
     client: "Världsledande Elbilstillverkare",
     engagement: "Teknisk ledning",

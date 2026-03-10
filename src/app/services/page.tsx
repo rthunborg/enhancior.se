@@ -15,16 +15,16 @@ export const metadata: Metadata = {
     "IT-konsult Göteborg",
   ],
   openGraph: {
-    url: "https://enhancior.se/tjanster",
+    url: "https://enhancior.se/services",
   },
   alternates: {
-    canonical: "https://enhancior.se/tjanster",
+    canonical: "https://enhancior.se/services",
   },
 };
 
 export default function TjansterPage() {
   return (
-    <PageShell breadcrumbSegments={[{ label: "tjänster" }]}>
+    <PageShell breadcrumbSegments={[{ label: "services" }]}>
       <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue", "advisory-quick-review", "advisory-procurement", "advisory-retainer"]} />
     </PageShell>
   );
