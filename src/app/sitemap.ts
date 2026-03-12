@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://enhancior.se";
-  const lastModified = new Date("2026-03-06");
+  const lastModified = new Date("2026-03-12");
 
   const pages = [
     "",

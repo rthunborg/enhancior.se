@@ -5,7 +5,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: ["/_next/", "/api/"],
     },
+    host: "https://enhancior.se",
     sitemap: "https://enhancior.se/sitemap.xml",
   };
 }

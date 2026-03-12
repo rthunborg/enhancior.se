@@ -23,10 +23,10 @@ export const metadata: Metadata = {
 };
 
 const clients = [
-  { name: "Världsledande Elbilstillverkare", years: "4 år", role: "Interim Tech Lead" },
-  { name: "Ledande Nordisk Modekedja", years: "2.5 år", role: "Senior Software Engineer" },
-  { name: "Världsledande Möbelkoncern", years: "6 mån", role: "Senior Solution Architect" },
-  { name: "Nordeuropeisk HR-Koncern", years: "4 mån", role: "Platform Engineer" },
+  { name: "Visma Enterprise", years: "4 mån", role: "Platform Engineer" },
+  { name: "Lindex", years: "2.5 år", role: "Senior Software Engineer" },
+  { name: "Polestar", years: "4 år", role: "Software Engineer / Interim Tech Lead" },
+  { name: "Ikea", years: "6 mån", role: "Senior Solution Architect" },
   { name: "Ericsson", years: "1 år", role: "Backend Developer" },
   { name: "Volvo", years: "1 år", role: "Backend Developer" },
 ] as const;
