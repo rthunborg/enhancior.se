@@ -144,24 +144,6 @@ export function ContactModal({
                 exit={{ opacity: 0, y: 100 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
               >
-                <div className="flex items-center justify-between mb-6">
-                  <Dialog.Title className="text-xl font-bold text-[#EDEDED]">
-                    Ta kontakt
-                  </Dialog.Title>
-                  <Dialog.Close asChild>
-                    <button
-                      className="rounded-lg p-2 text-[#A1A1A1] hover:text-[#EDEDED] hover:bg-[rgba(255,255,255,0.06)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F59E0B]"
-                      aria-label="Stäng"
-                    >
-                      <X className="h-5 w-5" />
-                    </button>
-                  </Dialog.Close>
-                </div>
-
-                <Dialog.Description className="text-sm text-[#A1A1A1] mb-6">
-                  Berätta om er situation så hör jag av mig inom 24 timmar.
-                </Dialog.Description>
-
                 <AnimatePresence mode="wait">
                   {formState === "success" ? (
                     <motion.div
@@ -172,6 +154,17 @@ export function ContactModal({
                       className="py-12 text-center"
                       role="status"
                     >
+                      <Dialog.Title className="sr-only">
+                        Meddelande skickat
+                      </Dialog.Title>
+                      <Dialog.Close asChild>
+                        <button
+                          className="absolute top-6 right-6 rounded-lg p-2 text-[#A1A1A1] hover:text-[#EDEDED] hover:bg-[rgba(255,255,255,0.06)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F59E0B]"
+                          aria-label="Stäng"
+                        >
+                          <X className="h-5 w-5" />
+                        </button>
+                      </Dialog.Close>
                       <motion.div
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
@@ -192,11 +185,31 @@ export function ContactModal({
                       </p>
                     </motion.div>
                   ) : (
-                    <motion.form
-                      key="form"
+                    <motion.div
+                      key="form-wrapper"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
+                    >
+                      <div className="flex items-center justify-between mb-6">
+                        <Dialog.Title className="text-xl font-bold text-[#EDEDED]">
+                          Ta kontakt
+                        </Dialog.Title>
+                        <Dialog.Close asChild>
+                          <button
+                            className="rounded-lg p-2 text-[#A1A1A1] hover:text-[#EDEDED] hover:bg-[rgba(255,255,255,0.06)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F59E0B]"
+                            aria-label="Stäng"
+                          >
+                            <X className="h-5 w-5" />
+                          </button>
+                        </Dialog.Close>
+                      </div>
+
+                      <Dialog.Description className="text-sm text-[#A1A1A1] mb-6">
+                        Berätta om er situation så hör jag av mig inom 24
+                        timmar.
+                      </Dialog.Description>
+                    <form
                       onSubmit={handleSubmit}
                       className="space-y-4"
                       noValidate={false}
@@ -386,7 +399,8 @@ export function ContactModal({
                         )}
                         {formState === "submitting" ? "Skickar..." : "Skicka"}
                       </button>
-                    </motion.form>
+                    </form>
+                    </motion.div>
                   )}
                 </AnimatePresence>
               </motion.div>
