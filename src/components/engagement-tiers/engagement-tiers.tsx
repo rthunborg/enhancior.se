@@ -22,9 +22,14 @@ const containerVariants = {
 
 export function EngagementTiers({ emphasizedTierId, tierIds }: EngagementTiersProps) {
   const reducedMotion = useReducedMotion() ?? false;
-  const tiers = tierIds
+  const filtered = tierIds
     ? engagementTiers.filter((t) => tierIds.includes(t.id))
     : engagementTiers;
+  const tiers = emphasizedTierId
+    ? [...filtered].sort((a, b) =>
+        a.id === emphasizedTierId ? -1 : b.id === emphasizedTierId ? 1 : 0
+      )
+    : filtered;
 
   return (
     <section aria-label="Engagemang" className="mb-16 md:mb-24 lg:mb-32">

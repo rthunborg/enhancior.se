@@ -106,6 +106,7 @@ export function EnterpriseFooter() {
               <button
                 type="button"
                 onClick={() => openContactModal()}
+                aria-label="Öppna kontaktformulär"
                 className="font-mono hover:underline cursor-pointer bg-transparent border-none p-0 text-inherit"
               >
                 rasmus.thunborg@enhancior.se

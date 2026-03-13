@@ -35,7 +35,7 @@ export function EngagementTierCard({
         "relative flex flex-col rounded-lg p-8 bg-[#111111]",
         "border",
         emphasized
-          ? "border-[#F59E0B]/40 order-first md:order-none"
+          ? "border-[#F59E0B]/40"
           : "border-[rgba(255,255,255,0.08)]"
       )}
     >
