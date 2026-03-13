@@ -7,7 +7,7 @@ export function StructuredData() {
                 "@id": "https://enhancior.se/#organization",
                 name: "Enhancior AB",
                 url: "https://enhancior.se",
-                logo: "https://enhancior.se/enhancior_logo.png",
+                logo: "https://enhancior.se/images/enhancior_logo.png",
                 description: "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, inbäddad arkitektkompetens och legacy-modernisering för SaaS och enterprise i Sverige.",
                 address: {
                     "@type": "PostalAddress",

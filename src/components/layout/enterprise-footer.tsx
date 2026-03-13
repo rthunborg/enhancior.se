@@ -88,7 +88,7 @@ export function EnterpriseFooter() {
               aria-label="Tillbaka till startsidan"
             >
               <Image
-                src="/images/enhancior_logo.png"
+                src="/images/enhancior_logo.webp"
                 alt="Enhancior logotyp"
                 width={40}
                 height={36}

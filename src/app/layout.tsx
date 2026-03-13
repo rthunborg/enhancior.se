@@ -5,17 +5,18 @@ import { Analytics } from "@vercel/analytics/react";
 import { StructuredData } from "@/components/seo/structured-data";
 import { EnterpriseFooter } from "@/components/layout/enterprise-footer";
 import { ContactModalProvider } from "@/components/contact";
-import { FloatingCta } from "@/components/contact/floating-cta";
-import { ScrollToTop } from "@/components/contact/scroll-to-top";
+import { LazyOverlays } from "@/components/layout/lazy-overlays";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -82,8 +83,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <div id="footer-sentinel" className="pointer-events-none h-0 w-0" aria-hidden="true" />
           <EnterpriseFooter />
-          <FloatingCta />
-          <ScrollToTop />
+          <LazyOverlays />
         </ContactModalProvider>
         <Analytics />
       </body>
