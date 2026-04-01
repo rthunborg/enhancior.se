@@ -1,4 +1,4 @@
-export function ModekedjaDiagram() {
+export function NordicFashionChainDiagram() {
   // Layout constants
   const pad = 20;
   const serviceBoxW = 130;
@@ -13,7 +13,6 @@ export function ModekedjaDiagram() {
   // Y positions
   const infraLabelY = 16;
   const infraY = 28;
-  const infraH = 0; // infra is a background layer
   const observabilityY = 38;
   const observabilityH = 24;
   const serviceY = observabilityY + observabilityH + 30;

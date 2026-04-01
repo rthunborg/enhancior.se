@@ -8,7 +8,7 @@ export function StructuredData() {
                 name: "Enhancior AB",
                 url: "https://enhancior.se",
                 logo: "https://enhancior.se/images/enhancior_logo.png",
-                description: "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, inbäddad arkitektkompetens och legacy-modernisering för SaaS och enterprise i Sverige.",
+                description: "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, mjukvaruarkitekt som deltar regelbundet i ert team, och legacy-modernisering för SaaS och enterprise i Sverige.",
                 address: {
                     "@type": "PostalAddress",
                     addressLocality: "Göteborg",
@@ -22,15 +22,15 @@ export function StructuredData() {
                 "@id": "https://enhancior.se/#service",
                 name: "Teknisk revision",
                 provider: { "@id": "https://enhancior.se/#organization" },
-                description: "Identifiera och åtgärda teknisk skuld i kodbas, arkitektur och leveransprocesser.",
+                description: "Identifiera och åtgärda teknisk skuld i kodbas, mjukvaruarkitektur och leveransprocesser.",
                 areaServed: "Sverige"
             },
             {
                 "@type": "Service",
                 "@id": "https://enhancior.se/#service2",
-                name: "Inbäddad arkitekt & teknisk ledning",
+                name: "Mjukvaruarkitekt i teamet & teknisk ledning",
                 provider: { "@id": "https://enhancior.se/#organization" },
-                description: "Inbäddad IT-konsult och arkitekt som driver tekniska beslut och stabiliserar er teknikgrund.",
+                description: "IT-konsult och mjukvaruarkitekt som arbetar nära ert team, driver tekniska beslut och stabiliserar er teknikgrund.",
                 areaServed: "Sverige"
             },
             {

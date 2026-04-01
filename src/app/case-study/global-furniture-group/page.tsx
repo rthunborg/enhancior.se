@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { MobelkoncernDiagram } from "@/components/case-study/diagrams/mobelkoncern-diagram";
+import { GlobalFurnitureGroupDiagram } from "@/components/case-study/diagrams/global-furniture-group-diagram";
 
 export const metadata: Metadata = {
   title:
@@ -47,7 +47,7 @@ const metrics: CaseStudyMetric[] = [
   },
 ];
 
-export default function VarlsledandeMobelkoncernCaseStudyPage() {
+export default function GlobalFurnitureGroupCaseStudyPage() {
   return (
       <CaseStudyLayout
         slug="global-furniture-group"
@@ -70,13 +70,13 @@ export default function VarlsledandeMobelkoncernCaseStudyPage() {
               planeras.
             </p>
             <p>
-              Kunden behövde en senior arkitekt som kunde designa hela
+              Kunden behövde en senior mjukvaruarkitekt som kunde designa hela
               backend-lagret, integrera med Active Directory och samtidigt
               kartlägga legacy-systemet för en ordnad övergång.
             </p>
           </>
         }
-        architectureViewer={<MobelkoncernDiagram />}
+        architectureViewer={<GlobalFurnitureGroupDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>

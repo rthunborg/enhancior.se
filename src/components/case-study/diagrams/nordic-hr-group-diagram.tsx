@@ -1,4 +1,4 @@
-export function HrKoncernDiagram() {
+export function NordicHrGroupDiagram() {
   // Layout constants
   const svgW = 520;
   const svgH = 420;

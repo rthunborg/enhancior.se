@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { ModekedjaDiagram } from "@/components/case-study/diagrams/modekedja-diagram";
+import { NordicFashionChainDiagram } from "@/components/case-study/diagrams/nordic-fashion-chain-diagram";
 
 export const metadata: Metadata = {
   title: "Ledande Nordisk Modekedja: Från Legacy till Eventdriven Arkitektur | Enhancior",
@@ -46,7 +46,7 @@ const metrics: CaseStudyMetric[] = [
   },
 ];
 
-export default function LedandeNordiskModekedjaCaseStudyPage() {
+export default function NordicFashionChainCaseStudyPage() {
   return (
       <CaseStudyLayout
         slug="nordic-fashion-chain"
@@ -74,7 +74,7 @@ export default function LedandeNordiskModekedjaCaseStudyPage() {
             </p>
           </>
         }
-        architectureViewer={<ModekedjaDiagram />}
+        architectureViewer={<NordicFashionChainDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>

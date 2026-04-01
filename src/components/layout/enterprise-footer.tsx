@@ -7,7 +7,7 @@ import { useContactModal } from "@/components/contact";
 const tjänsterLinks = [
   { label: "30-dagars Audit", href: "/cto-crisis" },
   { label: "Teknisk ledning", href: "/cto-proactive" },
-  { label: "Arkitekt som resurs", href: "/founder-rescue" },
+  { label: "Mjukvaruarkitekt som resurs", href: "/founder-rescue" },
   { label: "IT-rådgivning", href: "/it-advisory" },
 ] as const;
 
@@ -54,7 +54,7 @@ export function EnterpriseFooter() {
             <div className="text-center md:text-left">
               <p className={headingClasses}>Enhancior AB</p>
               <p className="text-muted-foreground text-sm">
-                Senior arkitekt.
+                Senior mjukvaruarkitekt.
               </p>
               <p className="text-muted-foreground text-sm">
                 Teknisk ledning.

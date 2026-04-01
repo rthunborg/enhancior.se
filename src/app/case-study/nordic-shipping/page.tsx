@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { NordisktRederiDiagram } from "@/components/case-study/diagrams/nordiskt-rederi-diagram";
+import { NordicShippingDiagram } from "@/components/case-study/diagrams/nordic-shipping-diagram";
 
 export const metadata: Metadata = {
   title:
@@ -47,7 +47,7 @@ const metrics: CaseStudyMetric[] = [
   },
 ];
 
-export default function NordisktRederiCaseStudyPage() {
+export default function NordicShippingCaseStudyPage() {
   return (
     <CaseStudyLayout
       slug="nordic-shipping"
@@ -85,7 +85,7 @@ export default function NordisktRederiCaseStudyPage() {
           </p>
         </>
       }
-      architectureViewer={<NordisktRederiDiagram />}
+      architectureViewer={<NordicShippingDiagram />}
       interventionNarrative={
         <ul className="list-disc pl-5 space-y-3">
           <li>

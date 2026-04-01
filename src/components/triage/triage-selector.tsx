@@ -8,25 +8,26 @@ import { ChevronRight } from "lucide-react";
 const TRIAGE_OPTIONS = [
   {
     id: "cto-crisis",
-    label: "Features tar evigheter att leverera och teknisk skuld bromsar oss.",
+    label:
+      "Nya funktioner tar evigheter att leverera och teknisk skuld bromsar oss.",
     href: "/cto-crisis",
     ariaLabel:
-      "Features tar evigheter att leverera och teknisk skuld bromsar oss. Välj för att se lösningar.",
+      "Nya funktioner tar evigheter att leverera och teknisk skuld bromsar oss. Välj för att se lösningar.",
   },
   {
     id: "cto-proactive",
-    label: "Teamet växer snabbt, men arkitekturen hänger inte med.",
+    label: "Teamet växer snabbt, men mjukvaruarkitekturen hänger inte med.",
     href: "/cto-proactive",
     ariaLabel:
-      "Teamet växer snabbt, men arkitekturen hänger inte med. Välj för att se lösningar.",
+      "Teamet växer snabbt, men mjukvaruarkitekturen hänger inte med. Välj för att se lösningar.",
   },
   {
     id: "founder-rescue",
     label:
-      "Vi saknar rätt senior tech-kompetens och behöver en erfaren arkitekt som håller oss på rätt kurs.",
+      "Vi saknar rätt senior IT-kompetens och behöver en erfaren mjukvaruarkitekt som håller oss på rätt kurs.",
     href: "/tech-needs",
     ariaLabel:
-      "Vi saknar rätt senior tech-kompetens och behöver en erfaren arkitekt som håller oss på rätt kurs. Välj för att se lösningar.",
+      "Vi saknar rätt senior IT-kompetens och behöver en erfaren mjukvaruarkitekt som håller oss på rätt kurs. Välj för att se lösningar.",
   },
 ] as const;
 

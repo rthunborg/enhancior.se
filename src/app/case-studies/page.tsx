@@ -5,13 +5,13 @@ import { PageShell } from "@/components/page-shell";
 export const metadata: Metadata = {
   title: "Kundcase | IT-konsult & Mjukvaruarkitekt – Enhancior",
   description:
-    "Verkliga uppdrag med mätbara resultat. Se hur Enhancior har hjälpt ledande nordiska och globala företag med arkitektur, teknisk ledning och modernisering.",
+    "Verkliga uppdrag med mätbara resultat. Se hur Enhancior har hjälpt ledande nordiska och globala företag med IT- och mjukvaruarkitektur, teknisk ledning och modernisering.",
   keywords: [
     "IT-konsult kundcase",
     "mjukvaruarkitekt uppdrag",
     "legacy modernisering case study",
     "teknisk revision resultat",
-    "enterprise arkitektur",
+    "enterprise mjukvaruarkitektur",
   ],
   openGraph: {
     url: "https://enhancior.se/case-studies",
@@ -68,7 +68,7 @@ const caseStudies = [
     title: "Teknisk Ledning för Finansiella Integrationer",
     summary:
       "Senior teknisk ledning som drev arkitekturbeslut, handledde teamet och stabiliserade komplexa finansiella integrationer.",
-    metric: { label: "Team velocity", delta: "+45%" },
+    metric: { label: "Leveranstakt", delta: "+45%" },
     industry: "Automotive / FinTech",
     timeline: "4 år (2021–2025)",
   }

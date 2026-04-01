@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { HrKoncernDiagram } from "@/components/case-study/diagrams/hr-koncern-diagram";
+import { NordicHrGroupDiagram } from "@/components/case-study/diagrams/nordic-hr-group-diagram";
 
 export const metadata: Metadata = {
   title: "Nordeuropeisk HR-Koncern: Automatiserad Credential-Rotation | Enhancior",
@@ -46,7 +46,7 @@ const metrics: CaseStudyMetric[] = [
   },
 ];
 
-export default function NordeuropeiskHrKoncernCaseStudyPage() {
+export default function NordicHrGroupCaseStudyPage() {
   return (
       <CaseStudyLayout
         slug="nordic-hr-group"
@@ -74,7 +74,7 @@ export default function NordeuropeiskHrKoncernCaseStudyPage() {
             </p>
           </>
         }
-        architectureViewer={<HrKoncernDiagram />}
+        architectureViewer={<NordicHrGroupDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>

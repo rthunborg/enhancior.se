@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { CaseStudyLayout } from "@/components/case-study";
 import type { CaseStudyMetric } from "@/components/case-study";
-import { ElbilstillverkareDiagram } from "@/components/case-study/diagrams/elbilstillverkare-diagram";
+import { GlobalEvManufacturerDiagram } from "@/components/case-study/diagrams/global-ev-manufacturer-diagram";
 
 export const metadata: Metadata = {
   title: "Världsledande Elbilstillverkare: Teknisk Ledning för Finansiella Integrationer | Enhancior",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const metrics: CaseStudyMetric[] = [
   {
-    label: "Team velocity",
+    label: "Leveranstakt",
     before: "Baseline",
     after: "+45%",
     delta: "↑ 45%",
@@ -46,7 +46,7 @@ const metrics: CaseStudyMetric[] = [
   },
 ];
 
-export default function VarlsledandeElbilstillverkareCaseStudyPage() {
+export default function GlobalEvManufacturerCaseStudyPage() {
   return (
       <CaseStudyLayout
         slug="global-ev-manufacturer"
@@ -70,7 +70,7 @@ export default function VarlsledandeElbilstillverkareCaseStudyPage() {
             </p>
           </>
         }
-        architectureViewer={<ElbilstillverkareDiagram />}
+        architectureViewer={<GlobalEvManufacturerDiagram />}
         interventionNarrative={
           <ul className="list-disc pl-5 space-y-3">
             <li>
@@ -85,7 +85,7 @@ export default function VarlsledandeElbilstillverkareCaseStudyPage() {
               <strong className="text-[#EDEDED]">
                 AWS Lambda/DynamoDB serverless:
               </strong>{" "}
-              Feature-implementation på serverless-stack med .NET,
+              Ny funktionalitet på serverless-stack med .NET,
               TypeScript och React. Automatiserade tester och
               Terraform-baserad infrastruktur.
             </li>
@@ -93,8 +93,8 @@ export default function VarlsledandeElbilstillverkareCaseStudyPage() {
               <strong className="text-[#EDEDED]">
                 Mentoring och kunskapsöverföring:
               </strong>{" "}
-              Strukturerad mentoring av utvecklare. Dokumenterad
-              arkitekturvision och beslutsdagbok som minskade
+              Strukturerad mentoring av utvecklare.               Dokumenterad
+              vision för mjukvaruarkitekturen och beslutsdagbok som minskade
               onboarding-tiden från tre månader till tre veckor.
             </li>
             <li>
@@ -110,7 +110,7 @@ export default function VarlsledandeElbilstillverkareCaseStudyPage() {
         outcomeNarrative={
           <>
             <p className="mb-4">
-              Under de fyra år jag samarbetade med kunden ökade teamets velocity med
+              Under de fyra år jag samarbetade med kunden ökade teamets leveranstakt med
               45%. Uptime förbättrades från 98.5% till 99.9% och
               onboarding-tiden minskade från tre månader till tre veckor.
             </p>

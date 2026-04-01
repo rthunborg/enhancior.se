@@ -1,4 +1,4 @@
-export function NordisktRederiDiagram() {
+export function NordicShippingDiagram() {
   // Layout constants
   const roleBoxW = 108;
   const roleBoxH = 40;

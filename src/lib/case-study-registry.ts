@@ -24,7 +24,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     slug: "nordic-shipping",
     title: "Från Excel-kaos till realtidsplattform för säsongsrekrytering",
     client: "Nordiskt Rederi",
-    engagement: "Arkitekt som resurs",
+    engagement: "Mjukvaruarkitekt som resurs",
     metrics: [
       { label: "Datadelning", value: "↓ ~95%" },
       { label: "Versionskontroll", value: "Eliminerat kaos" },
@@ -37,7 +37,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     slug: "global-furniture-group",
     title: "Backend-Arkitektur för 3D-Modellering",
     client: "Världsledande Möbelkoncern",
-    engagement: "Arkitekt som resurs",
+    engagement: "Mjukvaruarkitekt som resurs",
     metrics: [
       { label: "Design till MVP", value: "8 veckor" },
       { label: "API-endpoints", value: "24 st" },
@@ -49,7 +49,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     slug: "nordic-fashion-chain",
     title: "Från Legacy till Eventdriven Arkitektur",
     client: "Ledande Nordisk Modekedja",
-    engagement: "Arkitekt som resurs",
+    engagement: "Mjukvaruarkitekt som resurs",
     metrics: [
       { label: "Deploy-frekvens", value: "1/mån → 3/vecka" },
       { label: "Incidenter", value: "↓ 88%" },
@@ -64,7 +64,7 @@ export const caseStudyRegistry: CaseStudyCardMeta[] = [
     client: "Världsledande Elbilstillverkare",
     engagement: "Teknisk ledning",
     metrics: [
-      { label: "Velocity", value: "↑ 45%" },
+      { label: "Leveranstakt", value: "↑ 45%" },
       { label: "Uptime", value: "98.5% → 99.9%" },
       { label: "Onboarding", value: "3 mån → 3v" },
       { label: "Säkerhetsincidenter", value: "0" },

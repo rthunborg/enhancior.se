@@ -6,7 +6,7 @@ import { ContactButton } from "./contact-button";
 export const metadata: Metadata = {
   title: "Rasmus Thunborg | Senior Mjukvaruarkitekt & IT-konsult Göteborg",
   description:
-    "Senior mjukvaruarkitekt och IT-konsult i Göteborg med 10+ års erfarenhet från ledande globala och nordiska bolag. Specialiserad på arkitektur, backend-utveckling och teknisk ledning.",
+    "Senior mjukvaruarkitekt och IT-konsult i Göteborg med 10+ års erfarenhet från ledande globala och nordiska bolag. Specialiserad på mjukvaruarkitektur, backend-utveckling och teknisk ledning.",
   keywords: [
     "Rasmus Thunborg",
     "mjukvaruarkitekt Göteborg",
@@ -76,7 +76,7 @@ export default function OmPage() {
                 Det ni ser är det ni får
               </h2>
               <p>
-                Med Enhancior är det enkelt. När ni anlitar mig får ni mig. Inga account managers och inga juniorer. Bara en erfaren arkitekt som gör jobbet.
+                Med Enhancior är det enkelt. När ni anlitar mig får ni mig. Inga account managers och inga juniorer. Bara en erfaren mjukvaruarkitekt som gör jobbet.
               </p>
             </div>
 

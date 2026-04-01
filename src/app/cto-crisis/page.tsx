@@ -63,20 +63,20 @@ export default function CtooCrisisPage() {
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
             <p className="text-base font-semibold text-[#EDEDED] mb-1">
-              Arkitektur som blockerar tillväxt
+              Mjukvaruarkitektur som blockerar tillväxt
             </p>
             <p className="text-sm text-[#A1A1A1]">
-              Monoliten har blivit en flaskhals. Varje nytt feature-team krockar
-              med samma kodområden och ingen vågar ta ansvaret att refaktorera spagetti-koden.
+              Monoliten har blivit en flaskhals. Parallella utvecklingsteam krockar
+              i samma kodområden och ingen vågar ta ansvaret att refaktorera spagetti-koden.
             </p>
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
             <p className="text-base font-semibold text-[#EDEDED] mb-1">
-              Teamvelocity i fritt fall
+              Leveranstakten i fritt fall
             </p>
             <p className="text-sm text-[#A1A1A1]">
               Utvecklarna spenderar mer tid på att släcka bränder än att bygga
-              features. Teknisk skuld äter sprint-kapacitet och de seniora utvecklarna börjar titta mot dörren.
+              nya funktioner. Teknisk skuld äter sprint-kapacitet och de seniora utvecklarna börjar titta mot dörren.
             </p>
           </div>
         </div>

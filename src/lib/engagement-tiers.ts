@@ -18,11 +18,11 @@ export const engagementTiers: EngagementTier[] = [
     name: "30-dagars teknisk revision",
     tagline: "För system som dränerar sprint-kapacitet och bromsar leveransen",
     scope:
-      "Djupanalys av kodbas, arkitektur och leveransprocesser under 30 dagar. Ni får en konkret åtgärdsplan rankad efter affärsnytta och teknisk risk, redo att implementera dag 31.",
+      "Djupanalys av kodbas, mjukvaruarkitektur och leveransprocesser under 30 dagar. Ni får en konkret åtgärdsplan rankad efter affärsnytta och teknisk risk, redo att implementera dag 31.",
     timeline: "30 dagar",
     startingPrice: "Från 180 000 kr",
     deliverables: [
-      "Komplett arkitekturbedömning med identifierade flaskhalsar",
+      "Komplett bedömning av er mjukvaruarkitektur med identifierade flaskhalsar",
       "Prioriterad åtgärdsplan rankad efter affärsnytta",
       "Mätbara förbättringsmål med baseline-värden",
       "Konkret roadmap för de första 90 dagarna",
@@ -33,14 +33,15 @@ export const engagementTiers: EngagementTier[] = [
   {
     id: "fractional-retainer",
     name: "Teknisk ledning vid behov",
-    tagline: "En inbäddad arkitekt som driver beslut och stannar tills ert team är stabilt",
+    tagline:
+      "En mjukvaruarkitekt i ert team som driver beslut och stannar tills ni är stabila",
     scope:
-      "Senior arkitekt som integreras i ert team 1–2 dagar per vecka. Driver arkitekturbeslut, handleder teamet och stabiliserar er tekniska grund. Hjälper er hitta en permanent ersättare när ni är redo.",
+      "Senior mjukvaruarkitekt som deltar i ert team 1–2 dagar per vecka. Driver arkitekturbeslut, handleder teamet och stabiliserar er tekniska grund. Hjälper er hitta en permanent ersättare när ni är redo.",
     timeline: "Löpande · 1–2 dagar/vecka",
     startingPrice: "Från 45 000 kr/mån",
     deliverables: [
-      "Kontinuerligt arkitekturstöd och teknisk mentorship",
-      "Dokumenterad arkitekturvision och beslutsdagbok",
+      "Kontinuerligt stöd i mjukvaruarkitektur och teknisk mentorship",
+      "Dokumenterad vision för mjukvaruarkitekturen och beslutsdagbok",
       "Strukturerad kunskapsöverföring till ert team",
       "Stöd vid rekrytering av permanent teknisk ledare",
     ],
@@ -49,7 +50,7 @@ export const engagementTiers: EngagementTier[] = [
   },
   {
     id: "enterprise-rescue",
-    name: "Arkitekt som resurs",
+    name: "Mjukvaruarkitekt som resurs",
     tagline: "Storskalig modernisering av legacysystem",
     scope:
       "Djupgående moderniseringsuppdrag för enterprise-system som kräver modernisering. Compliance-säkrad process med full transparens, från diagnostik till leverans.",
@@ -68,7 +69,7 @@ export const engagementTiers: EngagementTier[] = [
     name: "Snabbgranskning",
     tagline: "Oberoende second opinion innan ni skriver på",
     scope:
-      "En erfaren arkitekt granskar leverantörens förslag, avtal och tekniska lösning under 1–2 veckor. Ni får en ärlig bedömning av risker, dolda kostnader och alternativ innan ni binder er.",
+      "En erfaren mjukvaruarkitekt granskar leverantörens förslag, avtal och tekniska lösning under 1–2 veckor. Ni får en ärlig bedömning av risker, dolda kostnader och alternativ innan ni binder er.",
     timeline: "1–2 veckor",
     startingPrice: "Från 45 000 kr",
     deliverables: [
@@ -101,7 +102,7 @@ export const engagementTiers: EngagementTier[] = [
     name: "Oberoende IT-rådgivning",
     tagline: "En oberoende teknisk rådgivare ni kan lita på",
     scope:
-      "Löpande tillgång till en senior arkitekt som hjälper er fatta bättre IT-beslut. Från systemval och leverantörsbedömningar till tekniska vägval, helt utan säljagenda.",
+      "Löpande tillgång till en senior mjukvaruarkitekt som hjälper er fatta bättre IT-beslut. Från systemval och leverantörsbedömningar till tekniska vägval, helt utan säljagenda.",
     timeline: "Löpande · 2–4 dagar/månad",
     startingPrice: "Från 35 000 kr/mån",
     deliverables: [

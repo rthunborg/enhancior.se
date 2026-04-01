@@ -5,12 +5,12 @@ import { PageShell } from "@/components/page-shell";
 export const metadata: Metadata = {
   title: "IT-konsulttjänster | Teknisk Revision, Arkitektur & Ledning – Enhancior",
   description:
-    "IT-konsulttjänster inom teknisk revision, inbäddad arkitektkompetens och enterprise-modernisering. Senior mjukvaruarkitekt i Göteborg – tydlig omfattning, tidslinje och leveranser.",
+    "IT-konsulttjänster inom teknisk revision, mjukvaruarkitekt som deltar regelbundet i ert team, och enterprise-modernisering. Senior mjukvaruarkitekt i Göteborg – tydlig omfattning, tidslinje och leveranser.",
   keywords: [
     "IT-konsulttjänster",
     "teknisk revision",
     "mjukvaruarkitekt uppdrag",
-    "inbäddad arkitekt",
+    "mjukvaruarkitekt team",
     "enterprise modernisering",
     "IT-konsult Göteborg",
   ],

@@ -25,7 +25,7 @@ const FORK_OPTIONS = [
   },
 ] as const;
 
-export function TeknikbehovSelector() {
+export function TechNeedsSelector() {
   const [focusedIndex, setFocusedIndex] = useState(0);
   const cardRefs = useRef<(HTMLAnchorElement | null)[]>([]);
   const router = useRouter();

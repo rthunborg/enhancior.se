@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { PathwayShell } from "@/components/pathway/pathway-shell";
-import { TeknikbehovSelector } from "@/components/triage/teknikbehov-selector";
+import { TechNeedsSelector } from "@/components/triage/tech-needs-selector";
 
 export const metadata: Metadata = {
   title: "Teknikbehov: Bygg eller Köp? | Enhancior",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function TeknikbehovPage() {
+export default function TechNeedsPage() {
   return (
     <PathwayShell breadcrumbSegments={[{ label: "tech-needs" }]}>
       <div className="mb-16 md:mb-24 lg:mb-32">
@@ -26,7 +26,7 @@ export default function TeknikbehovPage() {
           bäst beskriver er.
         </p>
 
-        <TeknikbehovSelector />
+        <TechNeedsSelector />
       </div>
     </PathwayShell>
   );

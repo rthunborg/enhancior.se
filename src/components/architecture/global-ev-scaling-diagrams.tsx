@@ -10,7 +10,7 @@ import {
 } from "./diagram-primitives";
 
 // ── Before: Tangled integration landscape ──────────────────────────────
-export const ElbilstillverkareScalingBefore = (
+export const GlobalEvScalingBefore = (
   <motion.svg
     viewBox="0 0 600 320"
     width="100%"
@@ -58,7 +58,7 @@ export const ElbilstillverkareScalingBefore = (
 );
 
 // ── Intervention: Domain boundaries emerging ───────────────────────────
-export const ElbilstillverkareScalingIntervention = (
+export const GlobalEvScalingIntervention = (
   <motion.svg
     viewBox="0 0 600 320"
     width="100%"
@@ -156,7 +156,7 @@ export const ElbilstillverkareScalingIntervention = (
 );
 
 // ── After: Governed domain platform ────────────────────────────────────
-export const ElbilstillverkareScalingAfter = (
+export const GlobalEvScalingAfter = (
   <motion.svg
     viewBox="0 0 600 320"
     width="100%"
@@ -252,7 +252,7 @@ export const ElbilstillverkareScalingAfter = (
     <ServiceBox x={420} y={235} width={100} height={30} label="Alerting" color="green" />
 
     {/* Metric badges */}
-    <MetricBadge x={105} y={295} label="+45% velocity" color="green" />
+    <MetricBadge x={105} y={295} label="+45% leveranstakt" color="green" />
     <MetricBadge x={300} y={295} label="3v onboarding" color="green" />
     <MetricBadge x={490} y={295} label="99.9% uptime" color="green" />
   </motion.svg>

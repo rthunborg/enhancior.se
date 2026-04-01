@@ -5,7 +5,7 @@ export {
   GenericCrisisAfter,
 } from "./generic-crisis-diagrams";
 export {
-  ElbilstillverkareScalingBefore,
-  ElbilstillverkareScalingIntervention,
-  ElbilstillverkareScalingAfter,
-} from "./elbilstillverkare-scaling-diagrams";
+  GlobalEvScalingBefore,
+  GlobalEvScalingIntervention,
+  GlobalEvScalingAfter,
+} from "./global-ev-scaling-diagrams";

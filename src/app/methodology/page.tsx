@@ -25,7 +25,7 @@ const phases = [
     name: "Diagnos",
     tagline: "Förstå problemet innan något annat",
     description:
-      "Djupanalys av kodbas, arkitektur och leveransprocesser. Jag kartlägger flaskhalsar, teknisk skuld och organisatoriska mönster. Ni får en tydlig bild av var ni står och vad som behöver prioriteras.",
+      "Djupanalys av kodbas, mjukvaruarkitektur och leveransprocesser. Jag kartlägger flaskhalsar, teknisk skuld och organisatoriska mönster. Ni får en tydlig bild av var ni står och vad som behöver prioriteras.",
     deliverable: "Åtgärdsplan rankad efter affärsnytta och teknisk risk",
   },
   {
@@ -33,7 +33,7 @@ const phases = [
     name: "Insats",
     tagline: "Händerna i koden, inte bara PowerPoint",
     description:
-      "Hands-on implementation sida vid sida med ert team. Jag driver arkitekturbeslut, implementerar lösningar och ser till att förändringar levereras. Ingen teori utan resultat, bara konkret genomförande.",
+      "Praktisk implementation sida vid sida med ert team. Jag driver arkitekturbeslut, implementerar lösningar och ser till att förändringar levereras. Ingen teori utan resultat, bara konkret genomförande.",
     deliverable: "Implementerade förbättringar med mätbara resultat",
   },
   {
@@ -42,7 +42,7 @@ const phases = [
     tagline: "Ert team äger resultatet",
     description:
       "Strukturerad kunskapsöverföring så att ert team kan förvalta och vidareutveckla lösningen. Dokumentation, mentoring och pair programming tills teamet är självständigt.",
-    deliverable: "Dokumenterad arkitektur och ett team som äger den",
+    deliverable: "Dokumenterad mjukvaruarkitektur och ett team som äger den",
   },
   {
     number: "04",

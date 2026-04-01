@@ -22,7 +22,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://enhancior.se"),
   title: "IT-konsult Göteborg | Senior Mjukvaruarkitekt – Enhancior",
-  description: "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, inbäddad arkitektkompetens och legacy-modernisering för SaaS och enterprise i Sverige.",
+  description:
+    "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, mjukvaruarkitekt som deltar regelbundet i ert team, och legacy-modernisering för SaaS och enterprise i Sverige.",
   keywords: [
     "IT-konsult Göteborg",
     "mjukvaruarkitekt konsult",

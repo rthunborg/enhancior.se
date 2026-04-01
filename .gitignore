@@ -24,12 +24,16 @@
 .DS_Store
 *.pem
 .worktrees/
+
+# BMAD (methodology / workflow tooling — local install & generated artifacts)
 _bmad-output/
 _bmad/
+
 .claude/
 CLAUDE.md
 scripts/
 docs/
+.cursor/
 
 
 # debug

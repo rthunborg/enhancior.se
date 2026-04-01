@@ -5,7 +5,8 @@ import { HomepageCTAs } from "./homepage-ctas";
 
 export const metadata: Metadata = {
   title: "IT-konsult Göteborg | Senior Mjukvaruarkitekt – Enhancior",
-  description: "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, inbäddad arkitektkompetens och legacy-modernisering för SaaS och enterprise i Sverige.",
+  description:
+    "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, mjukvaruarkitekt som deltar regelbundet i ert team, och legacy-modernisering för SaaS och enterprise i Sverige.",
   openGraph: {
     url: "https://enhancior.se",
   },
@@ -36,9 +37,18 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center bg-[#0A0A0A] px-4">
       <div className="w-full max-w-2xl py-16 md:py-24 lg:py-32 xl:py-40">
-        <h1 className="mb-10 text-center text-3xl font-bold tracking-tight text-[#EDEDED] sm:text-4xl lg:text-5xl">
+        <div className="mb-8 space-y-1 text-center text-sm leading-relaxed text-[#A1A1A1]">
+          <p>Senior mjukvaruarkitekt.</p>
+          <p>Teknisk ledning.</p>
+          <p>Deltid eller uppdrag.</p>
+        </div>
+        <h1 className="mb-6 text-center text-3xl font-bold tracking-tight text-[#EDEDED] sm:text-4xl lg:text-5xl">
           Vad är det som bromsar er?
         </h1>
+        <p className="mx-auto mb-10 max-w-xl text-center text-base text-[#A1A1A1]">
+          Om du känner igen situationen i frågan: välj det alternativ som ligger
+          närmast er verklighet nedan för att gå vidare.
+        </p>
         <TriageSelector />
       </div>
 

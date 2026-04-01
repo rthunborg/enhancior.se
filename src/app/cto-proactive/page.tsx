@@ -4,17 +4,17 @@ import { PathwayCaseStudies } from "@/components/pathway/pathway-case-studies";
 import { EngagementTiers } from "@/components/engagement-tiers";
 import {
   ArchitectureViewer,
-  ElbilstillverkareScalingBefore,
-  ElbilstillverkareScalingIntervention,
-  ElbilstillverkareScalingAfter,
+  GlobalEvScalingBefore,
+  GlobalEvScalingIntervention,
+  GlobalEvScalingAfter,
 } from "@/components/architecture";
 
 export const metadata: Metadata = {
-  title: "Inbäddad Arkitekt & Fraktionell Teknisk Ledning | Enhancior",
+  title: "Mjukvaruarkitekt i ert team & fraktionell teknisk ledning | Enhancior",
   description:
-    "Teamet växer snabbare än arkitekturen. En inbäddad IT-konsult och mjukvaruarkitekt som integreras i ert team, driver arkitekturbesluten och hjälper er skala utan att tappa fart.",
+    "Teamet växer snabbare än mjukvaruarkitekturen. IT-konsult och mjukvaruarkitekt som arbetar nära ert team, driver arkitekturbesluten och hjälper er skala utan att tappa fart.",
   keywords: [
-    "inbäddad arkitekt",
+    "mjukvaruarkitekt i team",
     "fractional CTO",
     "fraktionell CTO",
     "teknisk ledning",
@@ -36,11 +36,11 @@ export default function CtoProactivePage() {
       {/* Hero Section */}
       <div className="mb-16 md:mb-24 lg:mb-32">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#EDEDED] mb-6">
-          Teamet växer. Arkitekturen måste hänga med.
+          Teamet växer. Mjukvaruarkitekturen måste hänga med.
         </h1>
         <p className="text-lg text-[#A1A1A1] max-w-2xl leading-relaxed">
-          Ni skalas snabbt, men arkitekturen designades för ett mindre team. En
-          inbäddad arkitekt integreras direkt i ert team, driver
+          Ni skalas snabbt, men mjukvaruarkitekturen designades för ett mindre team. En
+          senior mjukvaruarkitekt som deltar regelbundet i ert team driver
           arkitekturbesluten och säkerställer att er tekniska grund håller för
           nästa tillväxtfas.
         </p>
@@ -60,9 +60,10 @@ export default function CtoProactivePage() {
               Arkitekturen som fungerade vid 10 devs bryter samman vid 30+
             </p>
             <p className="text-sm text-[#A1A1A1]">
-              Monoliten som bar er hit blir en flaskhals. Feature-team krockar i
-              samma kodområden, merge-konflikter eskalerar och varje release
-              kräver orkestrering över hela organisationen.
+              Monoliten som bar er hit blir en flaskhals. Utvecklingsteam som
+              jobbar parallellt krockar i samma kodområden, merge-konflikter
+              eskalerar och varje release kräver orkestrering över hela
+              organisationen.
             </p>
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
@@ -72,7 +73,7 @@ export default function CtoProactivePage() {
             <p className="text-sm text-[#A1A1A1]">
               Nya utvecklare tar månader att bli produktiva. Kritisk
               domänkunskap sitter hos ett fåtal nyckelpersoner och det finns
-              ingen dokumenterad arkitekturvision att navigera efter.
+              ingen dokumenterad vision för mjukvaruarkitekturen att navigera efter.
             </p>
           </div>
           <div className="bg-[#111111] border border-[rgba(255,255,255,0.08)] rounded-lg p-6">
@@ -82,7 +83,7 @@ export default function CtoProactivePage() {
             <p className="text-sm text-[#A1A1A1]">
               Arkitekturbeslut fattas ad hoc utan långsiktig strategi. Ni
               behöver en erfaren teknisk ledare som kan guida
-              arkitekturevolutionen. Men en heltidsrekrytering tar för lång
+              utvecklingen av er mjukvaruarkitektur. Men en heltidsrekrytering tar för lång
               tid.
             </p>
           </div>
@@ -101,7 +102,7 @@ export default function CtoProactivePage() {
           <div className="flex flex-wrap gap-6 mb-8">
             <div>
               <p className="font-mono text-sm text-[#919191] mb-1">
-                Velocity
+                Leveranstakt
               </p>
               <p className="font-mono text-sm text-[#EDEDED]">
                 Baseline →{" "}
@@ -128,9 +129,9 @@ export default function CtoProactivePage() {
             </div>
           </div>
           <ArchitectureViewer
-            beforeContent={ElbilstillverkareScalingBefore}
-            interventionContent={ElbilstillverkareScalingIntervention}
-            afterContent={ElbilstillverkareScalingAfter}
+            beforeContent={GlobalEvScalingBefore}
+            interventionContent={GlobalEvScalingIntervention}
+            afterContent={GlobalEvScalingAfter}
           />
         </div>
       </section>

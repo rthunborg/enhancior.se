@@ -6,7 +6,7 @@ import { ContactCTA } from "./contact-cta";
 export const metadata: Metadata = {
   title: "IT-konsulting & Teknisk Rådgivning | Enhancior",
   description:
-    "Osäker på vad ni behöver? Enhancior hjälper er identifiera rätt teknisk insats, oavsett om det gäller arkitektur, teamförstärkning eller teknisk rådgivning.",
+    "Osäker på vad ni behöver? Enhancior hjälper er identifiera rätt teknisk insats, oavsett om det gäller IT- och mjukvaruarkitektur, teamförstärkning eller teknisk rådgivning.",
   keywords: [
     "IT-konsulting",
     "teknisk rådgivning",

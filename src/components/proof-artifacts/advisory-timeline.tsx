@@ -104,13 +104,13 @@ export const AdvisoryTimelineIntervention = (
     <TimelineNode
       time="Vecka 1"
       headline="Oberoende teknisk granskning"
-      description="En erfaren arkitekt analyserar leverantörens förslag: arkitektur, integrationer, licensmodell och dolda beroenden."
+      description="En erfaren mjukvaruarkitekt analyserar leverantörens förslag: mjukvaruarkitektur, integrationer, licensmodell och dolda beroenden."
       status="active"
     />
     <TimelineNode
       time="Vecka 2"
       headline="Onödig komplexitet identifierad"
-      description="Granskningen visar att 3 av 7 moduler inte behövs för kommunens faktiska krav. Integrationsarkitekturen är överspecificerad."
+      description="Granskningen visar att 3 av 7 moduler inte behövs för kommunens faktiska krav. Lösningens integrationslager är överspecificerat."
       metric="3 onödiga moduler"
       status="active"
     />

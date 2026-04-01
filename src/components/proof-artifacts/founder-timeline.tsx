@@ -86,9 +86,9 @@ export const FounderTimelineSituation = (
     />
     <TimelineNode
       time="Vecka 1"
-      headline="Velocity sjunker 40%"
+      headline="Leveranstakten sjunker 40%"
       description="Utan teknisk riktning tappar teamet fart. Prioriteringar blir oklara och leveranser försenas."
-      metric="-40% velocity"
+      metric="-40% leveranstakt"
       status="crisis"
     />
     <TimelineNode
@@ -119,7 +119,7 @@ export const FounderTimelineIntervention = (
     <TimelineNode
       time="Vecka 3-4"
       headline="Teknisk genomlysning"
-      description="Arkitektur, tech debt och teamkapacitet kartläggs. En ärlig nulägesbild som ger styrelsen underlag."
+      description="Mjukvaruarkitektur, teknisk skuld och teamkapacitet kartläggs. En ärlig nulägesbild som ger styrelsen underlag."
       status="active"
     />
     <TimelineNode
@@ -144,8 +144,8 @@ export const FounderTimelineResult = (
     <TimelineNode
       time="Månad 2"
       headline="Teamet levererar igen"
-      description="Velocity återställd. Sprintmål nås konsekvent."
-      metric="+60% velocity"
+      description="Leveranstakten återställd. Sprintmål nås konsekvent."
+      metric="+60% leveranstakt"
       status="resolved"
     />
     <TimelineNode
@@ -164,7 +164,7 @@ export const FounderTimelineResult = (
     />
     <TimelineNode
       time="Månad 6"
-      headline="Handover complete"
+      headline="Överlämning klar"
       description="Fraktionellt uppdrag avslutat. Ny CTO har full kontext, dokumentation och teamets förtroende."
       status="resolved"
       isLast

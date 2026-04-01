@@ -119,7 +119,7 @@ export default function VendorPacketPage() {
               <p className="text-sm text-[#A1A1A1]">
                 Teknisk ledning vid behov
               </p>
-              <p className="text-sm text-[#A1A1A1]">Arkitekt som resurs</p>
+              <p className="text-sm text-[#A1A1A1]">Mjukvaruarkitekt som resurs</p>
               <p className="text-sm text-[#A1A1A1]">
                 Oberoende IT-rådgivning
               </p>

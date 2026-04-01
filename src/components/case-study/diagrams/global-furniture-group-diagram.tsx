@@ -1,4 +1,4 @@
-export function MobelkoncernDiagram() {
+export function GlobalFurnitureGroupDiagram() {
   // Layout constants
   const padX = 20;
   const svgW = 520;
