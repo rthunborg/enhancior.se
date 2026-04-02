@@ -37,10 +37,18 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center bg-[#0A0A0A] px-4">
       <div className="w-full max-w-2xl py-16 md:py-24 lg:py-32 xl:py-40">
-        <div className="mb-8 space-y-1 text-center text-sm leading-relaxed text-[#A1A1A1]">
+        <div className="mb-6 space-y-1 text-center text-sm leading-relaxed text-[#A1A1A1]">
           <p>Senior mjukvaruarkitekt.</p>
           <p>Teknisk ledning.</p>
           <p>Deltid eller uppdrag.</p>
+        </div>
+        <div
+          className="mx-auto mb-10 flex max-w-sm items-center gap-4 px-4"
+          aria-hidden="true"
+        >
+          <div className="h-px min-w-0 flex-1 bg-gradient-to-r from-transparent via-[rgba(245,158,11,0.35)] to-[rgba(245,158,11,0.08)]" />
+          <div className="size-1.5 shrink-0 rotate-45 border border-[#F59E0B]/45 bg-[#F59E0B]/15 shadow-[0_0_12px_rgba(245,158,11,0.2)]" />
+          <div className="h-px min-w-0 flex-1 bg-gradient-to-l from-transparent via-[rgba(245,158,11,0.35)] to-[rgba(245,158,11,0.08)]" />
         </div>
         <h1 className="mb-6 text-center text-3xl font-bold tracking-tight text-[#EDEDED] sm:text-4xl lg:text-5xl">
           Vad är det som bromsar er?
