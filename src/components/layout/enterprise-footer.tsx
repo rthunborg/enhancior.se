@@ -60,7 +60,7 @@ export function EnterpriseFooter() {
                 Teknisk ledning.
               </p>
               <p className="text-muted-foreground text-sm">
-                Deltid eller uppdrag.
+                Kort eller lång insats.
               </p>
             </div>
 
