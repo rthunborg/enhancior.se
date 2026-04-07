@@ -9,6 +9,7 @@ const tjänsterLinks = [
   { label: "Teknisk ledning", href: "/cto-proactive" },
   { label: "Mjukvaruarkitekt som resurs", href: "/founder-rescue" },
   { label: "IT-rådgivning", href: "/it-advisory" },
+  { label: "AI-utbildning", href: "/ai-utbildning" },
 ] as const;
 
 const bevisLinks = [

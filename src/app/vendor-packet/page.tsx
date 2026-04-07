@@ -123,13 +123,16 @@ export default function VendorPacketPage() {
               <p className="text-sm text-[#A1A1A1]">
                 Oberoende IT-rådgivning
               </p>
+              <p className="text-sm text-[#A1A1A1]">
+                AI-utbildning
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Engagement Tiers */}
-      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue", "advisory-retainer"]} />
+      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue", "advisory-retainer", "ai-education"]} />
 
     </PathwayShell>
   );

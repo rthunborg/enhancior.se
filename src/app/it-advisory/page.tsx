@@ -143,6 +143,7 @@ export default function ITRadgivningPage() {
           "advisory-quick-review",
           "advisory-procurement",
           "advisory-retainer",
+          "ai-education",
         ]}
       />
     </PathwayShell>
