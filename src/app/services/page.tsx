@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function TjansterPage() {
   return (
     <PageShell breadcrumbSegments={[{ label: "services" }]}>
-      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue", "advisory-quick-review", "advisory-procurement", "advisory-retainer"]} />
+      <EngagementTiers tierIds={["tech-rescue-audit", "fractional-retainer", "enterprise-rescue", "advisory-quick-review", "advisory-procurement", "advisory-retainer", "ai-education"]} />
     </PageShell>
   );
 }

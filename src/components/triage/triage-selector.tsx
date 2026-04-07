@@ -29,6 +29,13 @@ const TRIAGE_OPTIONS = [
     ariaLabel:
       "Vi saknar rätt senior IT-kompetens och behöver en erfaren mjukvaruarkitekt som håller oss på rätt kurs. Välj för att se lösningar.",
   },
+  {
+    id: "ai-education",
+    label: "Vi vill förstå hur AI kan hjälpa vår organisation.",
+    href: "/ai-utbildning",
+    ariaLabel:
+      "Vi vill förstå hur AI kan hjälpa vår organisation. Välj för att se utbildningsalternativ.",
+  },
 ] as const;
 
 export function TriageSelector() {

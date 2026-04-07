@@ -43,8 +43,8 @@ export default function Home() {
           aria-label="Vem det här är"
         >
           <p>Senior mjukvaruarkitekt.</p>
+          <p>Expert inom Agentic AI.</p>
           <p>Teknisk ledning.</p>
-          <p>Kort eller lång insats.</p>
         </div>
         <div
           className="mx-auto mb-8 flex max-w-sm items-center gap-4 px-4"

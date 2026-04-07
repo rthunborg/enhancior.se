@@ -57,10 +57,10 @@ export function EnterpriseFooter() {
                 Senior mjukvaruarkitekt.
               </p>
               <p className="text-muted-foreground text-sm">
-                Teknisk ledning.
+                Expert inom Agentic AI.
               </p>
               <p className="text-muted-foreground text-sm">
-                Kort eller lång insats.
+                Teknisk ledning.
               </p>
             </div>
 

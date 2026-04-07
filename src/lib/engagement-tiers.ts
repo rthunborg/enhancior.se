@@ -113,4 +113,21 @@ export const engagementTiers: EngagementTier[] = [
     ctaLabel: "Ta kontakt",
     ctaHref: booking.baseUrl,
   },
+  {
+    id: "ai-education",
+    name: "AI-utbildning",
+    tagline:
+      "Föreläsningar och workshops som ger ert team konkreta AI-kunskaper",
+    scope:
+      "Föreläsningar och praktiska workshops om AI för ledning och utvecklare. Innehållet anpassas efter er målgrupp: strategisk AI-förståelse för beslutsfattare eller praktisk AI-användning för utvecklare som vill koda smartare med AI.",
+    timeline: "1–2 dagar",
+    startingPrice: "Offertbaserad",
+    deliverables: [
+      "Presentationsmaterial och inspelning av sessionen",
+      "Praktiska övningar anpassade efter er verklighet",
+      "Konkret handlingsplan för AI-användning i er organisation",
+    ],
+    ctaLabel: booking.ctaLabel,
+    ctaHref: booking.baseUrl,
+  },
 ];
