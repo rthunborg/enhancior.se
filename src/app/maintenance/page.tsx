@@ -15,15 +15,11 @@ export default function MaintenancePage() {
           />
         </div>
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#A1A1A1]">
-          Tillfälligt pausad
+          Pausad
         </p>
         <h1 className="mt-3 text-2xl font-semibold tracking-tight text-[#EDEDED] sm:text-3xl">
           Webbplatsen är pausad
         </h1>
-        <p className="mt-4 text-pretty text-sm leading-relaxed text-[#A1A1A1] sm:text-base">
-          Vi visar inget innehåll här en period. Vid brådskande ärenden når du
-          oss via samma kanaler som vanligt.
-        </p>
         <div
           className="mt-10 h-px w-24 bg-gradient-to-r from-transparent via-[#F59E0B]/40 to-transparent"
           aria-hidden
