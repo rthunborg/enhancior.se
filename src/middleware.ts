@@ -31,7 +31,7 @@ export function middleware(request: NextRequest) {
 
   if (pathname.startsWith("/api/")) {
     return NextResponse.json(
-      { error: "Tjänsten tillfälligt stängd." },
+      { error: "Kontakten via webbplatsen är tillfälligt pausad." },
       { status: 503 },
     );
   }

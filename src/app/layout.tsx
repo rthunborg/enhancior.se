@@ -31,13 +31,13 @@ const sharedIcons: Metadata["icons"] = {
 
 const maintenanceMetadata: Metadata = {
   metadataBase: new URL("https://enhancior.se"),
-  title: "Enhancior | Sidan uppdateras",
+  title: "Enhancior | Webbplatsen är tillfälligt pausad",
   description:
-    "Vår webbplats håller på att uppdateras. Titta gärna tillbaka om en stund.",
+    "Webbplatsen visar inget innehåll här en period. Vid brådskande ärenden når du oss via samma kanaler som vanligt.",
   icons: sharedIcons,
   openGraph: {
     siteName: "Enhancior",
-    title: "Enhancior | Sidan uppdateras",
+    title: "Enhancior | Webbplatsen är tillfälligt pausad",
   },
   robots: { index: false, follow: false },
   alternates: { canonical: "https://enhancior.se" },
