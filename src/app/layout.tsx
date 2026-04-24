@@ -6,6 +6,7 @@ import { StructuredData } from "@/components/seo/structured-data";
 import { EnterpriseFooter } from "@/components/layout/enterprise-footer";
 import { ContactModalProvider } from "@/components/contact";
 import { LazyOverlays } from "@/components/layout/lazy-overlays";
+import { MAINTENANCE_MODE } from "@/config/maintenance";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +20,30 @@ const geistMono = Geist_Mono({
   display: "optional",
 });
 
-export const metadata: Metadata = {
+const sharedIcons: Metadata["icons"] = {
+  icon: [
+    { url: "/favicon.ico", sizes: "any" },
+    { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+  ],
+  apple: "/apple-touch-icon.png",
+};
+
+const maintenanceMetadata: Metadata = {
+  metadataBase: new URL("https://enhancior.se"),
+  title: "Enhancior | Sidan uppdateras",
+  description:
+    "Vår webbplats håller på att uppdateras. Titta gärna tillbaka om en stund.",
+  icons: sharedIcons,
+  openGraph: {
+    siteName: "Enhancior",
+    title: "Enhancior | Sidan uppdateras",
+  },
+  robots: { index: false, follow: false },
+  alternates: { canonical: "https://enhancior.se" },
+};
+
+const defaultMetadata: Metadata = {
   metadataBase: new URL("https://enhancior.se"),
   title: "IT-konsult Göteborg | Senior Mjukvaruarkitekt – Enhancior",
   description:
@@ -36,14 +60,7 @@ export const metadata: Metadata = {
     "legacy modernisering",
     "teknisk revision",
   ],
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-    ],
-    apple: "/apple-touch-icon.png",
-  },
+  icons: sharedIcons,
   openGraph: {
     siteName: "Enhancior",
     locale: "sv_SE",
@@ -66,6 +83,10 @@ export const metadata: Metadata = {
   },
 };
 
+export const metadata: Metadata = MAINTENANCE_MODE
+  ? maintenanceMetadata
+  : defaultMetadata;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -74,19 +95,31 @@ export default function RootLayout({
   return (
     <html lang="sv" className="dark">
       <head>
-        <StructuredData />
+        {!MAINTENANCE_MODE ? <StructuredData /> : null}
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen${MAINTENANCE_MODE ? " bg-[#0A0A0A]" : ""}`}
       >
         <ContactModalProvider>
-          <div id="scroll-sentinel" className="pointer-events-none absolute top-[200px] h-0 w-0" aria-hidden="true" />
+          {!MAINTENANCE_MODE ? (
+            <div
+              id="scroll-sentinel"
+              className="pointer-events-none absolute top-[200px] h-0 w-0"
+              aria-hidden="true"
+            />
+          ) : null}
           <main className="flex-1">{children}</main>
-          <div id="footer-sentinel" className="pointer-events-none h-0 w-0" aria-hidden="true" />
-          <EnterpriseFooter />
-          <LazyOverlays />
+          {!MAINTENANCE_MODE ? (
+            <div
+              id="footer-sentinel"
+              className="pointer-events-none h-0 w-0"
+              aria-hidden="true"
+            />
+          ) : null}
+          {!MAINTENANCE_MODE ? <EnterpriseFooter /> : null}
+          {!MAINTENANCE_MODE ? <LazyOverlays /> : null}
         </ContactModalProvider>
-        <Analytics />
+        {!MAINTENANCE_MODE ? <Analytics /> : null}
       </body>
     </html>
   );

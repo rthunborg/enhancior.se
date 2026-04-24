@@ -1,6 +1,10 @@
 import type { MetadataRoute } from "next";
+import { MAINTENANCE_MODE } from "@/config/maintenance";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  if (MAINTENANCE_MODE) {
+    return [];
+  }
   const baseUrl = "https://enhancior.se";
   const lastModified = new Date("2026-03-12");
 
