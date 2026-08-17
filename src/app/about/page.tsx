@@ -4,17 +4,22 @@ import { PageShell } from "@/components/page-shell";
 import { ContactButton } from "./contact-button";
 
 export const metadata: Metadata = {
-  title: "Rasmus Thunborg | Senior Mjukvaruarkitekt & IT-konsult Göteborg",
+  title: "Rasmus Thunborg | Rasmus Alestig Thunborg – Mjukvaruarkitekt",
   description:
-    "Senior mjukvaruarkitekt och IT-konsult i Göteborg med 10+ års erfarenhet från ledande globala och nordiska bolag. Specialiserad på mjukvaruarkitektur, backend-utveckling och teknisk ledning.",
+    "Rasmus Alestig Thunborg, även känd som Rasmus Thunborg och Rasmus Alestig, är senior mjukvaruarkitekt och IT-konsult i Göteborg med 10+ års erfarenhet.",
   keywords: [
     "Rasmus Thunborg",
+    "Rasmus Alestig Thunborg",
+    "Rasmus Alestig",
     "mjukvaruarkitekt Göteborg",
     "senior IT-konsult Göteborg",
     "arkitekturkonsult Sverige",
     "teknisk ledning konsult",
   ],
   openGraph: {
+    title: "Rasmus Thunborg | Rasmus Alestig Thunborg",
+    description:
+      "Rasmus Alestig Thunborg, även känd som Rasmus Thunborg och Rasmus Alestig, är senior mjukvaruarkitekt och IT-konsult i Göteborg.",
     url: "https://enhancior.se/about",
   },
   alternates: {
@@ -76,7 +81,11 @@ export default function OmPage() {
                 Det ni ser är det ni får
               </h2>
               <p>
-                Med Enhancior är det enkelt. När ni anlitar mig får ni mig. Inga account managers och inga juniorer. Bara en erfaren mjukvaruarkitekt som gör jobbet.
+                Jag heter Rasmus Alestig Thunborg och arbetar professionellt
+                under namnen Rasmus Thunborg och Rasmus Alestig. Med Enhancior
+                är det enkelt: när ni anlitar mig får ni mig. Inga account
+                managers och inga juniorer. Bara en erfaren mjukvaruarkitekt
+                som gör jobbet.
               </p>
             </div>
 

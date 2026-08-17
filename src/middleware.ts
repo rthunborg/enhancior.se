@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { MAINTENANCE_MODE } from "@/config/maintenance";
+import { getMaintenanceApiPolicy } from "@/lib/maintenance-api-policy";
 
 export function middleware(request: NextRequest) {
   if (!MAINTENANCE_MODE) {
@@ -30,10 +31,12 @@ export function middleware(request: NextRequest) {
   }
 
   if (pathname.startsWith("/api/")) {
-    return NextResponse.json(
-      { error: "Begäran kan inte hanteras." },
-      { status: 503 },
-    );
+    const policy = getMaintenanceApiPolicy(pathname);
+
+    return NextResponse.json(policy.body, {
+      status: policy.status,
+      headers: policy.headers,
+    });
   }
 
   return NextResponse.redirect(new URL("/maintenance", request.url), 307);

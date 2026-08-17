@@ -48,6 +48,9 @@ const defaultMetadata: Metadata = {
   description:
     "Senior IT-konsult och mjukvaruarkitekt i Göteborg. Teknisk revision, mjukvaruarkitekt som deltar regelbundet i ert team, och legacy-modernisering för SaaS och enterprise i Sverige.",
   keywords: [
+    "Rasmus Thunborg",
+    "Rasmus Alestig Thunborg",
+    "Rasmus Alestig",
     "IT-konsult Göteborg",
     "mjukvaruarkitekt konsult",
     "senior mjukvaruarkitekt",

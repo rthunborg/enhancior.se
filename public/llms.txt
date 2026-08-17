@@ -4,7 +4,7 @@
 
 ## Company Overview
 
-Enhancior AB is a solo consultancy based in Gothenburg, Sweden, founded by Rasmus Thunborg. The company provides senior software architecture and technical leadership services to SaaS companies and enterprises struggling with technical debt, scaling challenges, or leadership gaps in their engineering organizations.
+Enhancior AB is a solo consultancy based in Gothenburg, Sweden, founded by Rasmus Alestig Thunborg, professionally known as Rasmus Thunborg and Rasmus Alestig. The company provides senior software architecture and technical leadership services to SaaS companies and enterprises struggling with technical debt, scaling challenges, or leadership gaps in their engineering organizations.
 
 Enhancior operates as a one-person firm: when you hire Enhancior, you get Rasmus directly. No account managers, no juniors, no subcontracting.
 
